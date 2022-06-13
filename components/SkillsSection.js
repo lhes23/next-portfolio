@@ -1,8 +1,8 @@
 import React from "react";
 
-const SkillsSection = () => {
+const SkillsSection = ({ styles }) => {
   return (
-    <section className="py-16">
+    <section className={styles.section}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center">
         <div className="max-w-lg mx-auto text-center lg:text-left lg:mx-0">
           <h2 className="text-3xl font-bold sm:text-4xl">

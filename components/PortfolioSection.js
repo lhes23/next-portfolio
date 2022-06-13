@@ -1,8 +1,8 @@
 import React from "react";
 
-const PortfolioSection = ({ portfolio }) => {
+const PortfolioSection = ({ styles, portfolio }) => {
   return (
-    <section>
+    <section className={styles.section}>
       <div className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2">
         {portfolio?.map((port) => (
           <div className="w-full shadow-sm  border-rose-500">

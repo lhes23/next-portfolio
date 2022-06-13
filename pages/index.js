@@ -16,12 +16,12 @@ export default function Home({ userDetails }) {
         personalDetails={personalDetails}
         professionalDetails={professionalDetails}
       />
-      <div className="lg:m-auto lg:p-20">
-        <SkillsSection />
-        <AboutSection />
-        <PortfolioSection portfolio={portfolio} />
-        <InfoSection />
-        <ContactSection />
+      <div className="lg:m-auto px-10  bg-slate-100">
+        <SkillsSection styles={styles} />
+        <AboutSection styles={styles} />
+        <PortfolioSection styles={styles} portfolio={portfolio} />
+        <InfoSection styles={styles} />
+        <ContactSection styles={styles} />
       </div>
       <Footer />
     </main>
@@ -39,4 +39,8 @@ export const getServerSideProps = async () => {
       userDetails: data.userDetails,
     },
   };
+};
+
+const styles = {
+  section: "py-16 px-16",
 };

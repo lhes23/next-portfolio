@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactSection = () => {
+const ContactSection = ({ styles }) => {
   return (
     <>
       {/*
@@ -12,7 +12,7 @@ const ContactSection = () => {
     plugins: [require('@tailwindcss/forms')]
   */}
 
-      <section className="py-16 bg-gray-100 px-6">
+      <section className={styles.section}>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:py-12 lg:col-span-2">
             <p className="max-w-xl text-lg">

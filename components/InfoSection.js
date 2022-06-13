@@ -1,8 +1,8 @@
 import React from "react";
 
-const InfoSection = () => {
+const InfoSection = ({ styles }) => {
   return (
-    <section className="py-16">
+    <section className={styles.section}>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
         <div className="relative z-10 lg:py-16">
           <div className="relative h-64 sm:h-80 lg:h-full">
