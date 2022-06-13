@@ -15,7 +15,7 @@ export default function Home({ userDetails }) {
       <HeroSection user={user} />
       <SkillsSection />
       <AboutSection />
-      <PortfolioSection />
+      <PortfolioSection user={user} />
       <InfoSection />
       <ContactSection />
       <Footer />
