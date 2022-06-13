@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import videoBG from "../public/videos/circuit.mp4";
 
 const HeroSection = () => {
   return (
     <section className="relative bg-white">
+      <video loop autoPlay muted className="heroBackground" src={videoBG} />
       <Image
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
         src="https://images.unsplash.com/photo-1601758003122-53c40e686a19"

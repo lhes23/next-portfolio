@@ -8,7 +8,7 @@ import SkillsSection from "../components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-full">
       <Nav />
       <HeroSection />
       <SkillsSection />
