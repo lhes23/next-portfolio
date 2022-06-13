@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Typed from "react-typed";
 
-const HeroSection = ({ user }) => {
-  const { firstName, lastName } = user.personalDetails;
-  const { jobTitles } = user.professionalDetails;
+const HeroSection = ({ personalDetails, professionalDetails }) => {
+  const { firstName, lastName } = personalDetails;
+  const { jobTitles } = professionalDetails;
 
   return (
     <section className="relative bg-white">

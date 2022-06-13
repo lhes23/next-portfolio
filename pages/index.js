@@ -8,16 +8,21 @@ import PortfolioSection from "../components/PortfolioSection";
 import SkillsSection from "../components/SkillsSection";
 
 export default function Home({ userDetails }) {
-  const user = userDetails[0];
+  const { personalDetails, professionalDetails, portfolio } = userDetails[0];
   return (
     <main className="w-full">
       <Nav />
-      <HeroSection user={user} />
-      <SkillsSection />
-      <AboutSection />
-      <PortfolioSection user={user} />
-      <InfoSection />
-      <ContactSection />
+      <HeroSection
+        personalDetails={personalDetails}
+        professionalDetails={professionalDetails}
+      />
+      <div className="lg:m-auto lg:p-20">
+        <SkillsSection />
+        <AboutSection />
+        <PortfolioSection portfolio={portfolio} />
+        <InfoSection />
+        <ContactSection />
+      </div>
       <Footer />
     </main>
   );

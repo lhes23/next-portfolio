@@ -1,13 +1,11 @@
 import React from "react";
 
-const PortfolioSection = ({ user }) => {
-  const { portfolio } = user;
-  console.log(portfolio);
+const PortfolioSection = ({ portfolio }) => {
   return (
-    <>
-      <div className="grid grid-cols-3 gap-4 m-40 justify-center align-center">
+    <section>
+      <div className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2">
         {portfolio?.map((port) => (
-          <div className="w-full">
+          <div className="w-full shadow-sm  border-rose-500">
             <a href className="block overflow-hidden rounded-2xl">
               <img
                 className="object-cover w-full h-56"
@@ -26,7 +24,7 @@ const PortfolioSection = ({ user }) => {
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
