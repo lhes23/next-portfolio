@@ -9,19 +9,19 @@ const HeroSection = () => {
         loop
         autoPlay
         muted
-        className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
+        className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
         src="/circuit.mp4"
         type="video/mp4"
       />
 
       <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
         <div className="max-w-xl text-center sm:text-left">
-          <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
-            Hi, My Name is
+          <h1 className="text-3xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 backgroundAnimate">
+            Hi, my name is
             <span className="sm:block">Lester Reandino</span>
           </h1>
 
-          <p className="max-w-lg mt-4 text-white text-2xl sm:leading-relaxed sm:text-xl">
+          <p className="max-w-lg mt-4 text-white text-2xl sm:leading-relaxed sm:text-4xl">
             I&apos;m a{" "}
             <Typed
               strings={[

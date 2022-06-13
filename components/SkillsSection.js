@@ -2,8 +2,8 @@ import React from "react";
 
 const SkillsSection = () => {
   return (
-    <section>
-      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="">
+      <div className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center">
           <div className="max-w-lg mx-auto text-center lg:text-left lg:mx-0">
             <h2 className="text-3xl font-bold sm:text-4xl">
