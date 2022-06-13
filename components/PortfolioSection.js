@@ -11,7 +11,7 @@ const PortfolioSection = ({ user }) => {
             <a href className="block overflow-hidden rounded-2xl">
               <img
                 className="object-cover w-full h-56"
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                src={`/images/portfolio/${port.img}`}
                 alt
               />
               <div className="p-4 bg-gray-900">
