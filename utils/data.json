@@ -1,0 +1,229 @@
+{
+  "personalDetails": {
+    "firstName": "Lester",
+    "lastName": "Reandino",
+    "bday": "23 December, 1985",
+    "address": "New Cabalan, Olongapo City, Zambales, Philippines",
+    "email": "lesterreandino@gmail.com",
+    "phoneNumber": "+63-915-982-2241",
+    "about": "A Husband and a Father of 3 kids. Enthusiastic in giving value to businesses and companies by using Web Development skills. Seeking extensive experience that will be further developed and continues self improvement to give more value and become an asset to the company"
+  },
+  "education": {
+    "degree": "Bachelor",
+    "course": "Bachelor of Science in Computer Science",
+    "year": "June 2002 - October 2005",
+    "school": "Columban College",
+    "schoolAddress": "Olongapo City, Zambales"
+  },
+  "professionalDetails": {
+    "mainTitles": "Web Developer and Designer",
+    "summary": "An experienced Production Manager leading 14 staff and 5 sections. A Web Developer with experienced in Wordpress Development. Full Stack Development with technologies like HTML, CSS, Javascript, React, Bootstrap, PHP, Python and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
+    "jobTitles": [
+      "Full Stack Web Developer",
+      "Web Designer",
+      "Wordpress Expert",
+      "Project Manager",
+      "Virtual Assistant",
+      "Dancer"
+    ],
+    "website": "https://lhes23.github.io/iportfolio",
+    "skills": [
+      { "name": "HTML", "rate": 95 },
+      { "name": "CSS", "rate": 90 },
+      { "name": "Javascript", "rate": 80 },
+      { "name": "PHP", "rate": 80 },
+      { "name": "WordPress", "rate": 90 },
+      { "name": "Python", "rate": 75 }
+    ]
+  },
+  "jobExperiences": [
+    {
+      "title": "Web Developer",
+      "date": "2017 - Present",
+      "company": "Ippei Leads, Inc",
+      "tasks": [
+        "Managing the main website in WordPress hosted in Amazon Web Service (AWS) Cloud using Secure Shell (SSH) and Github",
+        "Develop a python program that can automate the integration and update of the site",
+        "Execute SQL command to Database whenever we need to change something  like date or string",
+        "Develop and design multiple websites for lead generation using WordPress",
+        "Design and Build WordPress Websites with DIVI and Thrive Themes",
+        "Experience in full-stack development using HTML, CSS, Javascript, React, Bootstrap, Python, and PHP. Database management like Phpmyadmin, MySQL, Adminer.",
+        "Proficient in Cpanel, Web Host Manager(WHM), Domain Name System (DNS), Hosting and Registrars",
+        "Practicing Python Web and desktop applications using Django, Tkinter, and SimpleGUI.",
+        "Handled different writers and paid them on a weekly basis",
+        "Experience in Digital Marketing like Copywriting. Blogging, SEO, Email Marketing and Facebook Ads"
+      ]
+    },
+    {
+      "title": "Production Manager",
+      "date": "2016 - 2017",
+      "company": "LINDBERG AG A4 - Branch",
+      "tasks": [
+        "Responsible for Leading and Managing the Production",
+        "Handle 14 staff with 5 Sections (Inventory, Work order Process, Adjustment Section, Sales Order Process, and Quality Controls)",
+        "Ensuring goals are completed in a given time by having a list generated using spreadsheets",
+        "Improve efficiency and effectiveness by monitoring inventory and consumptions",
+        "Develop a PHP software for monitoring process using Codeigniter"
+      ]
+    },
+    {
+      "title": "Production Line Leader",
+      "date": "2010 - 2016",
+      "company": "LINDBERG AG A4 - Branch",
+      "tasks": [
+        "Supervising the production team members consists of 10 persons",
+        "Hands-on in production, grinding, polishing, welding of precious materials.",
+        "Training newly hired by showing the right practice and standard operating procedure"
+      ]
+    },
+    {
+      "title": "Production Assistant",
+      "date": "2008 - 2010",
+      "company": "LINDBERG AG A4 - Branch",
+      "tasks": [
+        "Buffing and polishing of acetate, titanium, and precious metals",
+        "Doing any given tasks in production according to the immediate superior",
+        "Willing to work overtimes when needed"
+      ]
+    }
+  ],
+  "socialMedias": [
+    {
+      "title": "facebook",
+      "url": "https://www.facebook.com/lester.reandino/"
+    },
+    {
+      "title": "twitter",
+      "url": "https://twitter.com/lesterreandino"
+    },
+    {
+      "title": "linkedin",
+      "url": "https://www.linkedin.com/in/lester-reandino/"
+    },
+    {
+      "title": "instagram",
+      "url": "https://www.instagram.com/lesterreandino/"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "name": "All Good Towing",
+      "url": "https://www.allgoodtowing.com/",
+      "img": "allgoodtowing.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "2",
+      "name": "Atlanta Tree Service Co",
+      "url": "https://atlantatreeserviceco.com/",
+      "img": "atlantatreeserviceco.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "3",
+      "name": "Chicago Commercial Roofing Co",
+      "url": "https://chicagocommercialroofingco.com/",
+      "img": "chicagocommercialroofingco.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "4",
+      "name": "Chicago Sewer Rescue",
+      "url": "https://chicagosewerrescue.com/",
+      "img": "chicagosewerrescue.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "5",
+      "name": "Detroit Legacy Towing Service",
+      "url": "https://detroitlegacytowingservice.com/",
+      "img": "detroitlegacytowingservice.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "6",
+      "name": "Detroit Property Management Parks",
+      "url": "https://detroitpropertymanagementparks.com/",
+      "img": "detroitpropertymanagementparks.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "7",
+      "name": "Extraction Pro Water Removal",
+      "url": "https://extractionprowaterremoval.com/",
+      "img": "extractionprowaterremoval.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "8",
+      "name": "Hurricane Tree Service",
+      "url": "https://hurricanetreeservice.org/",
+      "img": "hurricanetreeservice.org.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "9",
+      "name": "Lansing Water Damage Restoration",
+      "url": "https://lansingwaterdamagerestoration.com/",
+      "img": "lansingwaterdamagerestoration.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "10",
+      "name": "Legacy Car Accident Lawyers",
+      "url": "https://legacycaraccidentlawyers.com/",
+      "img": "legacycaraccidentlawyers.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "11",
+      "name": "MC Auto Body Repair",
+      "url": "https://mcautobodyrepair.com/",
+      "img": "mcautobodyrepair.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "12",
+      "name": "Modesto HVACS",
+      "url": "https://modestohvacs.com",
+      "img": "modestohvacs.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "13",
+      "name": "Moving San Jose Local Long Distance",
+      "url": "https://movingsanjoselocallongdistance.com",
+      "img": "movingsanjoselocallongdistance.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "14",
+      "name": "Mt Prospect Plumber",
+      "url": "https://mtprospectplumber.org",
+      "img": "mtprospectplumber.org.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "15",
+      "name": "oFallon Roofer",
+      "url": "https://ofallonroofer.com",
+      "img": "ofallonroofer.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "16",
+      "name": "Spotless Maids House Cleaning Service",
+      "url": "https://spotlessmaidshousecleaningservice.com",
+      "img": "spotlessmaidshousecleaningservice.com.jpg",
+      "app": "wordpress"
+    },
+    {
+      "id": "17",
+      "name": "St Charles Roof",
+      "url": "https://stcharlesroof.com",
+      "img": "stcharlesroof.com.jpg",
+      "app": "wordpress"
+    }
+  ]
+}

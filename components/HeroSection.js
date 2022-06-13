@@ -2,7 +2,10 @@ import Image from "next/image";
 import React from "react";
 import Typed from "react-typed";
 
-const HeroSection = () => {
+const HeroSection = ({ user }) => {
+  const { firstName, lastName } = user.personalDetails;
+  const { jobTitles } = user.professionalDetails;
+
   return (
     <section className="relative bg-white">
       <video
@@ -10,25 +13,23 @@ const HeroSection = () => {
         autoPlay
         muted
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
-        src="/circuit.mp4"
+        src="/videos/circuit.mp4"
         type="video/mp4"
       />
 
       <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
         <div className="max-w-xl text-center sm:text-left">
-          <h1 className="text-3xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 backgroundAnimate">
+          <h1 className="text-3xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-pink-600 to-purple-600 backgroundAnimate shadow-md">
             Hi, my name is
-            <span className="sm:block">Lester Reandino</span>
+            <span className="sm:block">
+              {firstName} {lastName}
+            </span>
           </h1>
 
-          <p className="max-w-lg mt-4 text-white text-2xl sm:leading-relaxed sm:text-4xl">
+          <p className="max-w-lg mt-4 text-2xl sm:leading-relaxed sm:text-4xl text-white">
             I&apos;m a{" "}
             <Typed
-              strings={[
-                "Full Stack Web Developer",
-                "Web Designer",
-                "Wordpress Expert",
-              ]}
+              strings={jobTitles.map((title) => title)}
               typeSpeed={100}
               backSpeed={50}
               loop
