@@ -7,7 +7,8 @@ import Nav from "../components/Nav";
 import PortfolioSection from "../components/PortfolioSection";
 import SkillsSection from "../components/SkillsSection";
 
-export default function Home({ user }) {
+export default function Home({ userDetails }) {
+  const user = userDetails[0];
   return (
     <main className="w-full">
       <Nav />
@@ -27,9 +28,10 @@ export const getServerSideProps = async () => {
     process.env.NODE_ENV === "development" ? "http://localhost:3000" : "";
   const res = await fetch(`${baseUrl}/api/user`);
   const data = await res.json();
+
   return {
     props: {
-      user: data.userDetails,
+      userDetails: data.userDetails,
     },
   };
 };

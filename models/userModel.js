@@ -1,18 +1,20 @@
 import { Schema, models, model } from "mongoose";
 
 const UserSchema = Schema({
-  firstName: String,
-  lastName: String,
+  personalDetails: Object,
+  professionalDetails: Object,
 });
 
-const PersonalDetailSchema = Schema({
-  firstName: String,
-  lastName: String,
-  email: String,
-});
+// const PersonalDetailSchema = Schema({
+//   firstName: String,
+//   lastName: String,
+//   email: String,
+// });
 
-export const PersonalDetail =
-  models?.PersonalDetail || model("PersonalDetail", PersonalDetailSchema);
-export const User = models?.User || model("User", UserSchema);
+// const ProfessionalDetailSchema = Schema({
+//   jobTitles: [String],
+//   mainTitle: String,
+// });
 
-// export default User;
+const User = models?.User || model("User", UserSchema);
+export default User;
