@@ -16,14 +16,17 @@ export default function Home({ userDetails }) {
         personalDetails={personalDetails}
         professionalDetails={professionalDetails}
       />
-      <div className="lg:m-auto px-10  bg-slate-100">
-        <SkillsSection styles={styles} />
+      <div className="lg:m-auto px-10 bg-neutral-100">
+        <SkillsSection
+          styles={styles}
+          professionalDetails={professionalDetails}
+        />
         <AboutSection styles={styles} />
         <PortfolioSection styles={styles} portfolio={portfolio} />
         <InfoSection styles={styles} />
         <ContactSection styles={styles} />
       </div>
-      <Footer />
+      <Footer personalDetails={personalDetails} />
     </main>
   );
 }

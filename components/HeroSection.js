@@ -37,7 +37,7 @@ const HeroSection = ({ personalDetails, professionalDetails }) => {
           </p>
           <div className="flex flex-wrap gap-4 mt-8 text-center">
             <a
-              className="block w-full px-12 py-3 text-lg font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+              className="block w-full px-12 py-3 text-lg font-medium text-white border border-white rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
               href="/about"
             >
               Learn More

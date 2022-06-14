@@ -2,14 +2,22 @@ import React from "react";
 
 const AboutSection = ({ styles }) => {
   return (
-    <section id="About" className={styles.section}>
+    <section id="About" className={`bg-black ${styles.section}`}>
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
-          <img
-            className="absolute inset-0 object-cover w-full h-full"
-            src="https://www.hyperui.dev/photos/man-1.jpeg"
-            alt="Man using a computer"
+          <video
+            loop
+            autoPlay
+            muted
+            className="inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
+            src="/videos/planet.mp4"
+            type="video/mp4"
           />
+          {/* <img
+            className="absolute inset-0 h-full"
+            src="/images/profile/profilepic.jpg"
+            alt="Lester Reandino"
+          /> */}
         </div>
         <div className="lg:py-24">
           <h2 className="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
