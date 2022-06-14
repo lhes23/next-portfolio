@@ -21,7 +21,7 @@ const HeroSection = ({ personalDetails, professionalDetails }) => {
         <div className="w-full text-center justify-center">
           <h1 className="text-3xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-pink-600 to-purple-600 backgroundAnimate shadow-md">
             Hi, my name is
-            <span className="sm:block">
+            <span className="block">
               {firstName} {lastName}
             </span>
           </h1>
