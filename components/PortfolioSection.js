@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer";
 
 const PortfolioSection = ({ styles, portfolio }) => {
   const { ref: portContainer, inView } = useInView();
-  console.log(inView);
 
   return (
     <section className={styles.section} ref={portContainer}>
@@ -46,7 +45,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
                 width="100%"
                 height="100%"
                 layout="responsive"
-                alt=""
+                alt={port.name}
               />
               <div className="p-4 bg-gray-900">
                 <p className="text-xs text-gray-500">{port.url}</p>

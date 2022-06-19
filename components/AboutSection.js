@@ -4,10 +4,10 @@ import { useInView } from "react-intersection-observer";
 
 const planetVariants = {
   hidden: { scale: 0 },
-  visible: { scale: 1, transition: { delay: 0.5, duration: 1 } },
+  visible: { scale: 1, transition: { delay: 0.4, duration: 0.9 } },
 };
 
-const AboutSection = ({ styles }) => {
+const AboutSection = () => {
   const { ref: planetRef, inView } = useInView();
 
   return (

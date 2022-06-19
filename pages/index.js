@@ -22,7 +22,7 @@ export default function Home({ userDetails }) {
           professionalDetails={professionalDetails}
         />
       </div>
-      <AboutSection styles={styles} />
+      <AboutSection />
       <div className="lg:m-auto px-10 bg-neutral-100">
         <PortfolioSection styles={styles} portfolio={portfolio} />
         <InfoSection styles={styles} />
