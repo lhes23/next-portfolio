@@ -5,7 +5,7 @@ export const container = {
     scale: 1,
     transition: {
       delayChildren: 0.9,
-      staggerChildren: 0.5,
+      staggerChildren: 0.2,
     },
   },
 };

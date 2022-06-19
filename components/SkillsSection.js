@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { container, item } from "../utils/staggeredAnim";
 
 const SkillsSection = ({ styles, professionalDetails }) => {
   const { skills } = professionalDetails;
@@ -36,12 +38,18 @@ const SkillsSection = ({ styles, professionalDetails }) => {
             </svg>
           </a>
         </div>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <motion.div
+          className="grid grid-cols-2 gap-4 sm:grid-cols-3"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
           {skills?.map((skill) => (
-            <div
+            <motion.div
               className="block p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
               href="/accountant"
               key={skill.name}
+              variants={item}
             >
               <span className="inline-block p-3 rounded-lg bg-gray-50">
                 <svg
@@ -65,9 +73,9 @@ const SkillsSection = ({ styles, professionalDetails }) => {
               <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
                 Lorem ipsum dolor sit amet consectetur.
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

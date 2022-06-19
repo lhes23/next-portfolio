@@ -18,7 +18,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
         </div>
       </div>
       <motion.div
-        className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2"
+        className="grid lg:grid-cols-4 lg:gap-4 justify-center align-center grid-cols-1 gap-2"
         variants={container}
         initial="hidden"
         animate="visible"
@@ -30,7 +30,12 @@ const PortfolioSection = ({ styles, portfolio }) => {
             variants={item}
             whileHover={{ scale: 1.02 }}
           >
-            <a href="" className="block overflow-hidden rounded-2xl">
+            <a
+              href={port.url}
+              className="block overflow-hidden rounded-2xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 className="object-cover w-full h-56"
                 src={`/images/portfolio/${port.img}`}
