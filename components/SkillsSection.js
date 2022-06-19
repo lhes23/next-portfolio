@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/staggeredAnim";
+import { useInView } from "react-intersection-observer";
 
 const SkillsSection = ({ styles, professionalDetails }) => {
+  const { ref: skillRef, inView } = useInView();
   const { skills } = professionalDetails;
+
   return (
     <section className={styles.section}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center">
@@ -38,11 +41,13 @@ const SkillsSection = ({ styles, professionalDetails }) => {
             </svg>
           </a>
         </div>
+
         <motion.div
           className="grid grid-cols-2 gap-4 sm:grid-cols-3"
           variants={container}
           initial="hidden"
-          animate="visible"
+          animate={inView ? "visible" : ""}
+          ref={skillRef}
         >
           {skills?.map((skill) => (
             <motion.div

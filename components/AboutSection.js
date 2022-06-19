@@ -1,11 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const planetVariants = {
+  hidden: { scale: 0 },
+  visible: { scale: 1, transition: { delay: 0.5, duration: 1 } },
+};
 
 const AboutSection = ({ styles }) => {
+  const { ref: planetRef, inView } = useInView();
+  console.log(inView);
   return (
     <section id="About" className="bg-black w-full px-10 py-10">
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-        <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+        <div
+          className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
+          ref={planetRef}
+        >
           <motion.video
             loop
             autoPlay
@@ -13,8 +24,9 @@ const AboutSection = ({ styles }) => {
             className="inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
             src="/videos/planet.mp4"
             type="video/mp4"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1, transition: { delay: 2, duration: 2 } }}
+            variants={planetVariants}
+            initial="hidden"
+            animate={inView ? "visible" : ""}
           />
         </div>
         <div className="lg:py-24">
