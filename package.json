@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
     "framer-motion": "^6.3.11",
     "mongoose": "^6.3.6",
     "next": "12.1.6",
