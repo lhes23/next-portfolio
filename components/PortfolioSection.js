@@ -2,10 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/staggeredAnim";
+import { useInView } from "react-intersection-observer";
 
 const PortfolioSection = ({ styles, portfolio }) => {
+  const { ref: portContainer, inView } = useInView();
+  console.log(inView);
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={portContainer}>
       <div className="justify-center p-4 m-4 text-center">
         <h2 className="text-3xl font-bold sm:text-4xl">Portfolio</h2>
         <div className="flex flex-wrap gap-4 mt-8 text-center justify-center">
@@ -21,7 +25,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
         className="grid lg:grid-cols-4 lg:gap-4 justify-center align-center grid-cols-1 gap-2"
         variants={container}
         initial="hidden"
-        animate="visible"
+        animate={inView ? "visible" : ""}
       >
         {portfolio?.map((port) => (
           <motion.div

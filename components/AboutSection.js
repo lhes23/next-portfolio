@@ -9,7 +9,7 @@ const planetVariants = {
 
 const AboutSection = ({ styles }) => {
   const { ref: planetRef, inView } = useInView();
-  console.log(inView);
+
   return (
     <section id="About" className="bg-black w-full px-10 py-10">
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
