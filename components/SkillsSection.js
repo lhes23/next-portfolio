@@ -41,6 +41,7 @@ const SkillsSection = ({ styles, professionalDetails }) => {
             <div
               className="block p-4 border border-gray-100 shadow-sm rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
               href="/accountant"
+              key={skill.name}
             >
               <span className="inline-block p-3 rounded-lg bg-gray-50">
                 <svg

@@ -1,6 +1,7 @@
 import React from "react";
 
-const ContactSection = ({ styles }) => {
+const ContactSection = ({ styles, personalDetails }) => {
+  const { phoneNumber, address } = personalDetails;
   return (
     <>
       {/*
@@ -21,17 +22,14 @@ const ContactSection = ({ styles }) => {
               confidence that we will only recommend what is right for you.
             </p>
             <div className="mt-8">
-              <a href className="text-2xl font-bold text-pink-600">
-                {" "}
-                0151 475 4450{" "}
+              <a href="" className="text-2xl font-bold text-pink-600">
+                {phoneNumber}
               </a>
-              <address className="mt-2 not-italic">
-                282 Kevin Brook, Imogeneborough, CA 58517
-              </address>
+              <address className="mt-2 not-italic">{address}</address>
             </div>
           </div>
           <div className="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-            <form action className="space-y-4">
+            <form action="" className="space-y-4">
               <div>
                 <label className="sr-only" htmlFor="name">
                   Name

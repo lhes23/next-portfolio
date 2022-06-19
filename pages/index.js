@@ -24,7 +24,7 @@ export default function Home({ userDetails }) {
         <AboutSection styles={styles} />
         <PortfolioSection styles={styles} portfolio={portfolio} />
         <InfoSection styles={styles} />
-        <ContactSection styles={styles} />
+        <ContactSection styles={styles} personalDetails={personalDetails} />
       </div>
       <Footer personalDetails={personalDetails} />
     </main>

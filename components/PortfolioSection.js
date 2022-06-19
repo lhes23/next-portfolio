@@ -16,12 +16,12 @@ const PortfolioSection = ({ styles, portfolio }) => {
       </div>
       <div className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2">
         {portfolio?.map((port) => (
-          <div className="w-full shadow-sm  border-rose-500">
-            <a href className="block overflow-hidden rounded-2xl">
+          <div className="w-full shadow-sm  border-rose-500" key={port.id}>
+            <a href="" className="block overflow-hidden rounded-2xl">
               <img
                 className="object-cover w-full h-56"
                 src={`/images/portfolio/${port.img}`}
-                alt
+                alt=""
               />
               <div className="p-4 bg-gray-900">
                 <p className="text-xs text-gray-500">{port.url}</p>
