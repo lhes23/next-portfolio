@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { container, item } from "../utils/staggeredAnim";
 
 const PortfolioSection = ({ styles, portfolio }) => {
   return (
@@ -14,13 +17,26 @@ const PortfolioSection = ({ styles, portfolio }) => {
           </button>
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2">
+      <motion.div
+        className="grid lg:grid-cols-3 lg:gap-4 justify-center align-center grid-cols-1 gap-2"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
         {portfolio?.map((port) => (
-          <div className="w-full shadow-sm  border-rose-500" key={port.id}>
+          <motion.div
+            key={port.id}
+            className="w-full shadow-sm  border-rose-500"
+            variants={item}
+            whileHover={{ scale: 1.02 }}
+          >
             <a href="" className="block overflow-hidden rounded-2xl">
-              <img
+              <Image
                 className="object-cover w-full h-56"
                 src={`/images/portfolio/${port.img}`}
+                width="100%"
+                height="100%"
+                layout="responsive"
                 alt=""
               />
               <div className="p-4 bg-gray-900">
@@ -32,9 +48,9 @@ const PortfolioSection = ({ styles, portfolio }) => {
                 </p>
               </div>
             </a>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
