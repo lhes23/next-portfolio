@@ -2,17 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/staggeredAnim";
 import { useInView } from "react-intersection-observer";
-import { AiOutlineHtml5 } from "react-icons/ai";
-
-export const Icons = ({ icon }) => {
-  const icons = {
-    HTML: AiOutlineHtml5,
-    WordPress: "test12",
-    Javascript: "test2",
-  };
-  console.log(icons[icon]);
-  return <>{icons[icon]}</>;
-};
+import Icons from "./Icons";
 
 const SkillsSection = ({ styles, professionalDetails }) => {
   const { ref: skillRef, inView } = useInView();
