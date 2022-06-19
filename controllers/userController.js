@@ -1,6 +1,7 @@
 import dbConnect from "../utils/dbConnect";
 import User from "../models/userModel";
 import userDetails from "../utils/data.json";
+import nodemailer from "nodemailer";
 
 dbConnect();
 
@@ -14,6 +15,33 @@ export async function getUserData(req, res) {
 }
 
 export async function contactFormSubmit(req, res) {
-  const hello = "hello contact";
-  res.status(201).json({ hello });
+  const { name, email, message } = req.body;
+
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: "smtp.gmail.com",
+    auth: {
+      user: process.env.NEXT_PUBLIC_AUTH_EMAIL,
+      pass: process.env.NEXT_PUBLIC_AUTH_PASS,
+    },
+    secure: true,
+  });
+
+  const mailData = {
+    from: process.env.NEXT_PUBLIC_AUTH_EMAIL,
+    to: process.env.NEXT_PUBLIC_EMAIL_TO,
+    subject: "Message from NextJS Portfolio from " + name,
+    text: message + " Sent from: " + email,
+    html: `<div>${message} Sent from : ${email}</div>`,
+  };
+
+  transporter.sendMail(mailData, (err, info) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(info);
+    }
+  });
+
+  res.status(201).json({ message: "Message successfully sent!" });
 }
