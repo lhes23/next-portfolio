@@ -4,11 +4,11 @@ const InfoSection = ({ styles }) => {
   return (
     <section className={styles.section}>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
-        <div className="relative z-10 lg:py-16">
+        <div className="relative lg:py-16">
           <div className="relative h-64 sm:h-80 lg:h-full">
             <img
               className="absolute inset-0 object-cover w-full h-full"
-              src="https://www.hyperui.dev/photos/house-1.jpeg"
+              src="/images/profile/profilepic.jpg"
               alt="Indoors house"
             />
           </div>
@@ -26,12 +26,6 @@ const InfoSection = ({ styles }) => {
               dolores provident quaerat totam eos, aperiam architecto eius quis
               quibusdam fugiat dicta.
             </p>
-            <a
-              className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-              href="/contact"
-            >
-              Get in Touch
-            </a>
           </div>
         </div>
       </div>

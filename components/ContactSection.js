@@ -24,7 +24,7 @@ const ContactSection = ({ styles, personalDetails }) => {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.section} id="contact">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:py-12 lg:col-span-2">
             <p className="max-w-xl text-lg">

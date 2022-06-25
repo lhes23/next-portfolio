@@ -9,7 +9,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
   const { ref: portContainer, inView } = useInView();
 
   return (
-    <section className={styles.section} ref={portContainer}>
+    <section className={styles.section} ref={portContainer} id="portfolios">
       <div className="justify-center p-4 m-4 text-center">
         <h2 className="text-3xl font-bold sm:text-4xl">Portfolio</h2>
         <div className="flex flex-wrap gap-4 mt-8 text-center justify-center">

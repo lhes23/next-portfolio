@@ -9,7 +9,7 @@ const SkillsSection = ({ styles, professionalDetails }) => {
   const { skills } = professionalDetails;
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="skills">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center">
         <div className="max-w-lg mx-auto text-center lg:text-left lg:mx-0">
           <h2 className="text-3xl font-bold sm:text-4xl">
@@ -60,9 +60,6 @@ const SkillsSection = ({ styles, professionalDetails }) => {
                   <Icons icon={skill.name} />
                 </span>
                 <h6 className="mt-2 font-bold">{skill.name}</h6>
-                <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-600 sm:block">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
               </motion.div>
             ))}
           </motion.div>
