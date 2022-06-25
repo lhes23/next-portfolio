@@ -9,8 +9,8 @@ const ContactSection = ({ styles, personalDetails }) => {
     <>
       <section className={styles.section} id="contact">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="lg:py-12 lg:col-span-2">
-            <h3 className="font-bold lg:text-2xl lg:p-10">
+          <div className="lg:py-8 lg:col-span-2">
+            <h3 className="font-bold text-center text-xl py-4 lg:text-2xl lg:p-10">
               I would like to connect
             </h3>
             <p className="max-w-xl">
