@@ -1,6 +1,13 @@
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaCss3 } from "react-icons/fa";
-import { SiJavascript, SiPhp, SiWordpress, SiPython } from "react-icons/si";
+import {
+  SiJavascript,
+  SiPhp,
+  SiWordpress,
+  SiPython,
+  SiReact,
+  SiNextdotjs,
+} from "react-icons/si";
 
 const Icons = ({ icon }) => {
   const size = 40;
@@ -17,6 +24,10 @@ const Icons = ({ icon }) => {
       return <SiWordpress size={size} />;
     case "Python":
       return <SiPython size={size} />;
+    case "ReactJS":
+      return <SiReact size={size} />;
+    case "NextJS":
+      return <SiNextdotjs size={size} />;
   }
 };
 

@@ -9,15 +9,16 @@ import PortfolioSection from "../components/PortfolioSection";
 import SkillsSection from "../components/SkillsSection";
 import baseUrl from "../utils/baseUrl";
 
-export default function Home({ userDetails }) {
-  const { personalDetails, professionalDetails, portfolio } = userDetails[0];
+export default function Home({ userDetails, userDetails1 }) {
+  console.log(userDetails1);
+  const { personalDetails, professionalDetails, portfolio } = userDetails1[0];
   const { firstName, lastName } = personalDetails;
   return (
     <>
       <Head>
         <title>{firstName + " " + lastName}</title>
         <meta name="description" content={firstName + " " + lastName} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/lr-logo.svg" />
       </Head>
       <main className="w-full">
         <Nav />
