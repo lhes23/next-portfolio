@@ -45,11 +45,8 @@ const PortfolioSection = ({ styles, portfolio }) => {
                   alt={port.name}
                 />
                 <div className="p-4 bg-gray-900">
-                  <p className="text-xs text-gray-500">{port.url}</p>
-                  <h5 className="text-sm text-white">{port.name}</h5>
-                  <p className="mt-1 text-xs text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum nobis aliquid accusamus? Sint, sequi voluptas.
+                  <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">
+                    {port.name}
                   </p>
                 </div>
               </a>

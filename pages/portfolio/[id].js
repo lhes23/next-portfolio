@@ -16,7 +16,7 @@ const PortFolioDetails = ({ portfolios }) => {
         <h2>{url}</h2>
         <p>{app}</p>
       </div>
-      <Link href="/">
+      <Link href="/#portfolios">
         <a>Home</a>
       </Link>
     </>
