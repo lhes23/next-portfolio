@@ -7,11 +7,9 @@ import InfoSection from "../components/InfoSection";
 import Nav from "../components/Nav";
 import PortfolioSection from "../components/PortfolioSection";
 import SkillsSection from "../components/SkillsSection";
-import baseUrl from "../utils/baseUrl";
 
-export default function Home({ userDetails, userDetails1 }) {
-  console.log(userDetails1);
-  const { personalDetails, professionalDetails, portfolio } = userDetails1[0];
+export default function Home({ userDetails }) {
+  const { personalDetails, professionalDetails, portfolio } = userDetails[0];
   const { firstName, lastName } = personalDetails;
   return (
     <>
@@ -43,17 +41,6 @@ export default function Home({ userDetails, userDetails1 }) {
     </>
   );
 }
-
-export const getServerSideProps = async () => {
-  const res = await fetch(`${baseUrl}/api/user`);
-  const data = await res.json();
-
-  return {
-    props: {
-      userDetails: data.userDetails,
-    },
-  };
-};
 
 const styles = {
   section: "py-16 lg:px-16",

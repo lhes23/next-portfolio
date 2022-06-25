@@ -1,14 +1,9 @@
 import "../styles/globals.css";
 import App from "next/app";
-import { AppWrapper } from "../utils/store";
 import baseUrl from "../utils/baseUrl";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <AppWrapper>
-      <Component {...pageProps} />
-    </AppWrapper>
-  );
+  return <Component {...pageProps} />;
 }
 
 MyApp.getInitialProps = async (appContext) => {
@@ -16,7 +11,7 @@ MyApp.getInitialProps = async (appContext) => {
   const data = await res.json();
 
   const appProps = await App.getInitialProps(appContext);
-  appProps.pageProps = { userDetails1: data.userDetails };
+  appProps.pageProps = { userDetails: data.userDetails };
   return { ...appProps };
 };
 
