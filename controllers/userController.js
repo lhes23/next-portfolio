@@ -31,8 +31,8 @@ export async function contactFormSubmit(req, res) {
     from: process.env.NEXT_PUBLIC_AUTH_EMAIL,
     to: process.env.NEXT_PUBLIC_EMAIL_TO,
     subject: "Message from NextJS Portfolio from " + name,
-    text: message + " Sent from: " + email,
-    html: `<div>${message} Sent from : ${email}</div>`,
+    text: "Name: " + name + "; Message: " + message + "; Sent from: " + email,
+    html: `<div><p>Message coming from NextJS Portfolio</p><p>Name: ${name}</p><p>Message: ${message}</p><p>Sent from : ${email}</p></div>`,
   };
 
   transporter.sendMail(mailData, (err, info) => {
