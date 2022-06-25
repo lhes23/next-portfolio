@@ -22,7 +22,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
         </div>
       </div>
       <motion.div
-        className="grid lg:grid-cols-4 lg:gap-4 justify-center align-center grid-cols-1 gap-2"
+        className="grid lg:grid-cols-4 lg:gap-4 justify-center align-center grid-cols-2 gap-2"
         variants={container}
         initial="hidden"
         animate={inView ? "visible" : ""}
@@ -30,12 +30,12 @@ const PortfolioSection = ({ styles, portfolio }) => {
         {portfolio?.map((port) => (
           <motion.div
             key={port.id}
-            className="w-full shadow-sm  border-rose-500"
+            className="w-full"
             variants={item}
             whileHover={{ scale: 1.02 }}
           >
             <Link href={`/portfolio/${port.id}`}>
-              <a className="block overflow-hidden rounded-2xl">
+              <a className="rounded-2xl block overflow-hidden">
                 <Image
                   className="object-cover w-full h-56"
                   src={`/images/portfolio/${port.img}`}
