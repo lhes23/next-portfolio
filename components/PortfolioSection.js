@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/staggeredAnim";
 import { useInView } from "react-intersection-observer";
@@ -33,29 +34,26 @@ const PortfolioSection = ({ styles, portfolio }) => {
             variants={item}
             whileHover={{ scale: 1.02 }}
           >
-            <a
-              href={port.url}
-              className="block overflow-hidden rounded-2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="object-cover w-full h-56"
-                src={`/images/portfolio/${port.img}`}
-                width="100%"
-                height="100%"
-                layout="responsive"
-                alt={port.name}
-              />
-              <div className="p-4 bg-gray-900">
-                <p className="text-xs text-gray-500">{port.url}</p>
-                <h5 className="text-sm text-white">{port.name}</h5>
-                <p className="mt-1 text-xs text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Rerum nobis aliquid accusamus? Sint, sequi voluptas.
-                </p>
-              </div>
-            </a>
+            <Link href={`/portfolio/${port.id}`}>
+              <a className="block overflow-hidden rounded-2xl">
+                <Image
+                  className="object-cover w-full h-56"
+                  src={`/images/portfolio/${port.img}`}
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  alt={port.name}
+                />
+                <div className="p-4 bg-gray-900">
+                  <p className="text-xs text-gray-500">{port.url}</p>
+                  <h5 className="text-sm text-white">{port.name}</h5>
+                  <p className="mt-1 text-xs text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rerum nobis aliquid accusamus? Sint, sequi voluptas.
+                  </p>
+                </div>
+              </a>
+            </Link>
           </motion.div>
         ))}
       </motion.div>

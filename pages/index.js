@@ -7,6 +7,7 @@ import InfoSection from "../components/InfoSection";
 import Nav from "../components/Nav";
 import PortfolioSection from "../components/PortfolioSection";
 import SkillsSection from "../components/SkillsSection";
+import baseUrl from "../utils/baseUrl";
 
 export default function Home({ userDetails }) {
   const { personalDetails, professionalDetails, portfolio } = userDetails[0];
@@ -43,8 +44,6 @@ export default function Home({ userDetails }) {
 }
 
 export const getServerSideProps = async () => {
-  const baseUrl =
-    process.env.NODE_ENV === "development" ? "http://localhost:3000" : "";
   const res = await fetch(`${baseUrl}/api/user`);
   const data = await res.json();
 
