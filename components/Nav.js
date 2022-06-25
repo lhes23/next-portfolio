@@ -5,19 +5,19 @@ const Nav = () => {
   const navContent = (
     <>
       <Link href="/">
-        <a className="">Home</a>
+        <a className={styles.navLink}>Home</a>
       </Link>
       <Link href="#skills">
-        <a className="">Skills and Strength</a>
+        <a className={styles.navLink}>Skills</a>
       </Link>
-      <Link className="" href="#About">
-        <a className="">About</a>
+      <Link href="#About">
+        <a className={styles.navLink}>About</a>
       </Link>
       <Link href="#portfolios">
-        <a>Portfolios</a>
+        <a className={styles.navLink}>Portfolios</a>
       </Link>
       <Link href="#contact">
-        <a className="">Contact</a>
+        <a className={styles.navLink}>Contact</a>
       </Link>
     </>
   );
@@ -29,7 +29,7 @@ const Nav = () => {
             {navContent}
           </nav>
         </div>
-        <div className="z-10 absolute border-t border-gray-100 justify-center w-full lg:hidden">
+        <div className="z-10 fixed border-gray-100 justify-center w-full lg:hidden">
           <nav className="flex items-center justify-center w-full p-4 overflow-x-auto text-sm font-medium text-white">
             {navContent}
           </nav>
@@ -37,6 +37,10 @@ const Nav = () => {
       </header>
     </>
   );
+};
+
+const styles = {
+  navLink: "px-2",
 };
 
 export default Nav;
