@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { leftElement, rightElement } from "../utils/animations";
+import Image from "next/image";
 
 const InfoSection = ({ styles, personalDetails, education }) => {
   const { about } = personalDetails;
@@ -21,7 +22,12 @@ const InfoSection = ({ styles, personalDetails, education }) => {
             animate={picInView ? "visible" : ""}
           >
             <div className="justify-center z-10 rounded-full ring ring-offset-gray-200 ring-offset-2 relative lg:h-96 sm:h-full sm:w-full w-48 h-48">
-              <img src="/images/profile/profilepic.jpg" className="w-32" />
+              <Image
+                src="/images/profile/profilepic.jpg"
+                className="w-32"
+                alt="Lester Reandino profile picture"
+                layout="fill"
+              />
             </div>
           </motion.div>
         </div>

@@ -36,7 +36,7 @@ const SkillsSection = ({ styles, professionalDetails }) => {
                 <span className="inline-block p-3 rounded-lg bg-gray-50">
                   <Icons icon={skill.name} />
                 </span>
-                <h6 className="mt-2 font-bold">{skill.name}</h6>
+                <h3 className="mt-2 font-bold">{skill.name}</h3>
               </motion.div>
             ))}
           </motion.div>
