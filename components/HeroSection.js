@@ -39,9 +39,9 @@ const HeroSection = ({ personalDetails, professionalDetails }) => {
               />
             </span>
           </p>
-          <div className="flex flex-wrap gap-4 mt-8 text-center justify-center">
+          <div className="flex flex-wrap gap-4 mt-8 text-center justify-center bg-transparent">
             <Link href="#skills">
-              <a className="block w-full px-12 py-3 text-lg font-medium text-white border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring">
+              <a className="block px-12 py-3 text-lg font-medium text-white border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring">
                 Learn More
               </a>
             </Link>
