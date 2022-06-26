@@ -6,7 +6,7 @@ const PortFolioDetails = ({ userDetails }) => {
   const router = useRouter();
   const { id } = router.query;
   const portfolio = portfolios.filter((portfolio) => portfolio.id === id);
-  const { id: portId, name, app, img, url } = portfolio[0];
+  const { id: portId, name, app, img, url, description } = portfolio[0];
 
   return (
     <>
@@ -19,11 +19,7 @@ const PortFolioDetails = ({ userDetails }) => {
             />
             <div>
               <h1 className="text-3xl font-bold">{name}</h1>
-              <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
+              <p className="py-6">{description}</p>
               <a
                 className={styles.btn}
                 href={url}
