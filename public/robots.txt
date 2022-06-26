@@ -1,0 +1,3 @@
+#Allow All Crawlers
+User-agent: *
+Allow: /
