@@ -53,7 +53,7 @@ const ContactForm = () => {
             Name
           </label>
           <input
-            className="w-full p-3 text-sm border-gray-200 rounded-lg"
+            className="w-full p-3 text-sm border-gray-200 rounded-lg font-medium"
             placeholder="Name"
             type="text"
             name="name"
@@ -67,7 +67,7 @@ const ContactForm = () => {
               Email
             </label>
             <input
-              className="w-full p-3 text-sm border-gray-200 rounded-lg"
+              className="w-full p-3 text-sm border-gray-200 rounded-lg font-medium"
               placeholder="Email address"
               type="email"
               name="email"
@@ -82,7 +82,7 @@ const ContactForm = () => {
             Message
           </label>
           <textarea
-            className="w-full p-3 text-sm border-gray-200 rounded-lg"
+            className="w-full p-3 text-sm border-gray-200 rounded-lg font-medium"
             placeholder="Message"
             rows={8}
             // name="message"
@@ -93,7 +93,7 @@ const ContactForm = () => {
         <div className="mt-4">
           <button
             type="submit"
-            className="block w-full px-12 py-3 text-lg font-medium text-blue-500 border border-blue-500 rounded sm:w-auto hover:bg-blue-600 hover:text-white active:bg-blue-500 focus:outline-none focus:ring"
+            className="block w-full px-12 py-3 text-lg font-bold text-blue-500 border border-blue-500 rounded sm:w-auto hover:bg-blue-600 hover:text-white active:bg-blue-500 focus:outline-none focus:ring"
           >
             Submit
           </button>
