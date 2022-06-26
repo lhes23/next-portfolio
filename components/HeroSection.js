@@ -20,7 +20,7 @@ const HeroSection = ({ personalDetails, professionalDetails }) => {
 
       <div className="relative w-full px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
         <div className="w-full text-center justify-center">
-          <h1 className="text-3xl font-extrabold sm:pt-32 text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-green-300 via-pink-600 to-purple-600 backgroundAnimate shadow-md">
+          <h1 className="text-3xl font-extrabold sm:pt-32 text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-green-300 via-pink-600 to-purple-600 backgroundAnimate">
             Hi, my name is
             <span className="block">
               {firstName} {lastName}
