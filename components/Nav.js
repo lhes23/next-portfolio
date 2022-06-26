@@ -24,12 +24,12 @@ const Nav = () => {
   return (
     <>
       <header className="shadow-sm">
-        <div className="z-10 fixed flex items-center justify-between h-16 px-4 mx-auto w-full bg-gray-800/60">
+        <div className="fixed flex items-center justify-between h-16 px-4 mx-auto w-full bg-gray-800/60 z-20">
           <nav className="items-center justify-center hidden space-x-8 text-1xl text-white font-medium lg:flex lg:flex-1 lg:w-0">
             {navContent}
           </nav>
         </div>
-        <div className="z-10 fixed border-gray-100 justify-center w-full lg:hidden">
+        <div className="fixed border-gray-100 justify-center w-full lg:hidden z-20">
           <nav className="flex items-center justify-center w-full p-4 overflow-x-auto text-sm font-medium text-white">
             {navContent}
           </nav>

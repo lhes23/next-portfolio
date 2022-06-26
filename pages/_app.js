@@ -7,11 +7,12 @@ function MyApp({ Component, pageProps }) {
 }
 
 MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+
   const res = await fetch(`${baseUrl}/api/user`);
   const data = await res.json();
-
-  const appProps = await App.getInitialProps(appContext);
   appProps.pageProps = { userDetails: data.userDetails };
+
   return { ...appProps };
 };
 
