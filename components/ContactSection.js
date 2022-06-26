@@ -13,6 +13,10 @@ const ContactSection = ({ styles, personalDetails }) => {
             <h3 className="font-bold text-center text-xl py-4 lg:text-2xl lg:p-10">
               I would like to connect
             </h3>
+            <p className="py-2 text-md">
+              Please message me or contact me directly thru email. I would like
+              to hear from you
+            </p>
             <p className="max-w-xl">
               <span className="text-sm font-bold">Email: </span>
               <span className="text-base italic">{email}</span>

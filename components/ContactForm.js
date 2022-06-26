@@ -43,7 +43,8 @@ const ContactForm = () => {
           className="p-4 mb-4 text-md font-bold text-red-700 bg-red-100 rounded-lg"
           role="alert"
         >
-          Message Successfully Sent!
+          There has been an error! Please send an email directly instead. Sorry
+          for the inconvenience!
         </div>
       )}
       <form onSubmit={submitFormHandler} className="space-y-4">

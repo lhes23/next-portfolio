@@ -16,6 +16,9 @@ const Nav = () => {
       <Link href="#portfolios">
         <a className={styles.navLink}>Portfolios</a>
       </Link>
+      <Link href="#info">
+        <a className={styles.navLink}>Info</a>
+      </Link>
       <Link href="#contact">
         <a className={styles.navLink}>Contact</a>
       </Link>

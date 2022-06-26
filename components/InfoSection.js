@@ -1,46 +1,45 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { leftElement, rightElement } from "../utils/animations";
 
-const profilePicVariants = {
-  hidden: { x: "-100vw" },
-  visible: { x: 0, transition: { delay: 0.4, duration: 0.5 } },
-};
-
-const infoVariants = {
-  hidden: { scale: 0.1 },
-  visible: { scale: 1, transition: { delay: 0.4, duration: 0.5 } },
-};
-
-const InfoSection = ({ styles, personalDetails }) => {
+const InfoSection = ({ styles, personalDetails, education }) => {
   const { about } = personalDetails;
+  const { course, year, school, schoolAddress } = education;
+
   const { ref: picRef, inView: picInView } = useInView();
   const { ref: infoRef, inView: infoInView } = useInView();
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="info">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
-        <div className="relative py-10 justify-center flex" ref={picRef}>
+        <div className="relative py-4 justify-center flex" ref={picRef}>
           <motion.div
             className="avatar"
-            variants={profilePicVariants}
+            variants={leftElement}
             initial="hidden"
             animate={picInView ? "visible" : ""}
           >
-            <div className="justify-center w-full z-10 rounded-full ring ring-offset-gray-200 ring-offset-2 relative h-64 sm:h-80 lg:h-full">
-              <img src="/images/profile/profilepic.jpg" />
+            <div className="justify-center z-10 rounded-full ring ring-offset-gray-200 ring-offset-2 relative lg:h-96 sm:h-full sm:w-full w-48 h-48">
+              <img src="/images/profile/profilepic.jpg" className="w-32" />
             </div>
           </motion.div>
         </div>
         <div ref={infoRef}>
           <motion.div
             className="relative flex items-center bg-gray-100 shadow-md rounded-lg"
-            variants={infoVariants}
+            variants={rightElement}
             initial="hidden"
             animate={infoInView ? "visible" : ""}
           >
-            <span className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16" />
-            <div className="p-4 sm:p-16 lg:p-4">
-              <h2 className="text-2xl font-bold sm:text-3xl">More Info</h2>
+            <div className="p-4 sm:p-16 lg:p-8">
+              <h2 className="text-2xl font-bold sm:text-3xl">{course}</h2>
+              <div className="py-4">
+                <p>{year}</p>
+                <p>{school}</p>
+                <p>{schoolAddress}</p>
+              </div>
+              <h2 className="text-xl font-bold sm:text-2xl">More Info</h2>
               <p className="mt-4 text-gray-600">{about}</p>
             </div>
           </motion.div>

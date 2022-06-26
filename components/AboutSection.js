@@ -1,21 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import {
+  container,
+  item,
+  leftElement,
+  rightElement,
+} from "../utils/animations";
 
-const planetVariants = {
-  hidden: { scale: 0 },
-  visible: { scale: 1, transition: { delay: 0.4, duration: 0.9 } },
-};
-
-const summaryVariants = {
-  hidden: { x: "-100vw" },
-  visible: { x: 0, transition: { delay: 0.4, duration: 0.5 } },
-};
-
-const AboutSection = ({ professionalDetails }) => {
+const AboutSection = ({ professionalDetails, jobExperiences }) => {
   const { summary } = professionalDetails;
   const { ref: planetRef, inView: planetInView } = useInView();
   const { ref: summaryRef, inView: summaryInView } = useInView();
+  const { ref: jobRef, inView: jobInView } = useInView();
 
   return (
     <section id="About" className="bg-black w-full px-10 py-10">
@@ -29,7 +26,7 @@ const AboutSection = ({ professionalDetails }) => {
               className="inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
               src="/videos/planet.mp4"
               type="video/mp4"
-              variants={planetVariants}
+              variants={rightElement}
               initial="hidden"
               animate={planetInView ? "visible" : ""}
             />
@@ -38,17 +35,55 @@ const AboutSection = ({ professionalDetails }) => {
         <div ref={summaryRef}>
           <motion.div
             className="lg:py-24"
-            variants={summaryVariants}
+            variants={leftElement}
             initial="hidden"
             animate={summaryInView ? "visible" : "hidden"}
             exit={!summaryInView ? "hidden" : ""}
           >
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">
               Professional Summary
             </h2>
             <p className="mt-4 text-white">{summary}</p>
           </motion.div>
         </div>
+      </div>
+      <div className="py-8" ref={jobRef}>
+        <h2 className="text-2xl font-bold text-white sm:text-3xl justify-center align-center flex">
+          Job Experiences
+        </h2>
+        <motion.div
+          className="grid lg:gap-4 justify-center align-center sm:grid-cols-2 grid-cols-1 gap-2 py-8 lg:px-4"
+          variants={container}
+          initial="hidden"
+          animate={jobInView ? "visible" : ""}
+        >
+          {jobExperiences.map((job) => {
+            return (
+              <motion.div
+                className="card w-full glass"
+                key={job.title}
+                variants={item}
+              >
+                <div className="card-body text-white">
+                  <h2 className="card-title">{job.title}</h2>
+                  <span className="text-sm text-gray-50">
+                    {job.date} - {job.company}
+                  </span>
+                  <ul className="list-disc">
+                    {job.tasks.map((task) => {
+                      return (
+                        <li className="py-2" key={task}>
+                          {task}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <div className="card-actions justify-end"></div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </div>
     </section>
   );
