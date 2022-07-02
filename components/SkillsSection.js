@@ -16,7 +16,8 @@ const SkillsSection = ({ styles, professionalDetails }) => {
             Skills and Strength
           </h2>
           <p className="mt-4 text-gray-600">
-            Continuous learning and self-improvement. Full Stack Web Development
+            Continuous learning and self-improvement. Full Stack Web
+            Development. Experienced with back-end and front-end development
           </p>
         </div>
         <div ref={skillRef}>
