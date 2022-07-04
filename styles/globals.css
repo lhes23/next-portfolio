@@ -4,10 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   background-color: #eee;
+  height: 100%;
 }
 
 .backgroundAnimate {
