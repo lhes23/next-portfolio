@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../pages";
 
 import ContactForm from "./ContactForm";
 
-const ContactSection = ({ styles, personalDetails }) => {
-  const { phoneNumber, address, email } = personalDetails;
+const ContactSection = ({ styles }) => {
+  const ctx = useContext(UserContext);
+
+  const { phoneNumber, address, email } = ctx.personalDetails;
 
   return (
     <>

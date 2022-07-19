@@ -8,17 +8,12 @@ import InfoSection from "./InfoSection";
 import PortfolioSection from "./PortfolioSection";
 import SkillsSection from "./SkillsSection";
 import JobExperiences from "./JobExperiences";
+import { useContext } from "react";
+import { UserContext } from "../pages";
 
-const MainContent = ({ userDetails }) => {
-  const {
-    personalDetails,
-    professionalDetails,
-    portfolio,
-    education,
-    jobExperiences,
-  } = userDetails;
-
-  const { firstName, lastName } = personalDetails;
+const MainContent = () => {
+  const ctx = useContext(UserContext);
+  const { firstName, lastName } = ctx.personalDetails;
 
   return (
     <>
@@ -29,34 +24,22 @@ const MainContent = ({ userDetails }) => {
       </Head>
       <main className="w-full">
         <Nav />
-        <HeroSection
-          personalDetails={personalDetails}
-          professionalDetails={professionalDetails}
-        />
+        <HeroSection />
+        <SkillsSection styles={styles} />
+        <AboutSection />
+        <JobExperiences />
         <div className="lg:m-auto px-10 bg-neutral-100">
-          <SkillsSection
-            styles={styles}
-            professionalDetails={professionalDetails}
-          />
+          <PortfolioSection styles={styles} />
+          <InfoSection styles={styles} />
+          <ContactSection styles={styles} />
         </div>
-        <AboutSection professionalDetails={professionalDetails} />
-        <JobExperiences jobExperiences={jobExperiences} />
-        <div className="lg:m-auto px-10 bg-neutral-100">
-          <PortfolioSection styles={styles} portfolio={portfolio} />
-          <InfoSection
-            styles={styles}
-            personalDetails={personalDetails}
-            education={education}
-          />
-          <ContactSection styles={styles} personalDetails={personalDetails} />
-        </div>
-        <Footer personalDetails={personalDetails} />
+        <Footer />
       </main>
     </>
   );
 };
 
-const styles = {
+export const styles = {
   section: "py-16 lg:px-16",
 };
 

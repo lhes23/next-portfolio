@@ -7,7 +7,7 @@ export default function Home({ userDetails }) {
   const [userState, setUserState] = useState(userDetails);
   return (
     <UserContext.Provider value={userState}>
-      <MainContent userDetails={userDetails} />
+      <MainContent />
     </UserContext.Provider>
   );
 }

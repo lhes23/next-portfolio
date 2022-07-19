@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { leftElement, rightElement } from "../utils/animations";
+import { UserContext } from "../pages";
 
-const AboutSection = ({ professionalDetails }) => {
-  const { summary } = professionalDetails;
+const AboutSection = () => {
+  const ctx = useContext(UserContext);
+
+  const { summary } = ctx.professionalDetails;
   const { ref: planetRef, inView: planetInView } = useInView();
   const { ref: summaryRef, inView: summaryInView } = useInView();
 

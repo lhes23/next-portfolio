@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { container, item } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
+import { useContext } from "react";
+import { UserContext } from "../pages";
 
-const JobExperiences = ({ jobExperiences }) => {
+const JobExperiences = () => {
+  const ctx = useContext(UserContext);
+
   const { ref: jobRef, inView: jobInView } = useInView();
 
   return (
@@ -17,7 +21,7 @@ const JobExperiences = ({ jobExperiences }) => {
           initial="hidden"
           animate={jobInView ? "visible" : ""}
         >
-          {jobExperiences.map((job) => {
+          {ctx.jobExperiences.map((job) => {
             return (
               <motion.div
                 className="card w-full glass"
