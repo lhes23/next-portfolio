@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import { container, item } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
 import { UserContext } from "../pages";
+import { styles } from "./MainContent";
 
-const PortfolioSection = ({ styles }) => {
+const PortfolioSection = () => {
   const ctx = useContext(UserContext);
 
   const { ref: portContainer, inView } = useInView();

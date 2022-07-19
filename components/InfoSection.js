@@ -4,8 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { leftElement, rightElement } from "../utils/animations";
 import Image from "next/image";
 import { UserContext } from "../pages";
+import { styles } from "./MainContent";
 
-const InfoSection = ({ styles }) => {
+const InfoSection = () => {
   const ctx = useContext(UserContext);
 
   const { about } = ctx.personalDetails;

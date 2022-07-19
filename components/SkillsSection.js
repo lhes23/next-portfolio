@@ -4,8 +4,9 @@ import { container, item } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
 import Icons from "./Icons";
 import { UserContext } from "../pages";
+import { styles } from "./MainContent";
 
-const SkillsSection = ({ styles }) => {
+const SkillsSection = () => {
   const ctx = useContext(UserContext);
   const { skills } = ctx.professionalDetails;
   const { ref: skillRef, inView } = useInView();
