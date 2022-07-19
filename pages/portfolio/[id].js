@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const PortFolioDetails = ({ userDetails }) => {
   const { portfolio: portfolios } = userDetails[0];
@@ -12,10 +13,11 @@ const PortFolioDetails = ({ userDetails }) => {
     <>
       <div className="justify-center content-center flex pt-20">
         <div className="hero bg-indigo-200 max-w-screen-md rounded-2xl shadow-md">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <img
+          <div className="relative hero-content flex-col lg:flex-row-reverse">
+            <Image
               src={`/images/portfolio/${img}`}
               className="max-w-sm rounded-lg shadow-2xl"
+              layout="fill"
             />
             <div>
               <h1 className="text-3xl font-bold">{name}</h1>

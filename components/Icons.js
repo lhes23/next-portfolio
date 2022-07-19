@@ -1,5 +1,5 @@
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaCss3, FaWhmcs } from "react-icons/fa";
+import { FaCss3, FaNodeJs, FaWhmcs } from "react-icons/fa";
 import {
   SiJavascript,
   SiPhp,
@@ -9,6 +9,7 @@ import {
   SiNextdotjs,
   SiCpanel,
   SiPhpmyadmin,
+  SiExpress,
 } from "react-icons/si";
 
 const Icons = ({ icon }) => {
@@ -36,6 +37,10 @@ const Icons = ({ icon }) => {
       return <SiPhpmyadmin size={size} />;
     case "Web Host Manager":
       return <FaWhmcs size={size} />;
+    case "NodeJS":
+      return <FaNodeJs size={size} />;
+    case "ExpressJS":
+      return <SiExpress style={{ backgroundColor: "red" }} size={size} />;
   }
 };
 
