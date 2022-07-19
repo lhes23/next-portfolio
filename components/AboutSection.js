@@ -1,18 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  container,
-  item,
-  leftElement,
-  rightElement,
-} from "../utils/animations";
+import { leftElement, rightElement } from "../utils/animations";
 
-const AboutSection = ({ professionalDetails, jobExperiences }) => {
+const AboutSection = ({ professionalDetails }) => {
   const { summary } = professionalDetails;
   const { ref: planetRef, inView: planetInView } = useInView();
   const { ref: summaryRef, inView: summaryInView } = useInView();
-  const { ref: jobRef, inView: jobInView } = useInView();
 
   return (
     <section id="About" className="bg-black w-full px-10 py-10">
@@ -47,7 +41,7 @@ const AboutSection = ({ professionalDetails, jobExperiences }) => {
           </motion.div>
         </div>
       </div>
-      <div className="py-8" ref={jobRef}>
+      {/* <div className="py-8" ref={jobRef}>
         <h2 className="text-2xl font-bold text-white sm:text-3xl justify-center align-center flex">
           Job Experiences
         </h2>
@@ -84,7 +78,7 @@ const AboutSection = ({ professionalDetails, jobExperiences }) => {
             );
           })}
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import InfoSection from "./InfoSection";
 import PortfolioSection from "./PortfolioSection";
 import SkillsSection from "./SkillsSection";
+import JobExperiences from "./JobExperiences";
 
 const MainContent = ({ userDetails }) => {
   const {
@@ -30,10 +31,8 @@ const MainContent = ({ userDetails }) => {
             professionalDetails={professionalDetails}
           />
         </div>
-        <AboutSection
-          professionalDetails={professionalDetails}
-          jobExperiences={jobExperiences}
-        />
+        <AboutSection professionalDetails={professionalDetails} />
+        <JobExperiences jobExperiences={jobExperiences} />
         <div className="lg:m-auto px-10 bg-neutral-100">
           <PortfolioSection styles={styles} portfolio={portfolio} />
           <InfoSection
