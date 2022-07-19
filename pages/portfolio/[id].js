@@ -1,9 +1,14 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
+import { UserContext } from "../_app";
+import { useContext } from "react";
+import baseUrl from "../../utils/baseUrl";
 
 const PortFolioDetails = ({ userDetails }) => {
-  const { portfolio: portfolios } = userDetails[0];
+  const ctx = useContext(UserContext);
+  console.log(userDetails, ctx);
+
+  const { portfolio: portfolios } = userDetails;
   const router = useRouter();
   const { id } = router.query;
   const portfolio = portfolios.filter((portfolio) => portfolio.id === id);
@@ -12,9 +17,9 @@ const PortFolioDetails = ({ userDetails }) => {
   return (
     <>
       <div className="justify-center content-center flex pt-20">
-        <div className="hero bg-indigo-200 max-w-screen-md rounded-2xl shadow-md">
+        <div className="flex hero bg-indigo-200 max-w-screen-md rounded-2xl shadow-md">
           <div className="relative hero-content flex-col lg:flex-row-reverse">
-            <Image
+            <img
               src={`/images/portfolio/${img}`}
               className="max-w-sm rounded-lg shadow-2xl"
               layout="fill"
@@ -30,9 +35,11 @@ const PortFolioDetails = ({ userDetails }) => {
               >
                 Link to the site
               </a>
-              <Link href="/#portfolios">
-                <a className={styles.btn}>Back to Portfolios</a>
-              </Link>
+              {/* <Link> */}
+              <a href="/#portfolios" className={styles.btn}>
+                Back to Portfolios
+              </a>
+              {/* </Link> */}
             </div>
           </div>
         </div>
@@ -46,3 +53,13 @@ const styles = {
 };
 
 export default PortFolioDetails;
+
+export const getInitialProps = async () => {
+  const res = await fetch(`${baseUrl}/api/user`);
+  const data = await res.json();
+  return {
+    props: {
+      userDetails: data.userDetails[0],
+    },
+  };
+};

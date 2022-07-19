@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { UserContext } from "../pages";
+import { UserContext } from "../pages/_app";
 
 import ContactForm from "./ContactForm";
 import { styles } from "./MainContent";

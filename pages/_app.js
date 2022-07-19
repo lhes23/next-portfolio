@@ -1,9 +1,17 @@
 import "../styles/globals.css";
 import App from "next/app";
 import baseUrl from "../utils/baseUrl";
+import { createContext, useState } from "react";
+
+export const UserContext = createContext();
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const [userState, setUserState] = useState(pageProps.userDetails);
+  return (
+    <UserContext.Provider value={userState}>
+      <Component {...pageProps} />
+    </UserContext.Provider>
+  );
 }
 
 MyApp.getInitialProps = async (appContext) => {

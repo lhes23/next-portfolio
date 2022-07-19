@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { leftElement, rightElement } from "../utils/animations";
-import { UserContext } from "../pages";
+import { UserContext } from "../pages/_app";
 
 const AboutSection = () => {
   const ctx = useContext(UserContext);

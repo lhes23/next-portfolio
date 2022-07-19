@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
-import { UserContext } from "../pages";
+import { UserContext } from "../pages/_app";
 import { styles } from "./MainContent";
 
 const PortfolioSection = () => {
@@ -38,23 +38,26 @@ const PortfolioSection = () => {
             variants={item}
             whileHover={{ scale: 1.02 }}
           >
-            <Link href={`/portfolio/${port.id}`}>
-              <a className="rounded-2xl block overflow-hidden">
-                <Image
-                  className="object-cover w-full h-56"
-                  src={`/images/portfolio/${port.img}`}
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  alt={port.name}
-                />
-                <div className="p-4 bg-gray-900">
-                  <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">
-                    {port.name}
-                  </p>
-                </div>
-              </a>
-            </Link>
+            {/* <Link> */}
+            <a
+              href={`/portfolio/${port.id}`}
+              className="rounded-2xl block overflow-hidden"
+            >
+              <Image
+                className="object-cover w-full h-56"
+                src={`/images/portfolio/${port.img}`}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                alt={port.name}
+              />
+              <div className="p-4 bg-gray-900">
+                <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">
+                  {port.name}
+                </p>
+              </div>
+            </a>
+            {/* </Link> */}
           </motion.div>
         ))}
       </motion.div>

@@ -9,7 +9,7 @@ import PortfolioSection from "./PortfolioSection";
 import SkillsSection from "./SkillsSection";
 import JobExperiences from "./JobExperiences";
 import { useContext } from "react";
-import { UserContext } from "../pages";
+import { UserContext } from "../pages/_app";
 
 const MainContent = () => {
   const ctx = useContext(UserContext);
