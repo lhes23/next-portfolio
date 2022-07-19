@@ -1,11 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import Typed from "react-typed";
 import Link from "next/link";
+import { UserContext } from "../pages";
 
-const HeroSection = ({ personalDetails, professionalDetails }) => {
-  const { firstName, lastName } = personalDetails;
-  const { jobTitles } = professionalDetails;
+const HeroSection = () => {
+  const ctx = useContext(UserContext);
+  const { firstName, lastName } = ctx.personalDetails;
+  const { jobTitles } = ctx.professionalDetails;
 
   return (
     <section className="relative bg-white">

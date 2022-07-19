@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Nav from "./Nav";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
@@ -15,10 +16,17 @@ const MainContent = ({ userDetails }) => {
     portfolio,
     education,
     jobExperiences,
-  } = userDetails[0];
+  } = userDetails;
+
+  const { firstName, lastName } = personalDetails;
 
   return (
     <>
+      <Head>
+        <title>{firstName + " " + lastName}</title>
+        <meta name="description" content={firstName + " " + lastName} />
+        <link rel="icon" href="/lr-logo.svg" />
+      </Head>
       <main className="w-full">
         <Nav />
         <HeroSection
