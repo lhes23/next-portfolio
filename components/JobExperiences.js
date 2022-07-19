@@ -30,7 +30,7 @@ const JobExperiences = () => {
               >
                 <div className="card-body">
                   <h2 className="card-title">{job.title}</h2>
-                  <span className="text-sm text-gray-50">
+                  <span className="text-sm text-gray-500">
                     {job.date} - {job.company}
                   </span>
                   <ul className="list-disc">
