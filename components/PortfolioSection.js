@@ -31,33 +31,30 @@ const PortfolioSection = () => {
         initial="hidden"
         animate={inView ? "visible" : ""}
       >
-        {ctx.portfolio?.map((port) => (
+        {ctx.portfolios?.map((port) => (
           <motion.div
             key={port.id}
             className="w-full"
             variants={item}
             whileHover={{ scale: 1.02 }}
           >
-            {/* <Link> */}
-            <a
-              href={`/portfolio/${port.id}`}
-              className="rounded-2xl block overflow-hidden"
-            >
-              <Image
-                className="object-cover w-full h-56"
-                src={`/images/portfolio/${port.img}`}
-                width="100%"
-                height="100%"
-                layout="responsive"
-                alt={port.name}
-              />
-              <div className="p-4 bg-gray-900">
-                <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">
-                  {port.name}
-                </p>
-              </div>
-            </a>
-            {/* </Link> */}
+            <Link href={`/portfolio/${port.id}`}>
+              <a className="rounded-2xl block overflow-hidden">
+                <Image
+                  className="object-cover w-full h-56"
+                  src={`/images/portfolio/${port.img}`}
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  alt={port.name}
+                />
+                <div className="p-4 bg-gray-900">
+                  <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">
+                    {port.name}
+                  </p>
+                </div>
+              </a>
+            </Link>
           </motion.div>
         ))}
       </motion.div>

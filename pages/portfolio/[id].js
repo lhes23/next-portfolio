@@ -3,12 +3,12 @@ import Link from "next/link";
 import { UserContext } from "../_app";
 import { useContext } from "react";
 import baseUrl from "../../utils/baseUrl";
+import data from "../../utils/data.json";
 
-const PortFolioDetails = ({ userDetails }) => {
+const PortFolioDetails = () => {
   const ctx = useContext(UserContext);
-  console.log(userDetails, ctx);
 
-  const { portfolio: portfolios } = userDetails;
+  const { portfolios } = ctx;
   const router = useRouter();
   const { id } = router.query;
   const portfolio = portfolios.filter((portfolio) => portfolio.id === id);
@@ -35,11 +35,9 @@ const PortFolioDetails = ({ userDetails }) => {
               >
                 Link to the site
               </a>
-              {/* <Link> */}
-              <a href="/#portfolios" className={styles.btn}>
-                Back to Portfolios
-              </a>
-              {/* </Link> */}
+              <Link href="/#portfolios">
+                <a className={styles.btn}>Back to Portfolios</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -52,14 +50,14 @@ const styles = {
   btn: "block w-full px-12 py-3 my-2 text-lg font-medium text-blue-500 border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring hover:text-white",
 };
 
-export default PortFolioDetails;
+// export const getStaticProps = async () => {
+//   const res = await fetch(`${baseUrl}/api/user`);
+//   const data = await res.json();
+//   return {
+//     props: {
+//       userDetails: data.userDetails[0],
+//     },
+//   };
+// };
 
-export const getInitialProps = async () => {
-  const res = await fetch(`${baseUrl}/api/user`);
-  const data = await res.json();
-  return {
-    props: {
-      userDetails: data.userDetails[0],
-    },
-  };
-};
+export default PortFolioDetails;
