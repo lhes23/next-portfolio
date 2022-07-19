@@ -11,7 +11,7 @@ MyApp.getInitialProps = async (appContext) => {
 
   const res = await fetch(`${baseUrl}/api/user`);
   const data = await res.json();
-  appProps.pageProps = { userDetails: data.userDetails };
+  appProps.pageProps = { userDetails: data.userDetails[0] };
 
   return { ...appProps };
 };

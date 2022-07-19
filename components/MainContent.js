@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Nav from "./Nav";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
@@ -7,48 +8,38 @@ import InfoSection from "./InfoSection";
 import PortfolioSection from "./PortfolioSection";
 import SkillsSection from "./SkillsSection";
 import JobExperiences from "./JobExperiences";
+import { useContext } from "react";
+import { UserContext } from "../pages";
 
-const MainContent = ({ userDetails }) => {
-  const {
-    personalDetails,
-    professionalDetails,
-    portfolio,
-    education,
-    jobExperiences,
-  } = userDetails[0];
+const MainContent = () => {
+  const ctx = useContext(UserContext);
+  const { firstName, lastName } = ctx.personalDetails;
 
   return (
     <>
+      <Head>
+        <title>{firstName + " " + lastName}</title>
+        <meta name="description" content={firstName + " " + lastName} />
+        <link rel="icon" href="/lr-logo.svg" />
+      </Head>
       <main className="w-full">
         <Nav />
-        <HeroSection
-          personalDetails={personalDetails}
-          professionalDetails={professionalDetails}
-        />
+        <HeroSection />
+        <SkillsSection />
+        <AboutSection />
+        <JobExperiences />
         <div className="lg:m-auto px-10 bg-neutral-100">
-          <SkillsSection
-            styles={styles}
-            professionalDetails={professionalDetails}
-          />
+          <PortfolioSection />
+          <InfoSection />
+          <ContactSection />
         </div>
-        <AboutSection professionalDetails={professionalDetails} />
-        <JobExperiences jobExperiences={jobExperiences} />
-        <div className="lg:m-auto px-10 bg-neutral-100">
-          <PortfolioSection styles={styles} portfolio={portfolio} />
-          <InfoSection
-            styles={styles}
-            personalDetails={personalDetails}
-            education={education}
-          />
-          <ContactSection styles={styles} personalDetails={personalDetails} />
-        </div>
-        <Footer personalDetails={personalDetails} />
+        <Footer />
       </main>
     </>
   );
 };
 
-const styles = {
+export const styles = {
   section: "py-16 lg:px-16",
 };
 

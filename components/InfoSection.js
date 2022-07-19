@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { leftElement, rightElement } from "../utils/animations";
 import Image from "next/image";
+import { UserContext } from "../pages";
+import { styles } from "./MainContent";
 
-const InfoSection = ({ styles, personalDetails, education }) => {
-  const { about } = personalDetails;
-  const { course, year, school, schoolAddress } = education;
+const InfoSection = () => {
+  const ctx = useContext(UserContext);
+
+  const { about } = ctx.personalDetails;
+  const { course, year, school, schoolAddress } = ctx.education;
 
   const { ref: picRef, inView: picInView } = useInView();
   const { ref: infoRef, inView: infoInView } = useInView();

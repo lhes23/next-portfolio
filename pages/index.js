@@ -1,16 +1,13 @@
-import Head from "next/head";
+import { createContext, useState } from "react";
 import MainContent from "../components/MainContent";
 
+export const UserContext = createContext();
+
 export default function Home({ userDetails }) {
-  const { firstName, lastName } = userDetails[0].personalDetails;
+  const [userState, setUserState] = useState(userDetails);
   return (
-    <>
-      <Head>
-        <title>{firstName + " " + lastName}</title>
-        <meta name="description" content={firstName + " " + lastName} />
-        <link rel="icon" href="/lr-logo.svg" />
-      </Head>
-      <MainContent userDetails={userDetails} />
-    </>
+    <UserContext.Provider value={userState}>
+      <MainContent />
+    </UserContext.Provider>
   );
 }

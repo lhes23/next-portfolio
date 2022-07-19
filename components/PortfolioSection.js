@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { container, item } from "../utils/animations";
 import { useInView } from "react-intersection-observer";
+import { UserContext } from "../pages";
+import { styles } from "./MainContent";
 
-const PortfolioSection = ({ styles, portfolio }) => {
+const PortfolioSection = () => {
+  const ctx = useContext(UserContext);
+
   const { ref: portContainer, inView } = useInView();
 
   return (
@@ -27,7 +31,7 @@ const PortfolioSection = ({ styles, portfolio }) => {
         initial="hidden"
         animate={inView ? "visible" : ""}
       >
-        {portfolio?.map((port) => (
+        {ctx.portfolio?.map((port) => (
           <motion.div
             key={port.id}
             className="w-full"
