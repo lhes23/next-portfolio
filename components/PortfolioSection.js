@@ -12,6 +12,10 @@ const PortfolioSection = () => {
 
   const { ref: portContainer, inView } = useInView();
 
+  const sortedPortfolios = ctx.portfolios.sort((a, b) =>
+    a.createdAt < b.createdAt ? 1 : -1
+  );
+
   return (
     <section className={styles.section} ref={portContainer} id="portfolios">
       <div className="justify-center p-4 m-4 text-center">
@@ -31,7 +35,8 @@ const PortfolioSection = () => {
         initial="hidden"
         animate={inView ? "visible" : ""}
       >
-        {ctx.portfolios?.map((port) => (
+        {/* {ctx.portfolios?.map((port) => ( */}
+        {sortedPortfolios?.map((port) => (
           <motion.div
             key={port.id}
             className="w-full"

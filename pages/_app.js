@@ -7,8 +7,10 @@ import data from "../utils/data.json";
 export const UserContext = createContext();
 
 function MyApp({ Component, pageProps }) {
-  // const [userState, setUserState] = useState(pageProps.userDetails);
-  const [userState, setUserState] = useState(data);
+  console.log("_app - userDetails: ", pageProps.userDetails);
+  const [userState, setUserState] = useState(pageProps.userDetails);
+  // const [userState, setUserState] = useState(data);
+
   return (
     <UserContext.Provider value={userState}>
       <Component {...pageProps} />
@@ -19,9 +21,9 @@ function MyApp({ Component, pageProps }) {
 MyApp.getInitialProps = async (appContext) => {
   const appProps = await App.getInitialProps(appContext);
 
-  // const res = await fetch(`${baseUrl}/api/user`);
-  // const data = await res.json();
-  // appProps.pageProps = { userDetails: data.userDetails[0] };
+  const res = await fetch(`${baseUrl}/api/user`);
+  const data = await res.json();
+  appProps.pageProps = { userDetails: data.userDetails[0] };
 
   return { ...appProps };
 };
