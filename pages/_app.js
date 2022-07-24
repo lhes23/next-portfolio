@@ -8,8 +8,8 @@ export const UserContext = createContext();
 
 function MyApp({ Component, pageProps }) {
   console.log("_app - userDetails: ", pageProps.userDetails);
-  const [userState, setUserState] = useState(pageProps.userDetails);
-  // const [userState, setUserState] = useState(data);
+  // const [userState, setUserState] = useState(pageProps.userDetails);
+  const [userState, setUserState] = useState(data);
 
   return (
     <UserContext.Provider value={userState}>
