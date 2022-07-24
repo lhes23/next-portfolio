@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import InfoSection from "./InfoSection";
 import PortfolioSection from "./PortfolioSection";
 import SkillsSection from "./SkillsSection";
-import JobExperiences from "./JobExperiences";
+import JobExperiences from "./JobExperiences/JobExperiences";
 import { useContext } from "react";
 import { UserContext } from "../pages/_app";
 
