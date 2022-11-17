@@ -43,7 +43,9 @@
       { "name": "PhpMyAdmin" },
       { "name": "Web Host Manager" },
       { "name": "NodeJS" },
-      { "name": "ExpressJS" }
+      { "name": "ExpressJS" },
+      { "name": "Django" },
+      { "name": "Django Rest Framework" }
     ]
   },
   "jobExperiences": [
