@@ -23,25 +23,25 @@ const JobExperiences = () => {
         >
           <div className="relative wrap overflow-hidden p-10 h-full">
             <div
-              className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+              className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border hidden md:block"
               style={{ left: "50%" }}
             />
             {ctx.jobExperiences.map((job, index) => {
               return (
                 <>
                   <motion.div
-                    className={`mb-8 flex justify-between ${
+                    className={`mb-8 flex justify-between items-center w-full ${
                       index % 2 == 0 ? "flex-row-reverse" : ""
-                    } items-center w-full`}
+                    }`}
                     variants={item}
                   >
-                    <div className="order-1 w-5/12" />
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                      <h1 className="mx-auto font-semibold text-lg text-white">
+                    <div className="order-1 md:w-5/12 hidden md:block" />
+                    <div className="z-20 items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full hidden md:flex">
+                      <h1 className="mx-auto font-semibold text-lg text-white ">
                         {index + 1}
                       </h1>
                     </div>
-                    <div className="order-1 shadow-xl w-5/12 px-6 py-4 block p-4 border border-gray-100 rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
+                    <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100 rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
                       <h3 className="mb-3 font-bold text-gray-800 text-xl">
                         {job.title}
                       </h3>

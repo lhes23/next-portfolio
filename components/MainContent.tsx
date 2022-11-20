@@ -22,7 +22,7 @@ const MainContent = () => {
         <meta name="description" content={firstName + " " + lastName} />
         <link rel="icon" href="/lr-logo.svg" />
       </Head>
-      <main className="w-full">
+      <main className="w-full bg-slate-200">
         <Nav />
         <HeroSection />
         <SkillsSection />
