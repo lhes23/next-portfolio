@@ -22,6 +22,8 @@
     "jobTitles": [
       "Web Developer",
       "Web Designer",
+      "Full Stack Developer",
+      "Software Developer",
       "Wordpress Expert",
       "Project Manager",
       "Programmer",
@@ -297,6 +299,15 @@
       "app": "react",
       "description": "A remake of a simple blog. Wordpress backend, NextJS/ReactJS Front end",
       "createdAt": "2022-06-26"
+    },
+     {
+      "id": "22",
+      "name": "Checkspeed App",
+      "url": "https://checkspeed-app-frontend.vercel.app/",
+      "img": "checkspeed-app-frontend.vercel.app.jpg",
+      "app": "react",
+      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end",
+      "createdAt": "2022-10-11"
     }
   ]
 }
