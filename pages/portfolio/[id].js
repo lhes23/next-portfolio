@@ -1,12 +1,15 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import baseUrl from "../../utils/baseUrl";
+import { useRouter } from "next/router"
+import Link from "next/link"
+import baseUrl from "../../utils/baseUrl"
+import { useContext } from "react"
+import { UserContext } from "../_app"
 
-const PortFolioDetails = ({ portfolios }) => {
-  const router = useRouter();
-  const { id } = router.query;
-  const portfolio = portfolios.filter((portfolio) => portfolio.id === id);
-  const { id: portId, name, app, img, url, description } = portfolio[0];
+const PortFolioDetails = () => {
+  const ctx = useContext(UserContext)
+  const router = useRouter()
+  const { id } = router.query
+  const portfolio = ctx.portfolios.filter((portfolio) => portfolio.id === id)
+  const { id: portId, name, app, img, url, description } = portfolio[0]
 
   return (
     <>
@@ -37,32 +40,32 @@ const PortFolioDetails = ({ portfolios }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const styles = {
-  btn: "block w-full px-12 py-3 my-2 text-lg font-medium text-blue-500 border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring hover:text-white",
-};
+  btn: "block w-full px-12 py-3 my-2 text-lg font-medium text-blue-500 border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring hover:text-white"
+}
 
-export const getStaticProps = async () => {
-  const res = await fetch(`${baseUrl}/api/user`);
-  const data = await res.json();
-  const { portfolios } = data.userDetails[0];
-  return { props: { portfolios } };
-};
+// export const getStaticProps = async () => {
+//   const res = await fetch(`${baseUrl}/api/user`)
+//   const data = await res.json()
+//   const { portfolios } = data.userDetails[0]
+//   return { props: { portfolios } }
+// }
 
-export const getStaticPaths = async () => {
-  const res = await fetch(`${baseUrl}/api/user`);
-  const data = await res.json();
-  const { portfolios } = data.userDetails[0];
+// export const getStaticPaths = async () => {
+//   const res = await fetch(`${baseUrl}/api/user`)
+//   const data = await res.json()
+//   const { portfolios } = data.userDetails[0]
 
-  const paths = portfolios.map((port) => ({
-    params: { id: port.id },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-};
+//   const paths = portfolios.map((port) => ({
+//     params: { id: port.id }
+//   }))
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
 
-export default PortFolioDetails;
+export default PortFolioDetails
