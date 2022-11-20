@@ -41,7 +41,7 @@ const JobExperiences = () => {
                         {index + 1}
                       </h1>
                     </div>
-                    <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100 rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
+                    <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100  bg-white rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
                       <h3 className="mb-3 font-bold text-gray-800 text-xl">
                         {job.title}
                       </h3>
