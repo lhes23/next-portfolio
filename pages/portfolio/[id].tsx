@@ -19,7 +19,7 @@ const PortFolioDetails = () => {
             <img
               src={`/images/portfolio/${img}`}
               className="max-w-sm rounded-lg shadow-2xl"
-              layout="fill"
+              // layout="fill"
             />
             <div>
               <h1 className="text-3xl font-bold">{name}</h1>

@@ -3,8 +3,9 @@ import App from "next/app"
 import baseUrl from "../utils/baseUrl"
 import { createContext, useState } from "react"
 import data from "../utils/data.json"
+import { AppContextInterface } from "../utils/interfaces"
 
-export const UserContext = createContext()
+export const UserContext = createContext<AppContextInterface | null>(null)
 
 function MyApp({ Component, pageProps }) {
   // const [userState, setUserState] = useState(pageProps.userDetails);
