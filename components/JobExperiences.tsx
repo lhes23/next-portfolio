@@ -15,13 +15,13 @@ const JobExperiences = () => {
         <h2 className="text-2xl font-bold text-black sm:text-3xl justify-center align-center flex">
           Job Experiences
         </h2>
-        <div className="container mx-auto w-full h-full">
-          <motion.div
-            className="relative wrap overflow-hidden p-10 h-full"
-            variants={container}
-            initial="hidden"
-            animate={jobInView ? "visible" : ""}
-          >
+        <motion.div
+          className="container mx-auto w-full h-full"
+          variants={container}
+          initial="hidden"
+          animate={jobInView ? "visible" : ""}
+        >
+          <div className="relative wrap overflow-hidden p-10 h-full">
             <div
               className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
               style={{ left: "50%" }}
@@ -41,20 +41,28 @@ const JobExperiences = () => {
                         {index + 1}
                       </h1>
                     </div>
-                    <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <div className="order-1 shadow-xl w-5/12 px-6 py-4 block p-4 border border-gray-100 rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
                       <h3 className="mb-3 font-bold text-gray-800 text-xl">
                         {job.title}
                       </h3>
-                      <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                        {job.tasks}
-                      </p>
+                      <div className="text-slate-300">
+                        <p>{job.company}</p>
+                        <p>{job.date}</p>
+                      </div>
+                      <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                        <ul>
+                          {job.tasks.map((task, i) => (
+                            <li key={i}>{task}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </motion.div>
                 </>
               )
             })}
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

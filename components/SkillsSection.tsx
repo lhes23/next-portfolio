@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
-import { container, item } from "../utils/animations";
-import { useInView } from "react-intersection-observer";
-import Icons from "./Icons";
-import { UserContext } from "../pages/_app";
-import { styles } from "./MainContent";
+import React, { useContext } from "react"
+import { motion } from "framer-motion"
+import { container, item } from "../utils/animations"
+import { useInView } from "react-intersection-observer"
+import Icons from "./Icons"
+import { UserContext } from "../pages/_app"
+import { styles } from "./MainContent"
 
 const SkillsSection = () => {
-  const ctx = useContext(UserContext);
-  const { skills } = ctx.professionalDetails;
-  const { ref: skillRef, inView } = useInView();
+  const ctx = useContext(UserContext)
+  const { skills } = ctx.professionalDetails
+  const { ref: skillRef, inView } = useInView()
 
   return (
     <div className="lg:m-auto px-10 bg-neutral-100">
@@ -38,7 +38,7 @@ const SkillsSection = () => {
                   variants={item}
                   whileHover={{ scale: 1.02 }}
                 >
-                  <span className="inline-block p-3 rounded-lg bg-gray-50">
+                  <span className="inline-block p-3 rounded-lg">
                     <Icons icon={skill.name} />
                   </span>
                   <h3 className="mt-2 font-bold">{skill.name}</h3>
@@ -49,7 +49,7 @@ const SkillsSection = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default SkillsSection;
+export default SkillsSection
