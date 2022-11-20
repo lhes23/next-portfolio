@@ -45,14 +45,16 @@ const JobExperiences = () => {
                       <h3 className="mb-3 font-bold text-gray-800 text-xl">
                         {job.title}
                       </h3>
-                      <div className="text-slate-300">
+                      <div className="text-slate-400">
                         <p>{job.company}</p>
                         <p>{job.date}</p>
                       </div>
                       <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                         <ul>
                           {job.tasks.map((task, i) => (
-                            <li key={i}>{task}</li>
+                            <li key={i} className="list-disc list-outside m-2">
+                              {task}
+                            </li>
                           ))}
                         </ul>
                       </div>

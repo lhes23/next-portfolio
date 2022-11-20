@@ -52,6 +52,15 @@
   },
   "jobExperiences": [
     {
+      "title": "Full Stack Developer",
+      "date": "2022 - Present",
+      "company": "Visionary Interior",
+      "tasks": [
+        "Developing Frontend using React and Vuexy",
+        "Database modelling and SQL query using PostgresSQL and Supabase"
+      ]
+    },
+    {
       "title": "Web Developer",
       "date": "2017 - Present",
       "company": "Ippei Leads, Inc",
@@ -302,7 +311,7 @@
     },
     {
       "id": "22",
-      "name": "Checkspeed App1",
+      "name": "Checkspeed App",
       "url": "https://checkspeed-app-frontend.vercel.app/",
       "img": "checkspeed-app-frontend.vercel.app.jpg",
       "app": "react",
