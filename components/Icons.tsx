@@ -2,6 +2,7 @@ import { AiOutlineHtml5, AiFillApi } from "react-icons/ai"
 import { FaCss3, FaNodeJs, FaWhmcs } from "react-icons/fa"
 import {
   SiJavascript,
+  SiTypescript,
   SiPhp,
   SiWordpress,
   SiPython,
@@ -22,6 +23,8 @@ const Icons = ({ icon }) => {
       return <FaCss3 size={size} style={{ color: "#146eb0" }} />
     case "Javascript":
       return <SiJavascript size={size} style={{ color: "#f7df1e" }} />
+    case "TypeScript":
+      return <SiTypescript size={size} style={{ color: "#2f74c0" }} />
     case "PHP":
       return <SiPhp size={size} style={{ color: "#7377ad" }} />
     case "WordPress":

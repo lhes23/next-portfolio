@@ -36,6 +36,7 @@
       { "name": "HTML", "rate": 95 },
       { "name": "CSS", "rate": 90 },
       { "name": "Javascript", "rate": 80 },
+      { "name": "TypeScript", "rate": 80 },
       { "name": "PHP", "rate": 80 },
       { "name": "WordPress", "rate": 90 },
       { "name": "Python", "rate": 75 },
