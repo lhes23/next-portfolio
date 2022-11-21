@@ -1,4 +1,4 @@
-import { AiOutlineHtml5, AiFillApi } from "react-icons/ai"
+import { AiOutlineHtml5, AiFillApi, AiFillGithub } from "react-icons/ai"
 import { FaCss3, FaNodeJs, FaWhmcs } from "react-icons/fa"
 import {
   SiJavascript,
@@ -49,6 +49,8 @@ const Icons = ({ icon }) => {
       return <SiDjango style={{ color: "green" }} size={size} />
     case "Django Rest Framework":
       return <AiFillApi style={{ color: "green" }} size={size} />
+    case "Git and Github":
+      return <AiFillGithub style={{ color: "#000" }} size={size} />
   }
 }
 

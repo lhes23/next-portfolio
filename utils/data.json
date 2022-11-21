@@ -18,7 +18,7 @@
   },
   "professionalDetails": {
     "mainTitles": "Web Developer and Designer",
-    "summary": "An experienced Production Manager in a manufacturing company. A Web Developer with experienced in Wordpress Development. Full Stack Development with technologies like HTML, CSS, Javascript, ReactJS, NextJS, Bootstrap, Tailwind CSS, PHP, Python and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
+    "summary": "An experienced Production Manager. A Web Developer with experienced in Wordpress Development. Full Stack Development with Microservice architecture. Frontend development in HTML, CSS, Javascript, ReactJS, NextJS, Bootstrap, Tailwind CSS. Backend develpment in PHP, Python, NodeJs, Express and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
     "jobTitles": [
       "Web Developer",
       "Web Designer",
@@ -48,7 +48,8 @@
       { "name": "NodeJS" },
       { "name": "ExpressJS" },
       { "name": "Django" },
-      { "name": "Django Rest Framework" }
+      { "name": "Django Rest Framework" },
+      { "name": "Git and Github" }
     ]
   },
   "jobExperiences": [
