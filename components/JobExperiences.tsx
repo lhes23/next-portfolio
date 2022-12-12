@@ -28,39 +28,38 @@ const JobExperiences = () => {
             />
             {ctx.jobExperiences.map((job, index) => {
               return (
-                <>
-                  <motion.div
-                    className={`mb-8 flex justify-between items-center w-full ${
-                      index % 2 == 0 ? "flex-row-reverse" : ""
-                    }`}
-                    variants={item}
-                  >
-                    <div className="order-1 md:w-5/12 hidden md:block" />
-                    <div className="z-20 items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full hidden md:flex">
-                      <h1 className="mx-auto font-semibold text-lg text-white ">
-                        {index + 1}
-                      </h1>
+                <motion.div
+                  className={`mb-8 flex justify-between items-center w-full ${
+                    index % 2 == 0 ? "flex-row-reverse" : ""
+                  }`}
+                  variants={item}
+                  key={index}
+                >
+                  <div className="order-1 md:w-5/12 hidden md:block" />
+                  <div className="z-20 items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full hidden md:flex">
+                    <h1 className="mx-auto font-semibold text-lg text-white ">
+                      {index + 1}
+                    </h1>
+                  </div>
+                  <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100  bg-white rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
+                    <h3 className="mb-3 font-bold text-gray-800 text-xl">
+                      {job.title}
+                    </h3>
+                    <div className="text-slate-400">
+                      <p>{job.company}</p>
+                      <p>{job.date}</p>
                     </div>
-                    <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100  bg-white rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
-                      <h3 className="mb-3 font-bold text-gray-800 text-xl">
-                        {job.title}
-                      </h3>
-                      <div className="text-slate-400">
-                        <p>{job.company}</p>
-                        <p>{job.date}</p>
-                      </div>
-                      <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
-                        <ul>
-                          {job.tasks.map((task, i) => (
-                            <li key={i} className="list-disc list-outside m-2">
-                              {task}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                    <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                      <ul>
+                        {job.tasks.map((task, i) => (
+                          <li key={i} className="list-disc list-outside m-2">
+                            {task}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  </motion.div>
-                </>
+                  </div>
+                </motion.div>
               )
             })}
           </div>
