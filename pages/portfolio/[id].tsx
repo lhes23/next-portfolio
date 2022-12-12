@@ -17,11 +17,11 @@ const PortFolioDetails = () => {
         className="hero min-h-screen"
         style={{ backgroundImage: `url(/images/portfolio/${img})` }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-opacity-80"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">{name}</h1>
-            <p className="mb-5">{description}</p>
+            <p className="mb-5 text-2xl">{description}</p>
             <div className="flex justify-evenly">
               <Link href="/#portfolios">
                 <a className="btn btn-accent">Back to Portfolios</a>
