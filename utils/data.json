@@ -55,8 +55,8 @@
   "jobExperiences": [
     {
       "title": "Full Stack Developer",
-      "date": "2022 - Present",
-      "company": "Visionary Interior",
+      "date": "August 2022 - Present",
+      "company": "Visionary Interior PTE LTD",
       "tasks": [
         "Develop and optimise company’s system",
         "Produce functional web applications with interface to backend",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Web Developer",
-      "date": "2017 - Present",
+      "date": "October 2017 - Present",
       "company": "Ippei Leads, Inc",
       "tasks": [
         "Managing the main website in WordPress hosted in Amazon Web Service (AWS) Cloud using Secure Shell (SSH) and Github",
