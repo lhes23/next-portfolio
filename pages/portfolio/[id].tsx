@@ -26,7 +26,12 @@ const PortFolioDetails = () => {
               <Link href="/#portfolios">
                 <a className="btn btn-accent">Back to Portfolios</a>
               </Link>
-              <a href={url} className="btn btn-primary">
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
                 Link to the site
               </a>
             </div>
