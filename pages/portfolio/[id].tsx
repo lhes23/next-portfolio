@@ -13,38 +13,28 @@ const PortFolioDetails = () => {
 
   return (
     <>
-      <div className="justify-center content-center flex pt-20">
-        <div className="flex hero bg-indigo-200 max-w-screen-md rounded-2xl shadow-md">
-          <div className="relative hero-content flex-col lg:flex-row-reverse">
-            <img
-              src={`/images/portfolio/${img}`}
-              className="max-w-sm rounded-lg shadow-2xl"
-              // layout="fill"
-            />
-            <div>
-              <h1 className="text-3xl font-bold">{name}</h1>
-              <p className="py-6">{description}</p>
-              <a
-                className={styles.btn}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+      <div
+        className="hero min-h-screen"
+        style={{ backgroundImage: `url(/images/portfolio/${img})` }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">{name}</h1>
+            <p className="mb-5">{description}</p>
+            <div className="flex justify-evenly">
+              <Link href="/#portfolios">
+                <a className="btn btn-accent">Back to Portfolios</a>
+              </Link>
+              <a href={url} className="btn btn-primary">
                 Link to the site
               </a>
-              <Link href="/#portfolios">
-                <a className={styles.btn}>Back to Portfolios</a>
-              </Link>
             </div>
           </div>
         </div>
       </div>
     </>
   )
-}
-
-const styles = {
-  btn: "block w-full px-12 py-3 my-2 text-lg font-medium text-blue-500 border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring hover:text-white"
 }
 
 // export const getStaticProps = async () => {
