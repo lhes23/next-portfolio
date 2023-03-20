@@ -295,6 +295,15 @@
       "app": "react",
       "description": "A remake of a simple blog. Wordpress backend, NextJS/ReactJS Front end",
       "createdAt": "2022-06-26"
+    },
+    {
+      "id": "22",
+      "name": "Best Meats Wagyu",
+      "url": "https://bestmeats.rcclothes.com/",
+      "img": "bestmeats.png",
+      "app": "react",
+      "description": "An affiliate website using Vite + React + Typescript and Tailwind",
+      "createdAt": "2023-03-20"
     }
   ]
 }
