@@ -1,19 +1,19 @@
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { leftElement, rightElement } from "../utils/animations";
-import Image from "next/image";
-import { UserContext } from "../pages/_app";
-import { styles } from "./MainContent";
+import React, { useContext } from "react"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { leftElement, rightElement } from "../utils/animations"
+import Image from "next/image"
+import { UserContext } from "../pages/_app"
+import { styles } from "./MainContent"
 
 const InfoSection = () => {
-  const ctx = useContext(UserContext);
+  const ctx = useContext(UserContext)
 
-  const { about } = ctx.personalDetails;
-  const { course, year, school, schoolAddress } = ctx.education;
+  const { about } = ctx.personalDetails
+  const { course, year, school, schoolAddress } = ctx.education
 
-  const { ref: picRef, inView: picInView } = useInView();
-  const { ref: infoRef, inView: infoInView } = useInView();
+  const { ref: picRef, inView: picInView } = useInView()
+  const { ref: infoRef, inView: infoInView } = useInView()
 
   return (
     <section className={styles.section} id="info">
@@ -37,7 +37,7 @@ const InfoSection = () => {
         </div>
         <div ref={infoRef}>
           <motion.div
-            className="relative flex items-center bg-gray-100 shadow-md rounded-lg"
+            className="relative flex items-center bg-white shadow-xl rounded-lg"
             variants={rightElement}
             initial="hidden"
             animate={infoInView ? "visible" : ""}
@@ -56,7 +56,7 @@ const InfoSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default InfoSection;
+export default InfoSection

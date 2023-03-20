@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { leftElement, rightElement } from "../utils/animations";
-import { UserContext } from "../pages/_app";
+import React, { useContext } from "react"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { leftElement, rightElement } from "../utils/animations"
+import { UserContext } from "../pages/_app"
 
 const AboutSection = () => {
-  const ctx = useContext(UserContext);
+  const ctx = useContext(UserContext)
 
-  const { summary } = ctx.professionalDetails;
-  const { ref: planetRef, inView: planetInView } = useInView();
-  const { ref: summaryRef, inView: summaryInView } = useInView();
+  const { summary } = ctx.professionalDetails
+  const { ref: planetRef, inView: planetInView } = useInView()
+  const { ref: summaryRef, inView: summaryInView } = useInView()
 
   return (
     <section id="About" className="bg-black w-full px-10 py-10">
@@ -22,7 +22,7 @@ const AboutSection = () => {
               muted
               className="inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
               src="/videos/planet.mp4"
-              type="video/mp4"
+              // type="video/mp4"
               variants={rightElement}
               initial="hidden"
               animate={planetInView ? "visible" : ""}
@@ -83,7 +83,7 @@ const AboutSection = () => {
         </motion.div>
       </div> */}
     </section>
-  );
-};
+  )
+}
 
-export default AboutSection;
+export default AboutSection

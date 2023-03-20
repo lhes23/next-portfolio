@@ -1,33 +1,34 @@
-import { useState } from "react";
-import baseUrl from "../utils/baseUrl";
+import { useState, SyntheticEvent, FormEvent } from "react"
+import baseUrl from "../utils/baseUrl"
 
 const ContactForm = () => {
-  const [confirmMessageSent, setConfirmMessageSent] = useState(false);
-  const [errorMessageSent, setErrorMessageSent] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [confirmMessageSent, setConfirmMessageSent] = useState(false)
+  const [errorMessageSent, setErrorMessageSent] = useState(false)
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
 
-  const submitFormHandler = async (e) => {
-    e.preventDefault();
-    console.log(baseUrl);
+  const submitFormHandler = async (e: FormEvent<HTMLFormElement>) => {
+    // const submitFormHandler = async (e: SyntheticEvent) => {
+    e.preventDefault()
+
     const res = await fetch(`${baseUrl}/api/contact/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, message }),
-    });
+      body: JSON.stringify({ name, email, message })
+    })
 
     if (res.status < 300) {
-      const data = await res.json();
-      console.log(data);
-      setConfirmMessageSent(true);
-      setName("");
-      setEmail("");
-      setMessage("");
+      const data = await res.json()
+      console.log(data)
+      setConfirmMessageSent(true)
+      setName("")
+      setEmail("")
+      setMessage("")
     } else {
-      setErrorMessageSent(true);
+      setErrorMessageSent(true)
     }
-  };
+  }
   return (
     <>
       {confirmMessageSent && (
@@ -100,6 +101,6 @@ const ContactForm = () => {
         </div>
       </form>
     </>
-  );
-};
-export default ContactForm;
+  )
+}
+export default ContactForm

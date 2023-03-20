@@ -1,20 +1,20 @@
-import React, { useContext } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { container, item } from "../utils/animations";
-import { useInView } from "react-intersection-observer";
-import { UserContext } from "../pages/_app";
-import { styles } from "./MainContent";
+import React, { useContext } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { container, item } from "../utils/animations"
+import { useInView } from "react-intersection-observer"
+import { UserContext } from "../pages/_app"
+import { styles } from "./MainContent"
 
 const PortfolioSection = () => {
-  const ctx = useContext(UserContext);
+  const ctx = useContext(UserContext)
 
-  const { ref: portContainer, inView } = useInView();
+  const { ref: portContainer, inView } = useInView()
 
   const sortedPortfolios = ctx.portfolios.sort((a, b) =>
     a.createdAt < b.createdAt ? 1 : -1
-  );
+  )
 
   return (
     <section className={styles.section} ref={portContainer} id="portfolios">
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
         ))}
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default PortfolioSection;
+export default PortfolioSection

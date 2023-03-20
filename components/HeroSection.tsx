@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import Typed from "react-typed";
-import Link from "next/link";
-import { UserContext } from "../pages/_app";
+import React, { useContext } from "react"
+import Typed from "react-typed"
+import Link from "next/link"
+import { UserContext } from "../pages/_app"
 
 const HeroSection = () => {
-  const ctx = useContext(UserContext);
-  const { firstName, lastName } = ctx.personalDetails;
-  const { jobTitles } = ctx.professionalDetails;
+  const ctx = useContext(UserContext)
+  const { firstName, lastName } = ctx.personalDetails
+  const { jobTitles } = ctx.professionalDetails
 
   return (
     <section className="relative bg-white">
@@ -16,7 +16,7 @@ const HeroSection = () => {
         muted
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
         src="/videos/circuit.mp4"
-        type="video/mp4"
+        // type="video/mp4"
       />
 
       <div className="relative w-full px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

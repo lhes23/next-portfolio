@@ -1,5 +1,5 @@
 {
-  "_id": { "$oid": "62a721dc18fcfe970b21ff78" },
+  "id": { "$oid": "62a721dc18fcfe970b21ff78" },
   "personalDetails": {
     "firstName": "Lester",
     "lastName": "Reandino",
@@ -18,10 +18,12 @@
   },
   "professionalDetails": {
     "mainTitles": "Web Developer and Designer",
-    "summary": "An experienced Production Manager in a manufacturing company. A Web Developer with experienced in Wordpress Development. Full Stack Development with technologies like HTML, CSS, Javascript, ReactJS, NextJS, Bootstrap, Tailwind CSS, PHP, Python and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
+    "summary": "An experienced Production Manager. A Web Developer with experienced in Wordpress Development. Full Stack Development with Microservice architecture. Frontend development in HTML, CSS, Javascript, ReactJS, NextJS, Bootstrap, Tailwind CSS. Backend develpment in PHP, Python, NodeJs, Express and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
     "jobTitles": [
       "Web Developer",
       "Web Designer",
+      "Full Stack Developer",
+      "Software Developer",
       "Wordpress Expert",
       "Project Manager",
       "Programmer",
@@ -34,6 +36,7 @@
       { "name": "HTML", "rate": 95 },
       { "name": "CSS", "rate": 90 },
       { "name": "Javascript", "rate": 80 },
+      { "name": "TypeScript", "rate": 80 },
       { "name": "PHP", "rate": 80 },
       { "name": "WordPress", "rate": 90 },
       { "name": "Python", "rate": 75 },
@@ -43,13 +46,29 @@
       { "name": "PhpMyAdmin" },
       { "name": "Web Host Manager" },
       { "name": "NodeJS" },
-      { "name": "ExpressJS" }
+      { "name": "ExpressJS" },
+      { "name": "Django" },
+      { "name": "Django Rest Framework" },
+      { "name": "Git and Github" }
     ]
   },
   "jobExperiences": [
     {
+      "title": "Full Stack Developer",
+      "date": "August 2022 - Present",
+      "company": "Visionary Interior PTE LTD",
+      "tasks": [
+        "Develop and optimise company’s system",
+        "Produce functional web applications with interface to backend",
+        "Website Design and Optimization",
+        "Managing system day to day operations",
+        "Database modelling and SQL query using PostgresSQL and Supabase",
+        "Maintaining system integrity"
+      ]
+    },
+    {
       "title": "Web Developer",
-      "date": "2017 - Present",
+      "date": "October 2017 - Present",
       "company": "Ippei Leads, Inc",
       "tasks": [
         "Managing the main website in WordPress hosted in Amazon Web Service (AWS) Cloud using Secure Shell (SSH) and Github",
@@ -298,6 +317,15 @@
     },
     {
       "id": "22",
+      "name": "Checkspeed App",
+      "url": "https://checkspeed-app-frontend.vercel.app/",
+      "img": "checkspeed-app-frontend.vercel.app.jpg",
+      "app": "react",
+      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end",
+      "createdAt": "2022-10-11"
+    },
+    {
+      "id": "23",
       "name": "Best Meats Wagyu",
       "url": "https://bestmeats.rcclothes.com/",
       "img": "bestmeats.png",
