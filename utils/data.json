@@ -54,19 +54,6 @@
   },
   "jobExperiences": [
     {
-      "title": "Full Stack Developer",
-      "date": "August 2022 - Present",
-      "company": "Visionary Interior PTE LTD",
-      "tasks": [
-        "Develop and optimise company’s system",
-        "Produce functional web applications with interface to backend",
-        "Website Design and Optimization",
-        "Managing system day to day operations",
-        "Database modelling and SQL query using PostgresSQL and Supabase",
-        "Maintaining system integrity"
-      ]
-    },
-    {
       "title": "Web Developer",
       "date": "October 2017 - Present",
       "company": "Ippei Leads, Inc",
@@ -81,6 +68,19 @@
         "Practicing Python Web and desktop applications using Django, Tkinter, and SimpleGUI.",
         "Handled different writers and paid them on a weekly basis",
         "Experience in Digital Marketing like Copywriting. Blogging, SEO, Email Marketing and Facebook Ads"
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "date": "August 2022 - January 2023",
+      "company": "Visionary Interior PTE LTD",
+      "tasks": [
+        "Develop and optimise company’s system",
+        "Produce functional web applications with interface to backend",
+        "Website Design and Optimization",
+        "Managing system day to day operations",
+        "Database modelling and SQL query using PostgresSQL and Supabase",
+        "Maintaining system integrity"
       ]
     },
     {
