@@ -46,6 +46,14 @@ const HeroSection = () => {
                 Learn More
               </a>
             </Link>
+            <a
+              href="https://docs.google.com/document/d/1nVsZ8jtdT1oDQG0cIizADwHPJ09Tji5GiJqUQ6xtVQc/edit?usp=sharing"
+              className="block px-12 py-3 font-bold text-lg text-white border border-white rounded w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Resume
+            </a>
           </div>
         </div>
       </div>
