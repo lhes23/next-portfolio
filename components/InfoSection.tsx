@@ -25,9 +25,9 @@ const InfoSection = () => {
             initial="hidden"
             animate={picInView ? "visible" : ""}
           >
-            <div className="justify-center z-10 rounded-full ring ring-offset-gray-200 ring-offset-2 relative lg:h-96 sm:h-full sm:w-full w-48 h-48">
+            <div className="justify-center z-10 rounded-full ring ring-offset-gray-200 ring-offset-2 relative lg:h-96 sm:h-full sm:w-full w-48 h-48 bg-white shadow-lg">
               <Image
-                src="/images/profile/profilepic.jpg"
+                src="/images/profile/profilepic.png"
                 className="w-32"
                 alt="Lester Reandino profile picture"
                 layout="fill"
