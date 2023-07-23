@@ -30,7 +30,8 @@ const InfoSection = () => {
                 src="/images/profile/profilepic.png"
                 className="w-32"
                 alt="Lester Reandino profile picture"
-                layout="fill"
+                width={500}
+                height={500}
               />
             </div>
           </motion.div>

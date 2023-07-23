@@ -23,8 +23,8 @@ const PortFolioDetails = () => {
             <h1 className="mb-5 text-5xl font-bold">{name}</h1>
             <p className="mb-5 text-2xl">{description}</p>
             <div className="flex justify-evenly">
-              <Link href="/#portfolios">
-                <a className="btn btn-accent">Back to Portfolios</a>
+              <Link href="/#portfolios" className="btn btn-accent">
+                Back to Portfolios
               </Link>
               <a
                 href={url}
