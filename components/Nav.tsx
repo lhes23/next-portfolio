@@ -1,29 +1,25 @@
-import React from "react";
-import Link from "next/link";
+import React from "react"
+import Link from "next/link"
 
 const Nav = () => {
+  const navLinks = [
+    { title: "Home", url: "/" },
+    { title: "Skills", url: "#skills" },
+    { title: "About", url: "#about" },
+    { title: "Portfolios", url: "#portfolios" },
+    { title: "Info", url: "#info" },
+    { title: "Contact", url: "#contact" }
+  ]
+
   const navContent = (
     <>
-      <Link href="/">
-        <a className={styles.navLink}>Home</a>
-      </Link>
-      <Link href="#skills">
-        <a className={styles.navLink}>Skills</a>
-      </Link>
-      <Link href="#About">
-        <a className={styles.navLink}>About</a>
-      </Link>
-      <Link href="#portfolios">
-        <a className={styles.navLink}>Portfolios</a>
-      </Link>
-      <Link href="#info">
-        <a className={styles.navLink}>Info</a>
-      </Link>
-      <Link href="#contact">
-        <a className={styles.navLink}>Contact</a>
-      </Link>
+      {navLinks?.map((navLink, i) => (
+        <Link key={i} href={navLink.url} className={styles.navLink}>
+          {navLink.title}
+        </Link>
+      ))}
     </>
-  );
+  )
   return (
     <>
       <header className="shadow-sm">
@@ -39,11 +35,11 @@ const Nav = () => {
         </div>
       </header>
     </>
-  );
-};
+  )
+}
 
 const styles = {
-  navLink: "px-2",
-};
+  navLink: "px-2"
+}
 
-export default Nav;
+export default Nav
