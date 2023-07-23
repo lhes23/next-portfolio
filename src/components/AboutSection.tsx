@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { leftElement, rightElement } from "@/utils/animations"
 import { UserContext } from "@/pages/_app"
+import EarthCanvas from "./canvas/Earth"
 
 const AboutSection = () => {
   const ctx = useContext(UserContext)
@@ -16,7 +17,7 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
           <div ref={planetRef}>
-            <motion.video
+            {/* <motion.video
               loop
               autoPlay
               muted
@@ -26,7 +27,8 @@ const AboutSection = () => {
               variants={rightElement}
               initial="hidden"
               animate={planetInView ? "visible" : ""}
-            />
+            /> */}
+            <EarthCanvas />
           </div>
         </div>
         <div ref={summaryRef}>
