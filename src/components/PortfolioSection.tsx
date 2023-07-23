@@ -2,9 +2,9 @@ import React, { useContext } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { container, item } from "../utils/animations"
+import { container, item } from "@/utils/animations"
 import { useInView } from "react-intersection-observer"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 import { styles } from "./MainContent"
 
 const PortfolioSection = () => {

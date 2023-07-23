@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { leftElement, rightElement } from "../utils/animations"
+import { leftElement, rightElement } from "@/utils/animations"
 import Image from "next/image"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 import { styles } from "./MainContent"
 
 const InfoSection = () => {

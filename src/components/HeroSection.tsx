@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Typed from "react-typed"
 import Link from "next/link"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 
 const HeroSection = () => {
   const ctx = useContext(UserContext)

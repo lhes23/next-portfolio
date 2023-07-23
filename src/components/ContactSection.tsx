@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import { UserContext } from "../pages/_app";
+import React, { useContext } from "react"
+import { UserContext } from "@/pages/_app"
 
-import ContactForm from "./ContactForm";
-import { styles } from "./MainContent";
+import ContactForm from "./ContactForm"
+import { styles } from "./MainContent"
 
 const ContactSection = () => {
-  const ctx = useContext(UserContext);
+  const ctx = useContext(UserContext)
 
-  const { phoneNumber, address, email } = ctx.personalDetails;
+  const { phoneNumber, address, email } = ctx.personalDetails
 
   return (
     <>
@@ -40,7 +40,7 @@ const ContactSection = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default ContactSection

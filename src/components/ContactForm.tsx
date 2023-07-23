@@ -1,5 +1,5 @@
 import { useState, SyntheticEvent, FormEvent } from "react"
-import baseUrl from "../utils/baseUrl"
+import baseUrl from "@/utils/baseUrl"
 
 const ContactForm = () => {
   const [confirmMessageSent, setConfirmMessageSent] = useState(false)

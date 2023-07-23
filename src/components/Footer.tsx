@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 
 const Footer = () => {
   const ctx = useContext(UserContext)

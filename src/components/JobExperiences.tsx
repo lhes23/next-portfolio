@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
-import { container, item } from "../utils/animations"
+import { container, item } from "@/utils/animations"
 import { useInView } from "react-intersection-observer"
 import { useContext } from "react"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 
 const JobExperiences = () => {
   const ctx = useContext(UserContext)

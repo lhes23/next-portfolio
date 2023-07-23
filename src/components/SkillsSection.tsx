@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
 import { motion } from "framer-motion"
-import { container, item } from "../utils/animations"
+import { container, item } from "@/utils/animations"
 import { useInView } from "react-intersection-observer"
 import Icons from "./Icons"
-import { UserContext } from "../pages/_app"
+import { UserContext } from "@/pages/_app"
 import { styles } from "./MainContent"
 
 const SkillsSection = () => {
