@@ -1,7 +1,9 @@
 "use client"
 import React, { Suspense } from "react"
+import * as THREE from "three"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import CanvasLoader from "../CanvasLoader"
 
 // import CanvasLoader from "../Loader"
 
@@ -21,20 +23,13 @@ const EarthCanvas = () => {
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
-        fov: 45,
+        fov: 15,
         near: 0.1,
-        far: 200,
+        far: 100,
         position: [-4, 3, 6]
       }}
     >
-      {/* <Suspense fallback={<CanvasLoader />}> */}
-      <Suspense
-        fallback={
-          <>
-            <p>Loading...</p>
-          </>
-        }
-      >
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
           enableZoom={false}
