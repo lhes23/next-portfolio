@@ -16,18 +16,7 @@ const AboutSection = () => {
     <section id="about" className="bg-black w-full px-10 py-10">
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
-          <div ref={planetRef}>
-            {/* <motion.video
-              loop
-              autoPlay
-              muted
-              className="inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
-              src="/videos/planet.mp4"
-              // type="video/mp4"
-              variants={rightElement}
-              initial="hidden"
-              animate={planetInView ? "visible" : ""}
-            /> */}
+          <div ref={planetRef} className="h-full">
             <EarthCanvas />
           </div>
         </div>
