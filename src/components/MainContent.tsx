@@ -22,13 +22,13 @@ const MainContent = () => {
         <meta name="description" content={firstName + " " + lastName} />
         <link rel="icon" href="/lr-logo.svg" />
       </Head>
-      <main className="w-full bg-slate-200">
+      <main className="w-full bg-neutral-100">
         <Nav />
         <HeroSection />
         <SkillsSection />
         <AboutSection />
         <JobExperiences />
-        <div className="lg:m-auto px-10 bg-neutral-100">
+        <div className="lg:m-auto px-10">
           <PortfolioSection />
           <InfoSection />
           <ContactSection />

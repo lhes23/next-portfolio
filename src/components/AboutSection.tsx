@@ -13,7 +13,7 @@ const AboutSection = () => {
   const { ref: summaryRef, inView: summaryInView } = useInView()
 
   return (
-    <section id="about" className="bg-black w-full px-10 py-10">
+    <section id="about" className="w-full px-10 py-10">
       <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
           <div ref={planetRef} className="h-full">
@@ -28,10 +28,10 @@ const AboutSection = () => {
             animate={summaryInView ? "visible" : "hidden"}
             exit={!summaryInView ? "hidden" : ""}
           >
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+            <h2 className="text-2xl font-bold sm:text-3xl">
               Professional Summary
             </h2>
-            <p className="mt-4 text-white">{summary}</p>
+            <p className="mt-4">{summary}</p>
           </motion.div>
         </div>
       </div>
