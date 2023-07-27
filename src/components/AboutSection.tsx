@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer"
 import { leftElement, rightElement } from "@/utils/animations"
 import { UserContext } from "@/pages/_app"
 import EarthCanvas from "./canvas/Earth"
+import { styles } from "./MainContent"
 
 const AboutSection = () => {
   const ctx = useContext(UserContext)
@@ -13,9 +14,9 @@ const AboutSection = () => {
   const { ref: summaryRef, inView: summaryInView } = useInView()
 
   return (
-    <section id="about" className="w-full px-10 py-10">
-      <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-        <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+    <section id="about" className={styles.section}>
+      <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
+        <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
           <div ref={planetRef} className="h-full">
             <EarthCanvas />
           </div>

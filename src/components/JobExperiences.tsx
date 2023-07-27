@@ -3,6 +3,7 @@ import { container, item } from "@/utils/animations"
 import { useInView } from "react-intersection-observer"
 import { useContext } from "react"
 import { UserContext } from "@/pages/_app"
+import { styles } from "./MainContent"
 
 const JobExperiences = () => {
   const ctx = useContext(UserContext)
@@ -10,7 +11,7 @@ const JobExperiences = () => {
   const { ref: jobRef, inView: jobInView } = useInView()
 
   return (
-    <section>
+    <section className={styles.section}>
       <div className="py-8" ref={jobRef}>
         <h2 className="text-2xl font-bold text-black sm:text-3xl justify-center align-center flex">
           Job Experiences
@@ -21,7 +22,7 @@ const JobExperiences = () => {
           initial="hidden"
           animate={jobInView ? "visible" : ""}
         >
-          <div className="relative wrap overflow-hidden p-10 h-full">
+          <div className="relative wrap overflow-hidden h-full">
             <div
               className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border hidden md:block"
               style={{ left: "50%" }}

@@ -25,10 +25,10 @@ const MainContent = () => {
       <main className="w-full bg-neutral-100">
         <Nav />
         <HeroSection />
-        <SkillsSection />
-        <AboutSection />
-        <JobExperiences />
-        <div className="lg:m-auto px-10">
+        <div className="lg:m-auto px-6 md:px-10">
+          <SkillsSection />
+          <AboutSection />
+          <JobExperiences />
           <PortfolioSection />
           <InfoSection />
           <ContactSection />
