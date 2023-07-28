@@ -23,7 +23,7 @@ const AboutSection = () => {
         </div>
         <div ref={summaryRef}>
           <motion.div
-            className="lg:py-24"
+            className="lg:py-24 backdrop-blur-md bg-white/30"
             variants={leftElement}
             initial="hidden"
             animate={summaryInView ? "visible" : "hidden"}
