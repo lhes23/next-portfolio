@@ -17,7 +17,7 @@ const InfoSection = () => {
 
   return (
     <section className={styles.section} id="info">
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative py-4 justify-center flex" ref={picRef}>
           <motion.div
             className="avatar"
@@ -38,20 +38,20 @@ const InfoSection = () => {
         </div>
         <div ref={infoRef}>
           <motion.div
-            className="relative flex items-center bg-white shadow-xl rounded-lg"
+            className={`relative flex items-center ${styles.bgCardGlass}`}
             variants={rightElement}
             initial="hidden"
             animate={infoInView ? "visible" : ""}
           >
             <div className="p-4 sm:p-16 lg:p-8">
-              <h2 className="text-2xl font-bold sm:text-3xl">{course}</h2>
+              <h2 className={styles.title}>{course}</h2>
               <div className="py-4">
                 <p>{year}</p>
                 <p>{school}</p>
                 <p>{schoolAddress}</p>
               </div>
               <h2 className="text-xl font-bold sm:text-2xl">More Info</h2>
-              <p className="mt-4 text-gray-600">{about}</p>
+              <p className="mt-4">{about}</p>
             </div>
           </motion.div>
         </div>

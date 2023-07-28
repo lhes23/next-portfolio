@@ -13,9 +13,9 @@ const JobExperiences = () => {
   return (
     <section className={styles.section}>
       <div className="py-8" ref={jobRef}>
-        <h2 className="text-2xl font-bold text-black sm:text-3xl justify-center align-center flex">
-          Job Experiences
-        </h2>
+        <div className="justify-center p-4 m-4 text-center">
+          <h2 className={styles.title}>Job Experiences</h2>
+        </div>
         <motion.div
           className="container mx-auto w-full h-full"
           variants={container}
@@ -42,7 +42,9 @@ const JobExperiences = () => {
                       {index + 1}
                     </h1>
                   </div>
-                  <div className="order-1 shadow-xl md:w-5/12 px-6 py-4 block p-4 border border-gray-100  bg-white rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200">
+                  <div
+                    className={`${styles.bgCardGlass} order-1 md:w-5/12 px-6 py-4 block p-4 border border-gray-100  focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200`}
+                  >
                     <h3 className="mb-3 font-bold text-gray-800 text-xl">
                       {job.title}
                     </h3>
@@ -50,7 +52,7 @@ const JobExperiences = () => {
                       <p>{job.company}</p>
                       <p>{job.date}</p>
                     </div>
-                    <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                    <div className="text-sm leading-snug tracking-wide">
                       <ul>
                         {job.tasks.map((task, i) => (
                           <li key={i} className="list-disc list-outside m-2">

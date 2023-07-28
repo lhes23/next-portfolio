@@ -11,7 +11,9 @@ import {
   SiCpanel,
   SiPhpmyadmin,
   SiExpress,
-  SiDjango
+  SiDjango,
+  SiTailwindcss,
+  SiAmazonaws
 } from "react-icons/si"
 
 const Icons = ({ icon }) => {
@@ -51,6 +53,10 @@ const Icons = ({ icon }) => {
       return <AiFillApi style={{ color: "green" }} size={size} />
     case "Git and Github":
       return <AiFillGithub style={{ color: "#000" }} size={size} />
+    case "Tailwind CSS":
+      return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
+    case "Amazon Web Services":
+      return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
   }
 }
 

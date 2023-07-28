@@ -22,10 +22,10 @@ const MainContent = () => {
         <meta name="description" content={firstName + " " + lastName} />
         <link rel="icon" href="/lr-logo.svg" />
       </Head>
-      <main className="w-full bg-neutral-100">
+      <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
         <Nav />
         <HeroSection />
-        <div className="lg:m-auto px-6 md:px-10">
+        <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection />
           <AboutSection />
           <JobExperiences />
@@ -40,7 +40,11 @@ const MainContent = () => {
 }
 
 export const styles = {
-  section: "py-16 lg:px-16"
+  section: "py-16 lg:px-16",
+  title: "font-bold text-gray-800 text-3xl sm:text-4xl",
+  bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg glass",
+  button:
+    "text-white text-sm md:text-base bg-blue-500 btn glass hover:text-black hover:bg-gradient-to-r from-cyan-300 via-blue-100 to-purple-600"
 }
 
 export default MainContent
