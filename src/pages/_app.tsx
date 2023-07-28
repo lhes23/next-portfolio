@@ -18,13 +18,13 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-MyApp.getInitialProps = async (appContext) => {
-  const appProps = await App.getInitialProps(appContext)
-  const res = await fetch(`${baseUrl}/api/user`)
-  const data = await res.json()
-  appProps.pageProps = { userDetails: data.userDetails[0] }
+// MyApp.getInitialProps = async (appContext) => {
+//   const appProps = await App.getInitialProps(appContext)
+//   const res = await fetch(`${baseUrl}/api/user`)
+//   const data = await res.json()
+//   appProps.pageProps = { userDetails: data.userDetails[0] }
 
-  return { ...appProps }
-}
+//   return { ...appProps }
+// }
 
 export default MyApp
