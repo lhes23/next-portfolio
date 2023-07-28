@@ -20,7 +20,7 @@ const PortfolioSection = () => {
   return (
     <section className={styles.section} ref={portContainer} id="portfolios">
       <div className="justify-center p-4 m-4 text-center">
-        <h2 className="text-3xl font-bold sm:text-4xl">Portfolios</h2>
+        <h2 className={styles.title}>Portfolios</h2>
       </div>
       <motion.div
         className="grid lg:grid-cols-4 lg:gap-4 justify-center align-center grid-cols-2 gap-2"

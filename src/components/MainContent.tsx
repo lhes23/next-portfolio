@@ -40,7 +40,8 @@ const MainContent = () => {
 }
 
 export const styles = {
-  section: "py-16 lg:px-16"
+  section: "py-16 lg:px-16",
+  title: "font-bold text-gray-800 text-3xl sm:text-4xl"
 }
 
 export default MainContent

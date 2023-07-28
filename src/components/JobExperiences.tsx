@@ -14,7 +14,7 @@ const JobExperiences = () => {
     <section className={styles.section}>
       <div className="py-8" ref={jobRef}>
         <div className="justify-center p-4 m-4 text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">Job Experiences</h2>
+          <h2 className={styles.title}>Job Experiences</h2>
         </div>
         <motion.div
           className="container mx-auto w-full h-full"

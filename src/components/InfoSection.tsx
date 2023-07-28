@@ -44,7 +44,7 @@ const InfoSection = () => {
             animate={infoInView ? "visible" : ""}
           >
             <div className="p-4 sm:p-16 lg:p-8">
-              <h2 className="text-2xl font-bold sm:text-3xl">{course}</h2>
+              <h2 className={styles.title}>{course}</h2>
               <div className="py-4">
                 <p>{year}</p>
                 <p>{school}</p>

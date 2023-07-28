@@ -29,7 +29,7 @@ const AboutSection = () => {
             animate={summaryInView ? "visible" : "hidden"}
             exit={!summaryInView ? "hidden" : ""}
           >
-            <h2 className="text-2xl font-bold sm:text-3xl">
+            <h2 className={`text-center ${styles.title}`}>
               Professional Summary
             </h2>
             <p className="mt-4">{summary}</p>
