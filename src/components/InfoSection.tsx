@@ -51,7 +51,7 @@ const InfoSection = () => {
                 <p>{schoolAddress}</p>
               </div>
               <h2 className="text-xl font-bold sm:text-2xl">More Info</h2>
-              <p className="mt-4 text-gray-600">{about}</p>
+              <p className="mt-4">{about}</p>
             </div>
           </motion.div>
         </div>

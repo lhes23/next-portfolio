@@ -50,7 +50,7 @@ const JobExperiences = () => {
                       <p>{job.company}</p>
                       <p>{job.date}</p>
                     </div>
-                    <div className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+                    <div className="text-sm leading-snug tracking-wide">
                       <ul>
                         {job.tasks.map((task, i) => (
                           <li key={i} className="list-disc list-outside m-2">

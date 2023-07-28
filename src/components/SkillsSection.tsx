@@ -16,7 +16,7 @@ const SkillsSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-1 gap-y-8 lg:gap-x-16 lg:items-center">
         <div className="max-w-lg mx-auto text-center lg:text-left lg:mx-0">
           <h2 className={styles.title}>Skills and Strength</h2>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4">
             Continuous learning and self-improvement. Full Stack Web
             Development. Experienced with back-end and front-end development
           </p>
