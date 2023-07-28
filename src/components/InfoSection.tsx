@@ -17,7 +17,7 @@ const InfoSection = () => {
 
   return (
     <section className={styles.section} id="info">
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative py-4 justify-center flex" ref={picRef}>
           <motion.div
             className="avatar"
