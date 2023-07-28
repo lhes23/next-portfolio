@@ -14,7 +14,7 @@
     "course": "Bachelor of Science in Computer Science",
     "year": "June 2002 - October 2005",
     "school": "Columban College",
-    "schoolAddress": "Olongapo City, Zambales, Philippines"
+    "schoolAddress": "Zambales, Philippines"
   },
   "professionalDetails": {
     "mainTitles": "Web Developer and Designer",
@@ -33,15 +33,15 @@
     ],
     "website": "https://lhes23.github.io/iportfolio",
     "skills": [
-      { "name": "HTML", "rate": 95 },
-      { "name": "CSS", "rate": 90 },
-      { "name": "Javascript", "rate": 80 },
-      { "name": "TypeScript", "rate": 80 },
-      { "name": "PHP", "rate": 80 },
-      { "name": "WordPress", "rate": 90 },
-      { "name": "Python", "rate": 75 },
-      { "name": "ReactJS", "rate": "80" },
-      { "name": "NextJS", "rate": "75" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "Javascript" },
+      { "name": "TypeScript" },
+      { "name": "PHP" },
+      { "name": "WordPress" },
+      { "name": "Python" },
+      { "name": "ReactJS" },
+      { "name": "NextJS" },
       { "name": "cPanel" },
       { "name": "PhpMyAdmin" },
       { "name": "Web Host Manager" },
@@ -49,7 +49,9 @@
       { "name": "ExpressJS" },
       { "name": "Django" },
       { "name": "Django Rest Framework" },
-      { "name": "Git and Github" }
+      { "name": "Git and Github" },
+      { "name": "Tailwind CSS" },
+      { "name": "Amazon Web Services" }
     ]
   },
   "jobExperiences": [
@@ -332,6 +334,15 @@
       "app": "react",
       "description": "An affiliate website using Vite + React + Typescript and Tailwind",
       "createdAt": "2023-03-20"
+    },
+    {
+      "id": "24",
+      "name": "RC Clothes",
+      "url": "https://rcclothes.com/",
+      "img": "rcclothes.com.png",
+      "app": "react",
+      "description": "A dropshipping website made using WordPress and Woocommerce. Created for the RC enthusiast for clothing and wearables",
+      "createdAt": "2023-07-28"
     }
   ]
 }
