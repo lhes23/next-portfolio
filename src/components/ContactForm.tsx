@@ -93,9 +93,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mt-4">
-          <ButtonComponent>
-            <button type="submit">Submit</button>
-          </ButtonComponent>
+          <ButtonComponent type="submit">Submit</ButtonComponent>
         </div>
       </form>
     </>

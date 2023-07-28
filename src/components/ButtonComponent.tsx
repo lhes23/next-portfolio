@@ -1,8 +1,15 @@
+"use client"
 import React from "react"
 import { motion } from "framer-motion"
 import { styles } from "./MainContent"
 
-const ButtonComponent = ({ children }: { children: React.ReactNode }) => {
+const ButtonComponent = ({
+  type,
+  children
+}: {
+  type?: string
+  children: React.ReactNode
+}) => {
   return (
     <>
       <motion.button
