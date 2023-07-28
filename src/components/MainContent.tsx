@@ -44,7 +44,7 @@ export const styles = {
   title: "font-bold text-gray-800 text-3xl sm:text-4xl",
   bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg",
   button:
-    "text-white text-sm md:text-base bg-blue-500 btn glass hover:bg-gradient-to-tr from-purple-500 to-pink-500"
+    "text-white text-sm md:text-base bg-blue-500 btn glass hover:bg-gradient-to-r from-cyan-300 via-blue-100 to-purple-600"
 }
 
 export default MainContent
