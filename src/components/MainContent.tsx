@@ -42,7 +42,9 @@ const MainContent = () => {
 export const styles = {
   section: "py-16 lg:px-16",
   title: "font-bold text-gray-800 text-3xl sm:text-4xl",
-  bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg"
+  bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg",
+  button:
+    "text-white text-sm md:text-base bg-blue-500 btn glass hover:bg-gradient-to-tr from-purple-500 to-pink-500"
 }
 
 export default MainContent

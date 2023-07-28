@@ -1,5 +1,6 @@
 import { useState, SyntheticEvent, FormEvent } from "react"
 import baseUrl from "@/utils/baseUrl"
+import ButtonComponent from "./ButtonComponent"
 
 const ContactForm = () => {
   const [confirmMessageSent, setConfirmMessageSent] = useState(false)
@@ -92,12 +93,9 @@ const ContactForm = () => {
           />
         </div>
         <div className="mt-4">
-          <button
-            type="submit"
-            className="block w-full px-12 py-3 text-lg font-bold text-blue-500 border border-blue-500 rounded sm:w-auto hover:bg-blue-600 hover:text-white active:bg-blue-500 focus:outline-none focus:ring"
-          >
-            Submit
-          </button>
+          <ButtonComponent>
+            <button type="submit">Submit</button>
+          </ButtonComponent>
         </div>
       </form>
     </>
