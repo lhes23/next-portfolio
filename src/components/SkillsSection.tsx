@@ -30,7 +30,7 @@ const SkillsSection = () => {
           >
             {skills?.map((skill, i) => (
               <motion.div
-                className="block p-4 border border-gray-100 backdrop-blur-md bg-white/30 shadow-lg rounded-xl focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200"
+                className={`block p-4 border border-gray-100 focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200 ${styles.bgCardGlass}`}
                 key={skill.name}
                 variants={item}
                 whileHover={{ scale: 1.02 }}

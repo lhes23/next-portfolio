@@ -41,7 +41,8 @@ const MainContent = () => {
 
 export const styles = {
   section: "py-16 lg:px-16",
-  title: "font-bold text-gray-800 text-3xl sm:text-4xl"
+  title: "font-bold text-gray-800 text-3xl sm:text-4xl",
+  bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg"
 }
 
 export default MainContent

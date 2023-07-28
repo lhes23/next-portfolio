@@ -23,7 +23,7 @@ const AboutSection = () => {
         </div>
         <div ref={summaryRef}>
           <motion.div
-            className="p-10 backdrop-blur-md bg-white/30 rounded-lg shadow-lg"
+            className={`p-10 ${styles.bgCardGlass}`}
             variants={leftElement}
             initial="hidden"
             animate={summaryInView ? "visible" : "hidden"}
