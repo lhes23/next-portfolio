@@ -38,7 +38,7 @@ const InfoSection = () => {
         </div>
         <div ref={infoRef}>
           <motion.div
-            className="relative flex items-center bg-white shadow-xl rounded-lg"
+            className={`relative flex items-center ${styles.bgCardGlass}`}
             variants={rightElement}
             initial="hidden"
             animate={infoInView ? "visible" : ""}
