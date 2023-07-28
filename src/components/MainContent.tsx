@@ -22,7 +22,7 @@ const MainContent = () => {
         <meta name="description" content={firstName + " " + lastName} />
         <link rel="icon" href="/lr-logo.svg" />
       </Head>
-      <main className="w-full bg-neutral-100">
+      <main className="w-full bg-gradient-to-tr from-purple-400 via-purple-200 to-blue-500">
         <Nav />
         <HeroSection />
         <div className="lg:m-auto px-6 md:px-10">

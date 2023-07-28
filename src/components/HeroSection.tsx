@@ -9,16 +9,14 @@ const HeroSection = () => {
   const { jobTitles } = ctx.professionalDetails
 
   return (
-    <section className="relative bg-white">
+    <section className="relative">
       <video
         loop
         autoPlay
         muted
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
         src="/videos/circuit.mp4"
-        // type="video/mp4"
       />
-
       <div className="relative w-full px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
         <div className="w-full text-center justify-center">
           <h1 className="text-3xl font-extrabold sm:pt-32 text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-green-300 via-pink-600 to-purple-600">
