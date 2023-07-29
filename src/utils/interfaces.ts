@@ -21,7 +21,7 @@ export interface AppContextInterface {
     summary: string
     jobTitles: string[]
     website: string
-    skills: { name: string; rate?: string | number }[]
+    skills: ISkill[]
   }
   jobExperiences: {
     title: string
@@ -64,4 +64,8 @@ export interface IPortfolio {
 
 export interface IPortfolios {
   portfolios: IPortfolio[]
+}
+
+export interface ISkill {
+  name: string
 }

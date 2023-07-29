@@ -1,5 +1,4 @@
 "use client"
-import Head from "next/head"
 import Nav from "./Nav"
 import AboutSection from "./AboutSection"
 import HeroSection from "./HeroSection"
@@ -30,7 +29,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
         <Nav />
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
-          <SkillsSection />
+          <SkillsSection skills={data.professionalDetails.skills} />
           <AboutSection />
           <JobExperiences />
           <PortfolioSection />
