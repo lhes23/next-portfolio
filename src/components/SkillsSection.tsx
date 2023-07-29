@@ -1,15 +1,15 @@
-import React, { useContext } from "react"
-import { motion } from "framer-motion"
+"use client"
+import React, { useRef } from "react"
+import { motion, useInView } from "framer-motion"
 import { container, item } from "@/utils/animations"
-import { useInView } from "react-intersection-observer"
 import Icons from "./Icons"
-import { UserContext } from "@/pages/_app"
 import { styles } from "./MainContent"
+import ctx from "@/utils/data.json"
 
 const SkillsSection = () => {
-  const ctx = useContext(UserContext)
   const { skills } = ctx.professionalDetails
-  const { ref: skillRef, inView } = useInView()
+  const skillRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(skillRef)
 
   return (
     <section className={styles.section} id="skills">
@@ -26,7 +26,7 @@ const SkillsSection = () => {
             className="grid grid-cols-2 gap-4 sm:grid-cols-5"
             variants={container}
             initial="hidden"
-            animate={inView ? "visible" : ""}
+            animate={isInView ? "visible" : ""}
           >
             {skills?.map((skill, i) => (
               <motion.div
