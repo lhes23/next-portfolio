@@ -1,12 +1,10 @@
-import React, { useContext } from "react"
-import { UserContext } from "@/pages/_app"
+import React from "react"
 
 import ContactForm from "./ContactForm"
 import { styles } from "./MainContent"
+import ctx from "@/utils/data.json"
 
 const ContactSection = () => {
-  const ctx = useContext(UserContext)
-
   const { phoneNumber, address, email } = ctx.personalDetails
 
   return (
