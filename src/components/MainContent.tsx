@@ -31,7 +31,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection skills={data.professionalDetails.skills} />
           <AboutSection summary={data.professionalDetails.summary} />
-          <JobExperiences />
+          <JobExperiences jobExperiences={data.jobExperiences} />
           <PortfolioSection />
           <InfoSection />
           <ContactSection />
