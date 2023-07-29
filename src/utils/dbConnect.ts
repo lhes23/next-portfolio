@@ -1,5 +1,6 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
 export default function dbConnect() {
-  mongoose.connect(process.env.MONGODB_URI);
+  if (!process.env.MONGODB_URI) return false
+  mongoose.connect(process.env.MONGODB_URI)
 }
