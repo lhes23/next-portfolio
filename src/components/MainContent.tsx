@@ -32,7 +32,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
           <SkillsSection skills={data.professionalDetails.skills} />
           <AboutSection summary={data.professionalDetails.summary} />
           <JobExperiences jobExperiences={data.jobExperiences} />
-          <PortfolioSection />
+          <PortfolioSection portfolios={data.portfolios} />
           <InfoSection />
           <ContactSection />
         </div>

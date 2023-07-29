@@ -5,9 +5,10 @@ import { container } from "@/utils/animations"
 import { styles } from "./MainContent"
 import ctx from "@/utils/data.json"
 import Portfolio from "./Portfolio"
+import { IPortfolio } from "@/utils/interfaces"
 
-const PortfolioSection = () => {
-  const { portfolios } = ctx
+const PortfolioSection = ({ portfolios }: { portfolios: IPortfolio[] }) => {
+  // const { portfolios } = ctx
   const portContainerRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(portContainerRef)
 
