@@ -3,12 +3,10 @@
 import React from "react"
 import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"
-// import { UserContext } from "@/pages/_app"
 import ButtonComponent from "./ButtonComponent"
 import ctx from "@/utils/data.json"
 
 const HeroSection = () => {
-  // const ctx = useContext(UserContext)
   const { firstName, lastName } = ctx.personalDetails
   const { jobTitles } = ctx.professionalDetails
 
@@ -20,8 +18,6 @@ const HeroSection = () => {
     })
     return arr
   }
-
-  console.log(jobTitlesWithDelay())
 
   return (
     <section className="relative">
