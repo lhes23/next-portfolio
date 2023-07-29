@@ -6,9 +6,16 @@ import Image from "next/image"
 import { styles } from "./MainContent"
 import ctx from "@/utils/data.json"
 
-const InfoSection = () => {
-  const { about } = ctx.personalDetails
-  const { course, year, school, schoolAddress } = ctx.education
+interface IProp {
+  about: string
+  course: string
+  year: string
+  school: string
+  schoolAddress: string
+}
+const InfoSection = ({ about, course, year, school, schoolAddress }: IProp) => {
+  // const { about } = ctx.personalDetails
+  // const { course, year, school, schoolAddress } = ctx.education
   const infoRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(infoRef)
 

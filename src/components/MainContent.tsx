@@ -22,6 +22,14 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
   }
 
   const heroData = heroSectionProps(data)
+  // const heroData = {}
+  const infoData = {
+    about: data.personalDetails.about,
+    course: data.education.course,
+    year: data.education.year,
+    school: data.education.school,
+    schoolAddress: data.education.schoolAddress
+  }
 
   return (
     <>
@@ -33,7 +41,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
           <AboutSection summary={data.professionalDetails.summary} />
           <JobExperiences jobExperiences={data.jobExperiences} />
           <PortfolioSection portfolios={data.portfolios} />
-          <InfoSection />
+          <InfoSection {...infoData} />
           <ContactSection />
         </div>
         <Footer />
