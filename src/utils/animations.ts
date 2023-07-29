@@ -20,17 +20,17 @@ export const item = {
   }
 }
 
-export const leftElement = {
-  hidden: { x: "-100vw" },
-  visible: { x: 0, transition: { delay: 0.2, duration: 0.3 } }
+const transition = {
+  delay: 0.2,
+  duration: 0.5
 }
 
-export const rightElement = {
-  hidden: { scale: 0.1 },
-  visible: { scale: 1, transition: { delay: 0.2, duration: 0.3 } }
+export const slideFromLeft = {
+  hidden: { x: "-100vw" },
+  visible: { x: 0, transition }
 }
 
 export const scaleUp = {
   hidden: { scale: 0.1 },
-  visible: { scale: 1, transition: { delay: 0.2, duration: 0.3 } }
+  visible: { scale: 1, transition }
 }

@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { leftElement, rightElement } from "@/utils/animations"
+import { slideFromLeft, scaleUp } from "@/utils/animations"
 import EarthCanvas from "./canvas/Earth"
 import { styles } from "./MainContent"
 import ctx from "@/utils/data.json"
@@ -18,7 +18,7 @@ const AboutSection = () => {
         className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2"
       >
         <motion.div
-          variants={leftElement}
+          variants={slideFromLeft}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           exit={!isInView ? "hidden" : ""}
@@ -29,7 +29,7 @@ const AboutSection = () => {
 
         <motion.div
           className={`p-10 ${styles.bgCardGlass}`}
-          variants={rightElement}
+          variants={scaleUp}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           exit={!isInView ? "hidden" : ""}
