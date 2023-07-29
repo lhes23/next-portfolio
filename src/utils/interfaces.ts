@@ -40,3 +40,14 @@ export interface AppContextInterface {
     createdAt: string
   }[]
 }
+
+export interface IJobExperience {
+  title: string
+  date: string
+  company: string
+  tasks: string[]
+}
+
+export interface IJobExperiences {
+  jobExperiences: IJobExperience[]
+}

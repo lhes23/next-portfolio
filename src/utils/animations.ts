@@ -29,3 +29,8 @@ export const rightElement = {
   hidden: { scale: 0.1 },
   visible: { scale: 1, transition: { delay: 0.2, duration: 0.3 } }
 }
+
+export const scaleUp = {
+  hidden: { scale: 0.1 },
+  visible: { scale: 1, transition: { delay: 0.2, duration: 0.3 } }
+}
