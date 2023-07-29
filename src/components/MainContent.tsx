@@ -1,3 +1,4 @@
+"use client"
 import Head from "next/head"
 import Nav from "./Nav"
 import AboutSection from "./AboutSection"
@@ -8,21 +9,26 @@ import InfoSection from "./InfoSection"
 import PortfolioSection from "./PortfolioSection"
 import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
-import ctx from "@/utils/data.json"
+import { AppContextInterface } from "@/utils/interfaces"
 
-const MainContent = () => {
-  const { firstName, lastName } = ctx.personalDetails
+const MainContent = ({ data }: { data: AppContextInterface }) => {
+  const heroSectionProps = (data: AppContextInterface) => {
+    const { firstName, lastName } = data.personalDetails
+    const { jobTitles } = data.professionalDetails
+    return {
+      firstName,
+      lastName,
+      jobTitles
+    }
+  }
+
+  const heroData = heroSectionProps(data)
 
   return (
     <>
-      <Head>
-        <title>{firstName + " " + lastName}</title>
-        <meta name="description" content={firstName + " " + lastName} />
-        <link rel="icon" href="/lr-logo.svg" />
-      </Head>
       <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
         <Nav />
-        <HeroSection />
+        <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection />
           <AboutSection />

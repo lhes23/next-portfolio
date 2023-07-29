@@ -4,12 +4,14 @@ import React from "react"
 import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
-import ctx from "@/utils/data.json"
 
-const HeroSection = () => {
-  const { firstName, lastName } = ctx.personalDetails
-  const { jobTitles } = ctx.professionalDetails
+interface IProp {
+  firstName: string
+  lastName: string
+  jobTitles: string[]
+}
 
+const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
   const jobTitlesWithDelay = () => {
     const arr: (string | number)[] = []
     jobTitles.map((title: string) => {
