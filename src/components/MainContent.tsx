@@ -10,9 +10,10 @@ import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
 import { useContext } from "react"
 import { UserContext } from "@/pages/_app"
+import ctx from "@/utils/data.json"
 
 const MainContent = () => {
-  const ctx = useContext(UserContext)
+  // const ctx = useContext(UserContext)
   const { firstName, lastName } = ctx.personalDetails
 
   return (
@@ -25,15 +26,15 @@ const MainContent = () => {
       <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
         <Nav />
         <HeroSection />
-        <div className="lg:m-auto px-6 md:px-10 text-gray-600">
+        {/* <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection />
           <AboutSection />
           <JobExperiences />
           <PortfolioSection />
           <InfoSection />
           <ContactSection />
-        </div>
-        <Footer />
+        </div> */}
+        {/* <Footer /> */}
       </main>
     </>
   )
