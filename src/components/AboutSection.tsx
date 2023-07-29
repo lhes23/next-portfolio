@@ -4,10 +4,8 @@ import { motion, useInView } from "framer-motion"
 import { slideFromLeft, scaleUp } from "@/utils/animations"
 import EarthCanvas from "./canvas/Earth"
 import { styles } from "./MainContent"
-import ctx from "@/utils/data.json"
 
-const AboutSection = () => {
-  const { summary } = ctx.professionalDetails
+const AboutSection = ({ summary }: { summary: string }) => {
   const aboutRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(aboutRef)
 
