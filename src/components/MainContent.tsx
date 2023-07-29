@@ -11,38 +11,44 @@ import JobExperiences from "./JobExperiences"
 import { AppContextInterface } from "@/utils/interfaces"
 
 const MainContent = ({ data }: { data: AppContextInterface }) => {
-  const heroSectionProps = (data: AppContextInterface) => {
-    const { firstName, lastName } = data.personalDetails
-    const { jobTitles } = data.professionalDetails
-    return {
-      firstName,
-      lastName,
-      jobTitles
-    }
-  }
+  const {
+    personalDetails,
+    professionalDetails,
+    education,
+    jobExperiences,
+    portfolios
+  } = data
 
-  const heroData = heroSectionProps(data)
-  // const heroData = {}
+  const heroData = {
+    firstName: personalDetails.firstName,
+    lastName: personalDetails.lastName,
+    jobTitles: professionalDetails.jobTitles
+  }
   const infoData = {
-    about: data.personalDetails.about,
-    course: data.education.course,
-    year: data.education.year,
-    school: data.education.school,
-    schoolAddress: data.education.schoolAddress
+    about: personalDetails.about,
+    course: education.course,
+    year: education.year,
+    school: education.school,
+    schoolAddress: education.schoolAddress
   }
 
+  const contactData = {
+    phoneNumber: personalDetails.phoneNumber,
+    address: personalDetails.address,
+    email: personalDetails.email
+  }
   return (
     <>
       <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
         <Nav />
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
-          <SkillsSection skills={data.professionalDetails.skills} />
-          <AboutSection summary={data.professionalDetails.summary} />
-          <JobExperiences jobExperiences={data.jobExperiences} />
-          <PortfolioSection portfolios={data.portfolios} />
+          <SkillsSection skills={professionalDetails.skills} />
+          <AboutSection summary={professionalDetails.summary} />
+          <JobExperiences jobExperiences={jobExperiences} />
+          <PortfolioSection portfolios={portfolios} />
           <InfoSection {...infoData} />
-          <ContactSection />
+          <ContactSection {...contactData} />
         </div>
         <Footer />
       </main>

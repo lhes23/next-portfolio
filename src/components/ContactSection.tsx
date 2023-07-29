@@ -3,11 +3,14 @@ import React from "react"
 
 import ContactForm from "./ContactForm"
 import { styles } from "./MainContent"
-import ctx from "@/utils/data.json"
 
-const ContactSection = () => {
-  const { phoneNumber, address, email } = ctx.personalDetails
+interface IProp {
+  phoneNumber: string
+  address: string
+  email: string
+}
 
+const ContactSection = ({ phoneNumber, address, email }: IProp) => {
   return (
     <>
       <section className={styles.section} id="contact">
