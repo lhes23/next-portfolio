@@ -57,6 +57,8 @@ const Icons = ({ icon }) => {
       return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
     case "Amazon Web Services":
       return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
+    default:
+      return <></>
   }
 }
 
