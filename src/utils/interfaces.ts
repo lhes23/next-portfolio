@@ -51,3 +51,17 @@ export interface IJobExperience {
 export interface IJobExperiences {
   jobExperiences: IJobExperience[]
 }
+
+export interface IPortfolio {
+  id: string
+  name: string
+  url: string
+  img: string
+  app: string
+  description: string
+  createdAt: string
+}
+
+export interface IPortfolios {
+  portfolios: IPortfolio[]
+}

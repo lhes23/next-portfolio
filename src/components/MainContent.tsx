@@ -27,7 +27,7 @@ const MainContent = () => {
           <SkillsSection />
           <AboutSection />
           <JobExperiences />
-          {/* <PortfolioSection /> */}
+          <PortfolioSection />
           {/* <InfoSection /> */}
           {/* <ContactSection /> */}
         </div>

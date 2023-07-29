@@ -22,7 +22,7 @@ export const item = {
 
 const transition = {
   delay: 0.2,
-  duration: 0.5
+  duration: 0.4
 }
 
 export const slideFromLeft = {
