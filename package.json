@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-type-animation": "^3.1.0",
+    "sharp": "^0.32.4",
     "three": "^0.154.0",
     "touch-cli": "0.0.1"
   },
