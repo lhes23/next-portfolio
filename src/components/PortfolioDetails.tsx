@@ -31,7 +31,7 @@ const PortFolioDetails = ({
                   <p className="text-xl">{description}</p>
                   <div className="py-5 flex justify-evenly">
                     <ButtonComponent>
-                      <Link href="/#portfolio">Back To Portfolio</Link>
+                      <Link href="/#portfolios">Back To Portfolio</Link>
                     </ButtonComponent>
                     <ButtonComponent>
                       <a
