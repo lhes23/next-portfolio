@@ -8,10 +8,13 @@ Welcome to my Web Developer Professional Portfolio! This repository showcases my
 
 ## Technologies Used
 
--Next.js: A powerful React framework for building server-side rendered (SSR) and static websites. It allows for fast and efficient development with features like automatic code splitting, server-side rendering, and optimized performance.
--React.js: A popular JavaScript library for building user interfaces. Its component-based architecture and virtual DOM make it easy to create reusable UI components and manage the application's state efficiently.
--Tailwind CSS: A utility-first CSS framework that helps create custom designs with ease.
--TypeScript: A typed superset of JavaScript that adds static types for enhanced code quality.
+- [Next.js](https://nextjs.org/): A powerful React framework for building server-side rendered (SSR) and static websites. It allows for fast and efficient development with features like automatic code splitting, server-side rendering, and optimized performance.
+
+- [React.js](https://react.dev/): A popular JavaScript library for building user interfaces. Its component-based architecture and virtual DOM make it easy to create reusable UI components and manage the application's state efficiently.
+
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that helps create custom designs with ease.
+
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that adds static types for enhanced code quality.
 
 ## Live Demo
 
