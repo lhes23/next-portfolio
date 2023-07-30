@@ -3,10 +3,14 @@ import MainContent from "@/components/MainContent"
 import baseUrl from "@/utils/baseUrl"
 
 const Home = async () => {
-  const res = await fetch(`${baseUrl}/api/staticdata/`)
-  const data = await res.json()
-  if (!data) return <>Cant Load Data</>
-  return <MainContent data={data} />
+  try {
+    const res = await fetch(`${baseUrl}/api/staticdata/`)
+    const data = await res.json()
+    console.log({ res })
+    return <MainContent data={data} />
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 export default Home
