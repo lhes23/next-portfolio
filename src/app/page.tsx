@@ -1,10 +1,15 @@
+import React from "react"
 import MainContent from "@/components/MainContent"
-import data from "@/utils/data.json"
+import baseUrl from "@/utils/baseUrl"
 
-const fetchData = () => {
+export const fetchData = async () => {
+  const res = await fetch(`${baseUrl}/api/staticdata/`)
+  const data = await res.json()
   return data
 }
 
-export default function Home() {
-  return <MainContent data={data} />
+export default async function Home() {
+  const objectData = await fetchData()
+  if (!objectData) return <>Cant Load Data</>
+  return <MainContent data={objectData} />
 }
