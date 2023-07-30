@@ -23,7 +23,7 @@ const JobExperiences = ({
           <div className="relative wrap overflow-hidden h-full">
             <div
               ref={jobRef}
-              className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border hidden md:block"
+              className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border md:block"
               style={{ left: "50%" }}
             />
             {jobExperiences.map((job, index) => {
