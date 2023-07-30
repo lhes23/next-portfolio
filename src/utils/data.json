@@ -316,7 +316,15 @@
       "url": "https://next-portfolio-lhes23.vercel.app",
       "img": "next-portfolio-lhes23.vercel.app.jpg",
       "app": "react",
-      "tech": ["nextjs", "reactjs", "typescript", "html", "css", "javascript"],
+      "tech": [
+        "nextjs",
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript"
+      ],
       "description": "Main portfolio using NextJS, a ReactJS Framework",
       "createdAt": "2022-06-12"
     },
@@ -340,6 +348,7 @@
         "nextjs",
         "reactjs",
         "typescript",
+        "tailwind css",
         "html",
         "css",
         "javascript",
@@ -359,6 +368,7 @@
         "nextjs",
         "reactjs",
         "typescript",
+        "tailwind css",
         "html",
         "css",
         "javascript",
