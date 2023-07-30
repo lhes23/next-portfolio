@@ -26,7 +26,7 @@ const AboutSection = ({ summary }: { summary: string }) => {
         </motion.div>
 
         <motion.div
-          className={`p-10 ${styles.bgCardGlass}`}
+          className={`p-4 md:p-10 ${styles.bgCardGlass}`}
           variants={scaleUp}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
