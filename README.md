@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web Developer Portfolio - Next.js and React.js
 
-## Getting Started
+![Web Developer Portfolio](/public/images/portfolio/next-portfolio-lhes23.vercel.app.jpg)
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
+Welcome to my Web Developer Professional Portfolio! This repository showcases my projects, skills, and experiences as a web developer. I've utilized cutting-edge technologies, including Next.js, React.js, Tailwind CSS, and TypeScript, to create this portfolio. The portfolio is designed to provide an interactive and user-friendly experience for potential clients, employers, and collaborators.
+
+## Technologies Used
+
+-Next.js: A powerful React framework for building server-side rendered (SSR) and static websites. It allows for fast and efficient development with features like automatic code splitting, server-side rendering, and optimized performance.
+-React.js: A popular JavaScript library for building user interfaces. Its component-based architecture and virtual DOM make it easy to create reusable UI components and manage the application's state efficiently.
+-Tailwind CSS: A utility-first CSS framework that helps create custom designs with ease.
+-TypeScript: A typed superset of JavaScript that adds static types for enhanced code quality.
+
+## Live Demo
+
+Visit the live demo of the portfolio website: [Web Developer Portfolio Demo](https://next-portfolio-lhes23.vercel.app/)
+
+## Key Features
+
+1. **Responsive Design**: The portfolio is optimized for all devices, ensuring a seamless experience on desktops, tablets, and smartphones.
+
+2. **Projects Showcase**: Display a collection of the developer's top projects with project descriptions, technologies used, and live demo links (if applicable).
+
+3. **About Me Section**: A brief introduction of the developer, highlighting skills, education, and work experience.
+
+4. **Skills and Expertise**: Showcase the developer's technical skills and expertise, using a visually appealing design.
+
+5. **Contact Information**: Provide a way for potential clients and employers to get in touch with the developer through a contact form or email.
+
+<!-- 6. **Blog Section**: An optional section where the developer can share their insights, tutorials, and thoughts related to web development. -->
+
+## Installation
+
+To run this portfolio locally on your machine, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/lhes23/next-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+cd next-portfolio
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Install dependencies:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install
+```
 
-## Learn More
+4. Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open your web browser and visit `http://localhost:3000` to see the portfolio.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
+![Portfolio Screenshot 1](/public/images/portfolio/next-portfolio-lhes23.vercel.app.jpg)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Portfolio Screenshot 2](/public/images/portfolio-web-1.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Portfolio Screenshot 3](/public/images/portfolio-web-2.png)
+
+![Portfolio Screenshot 3](/public/images/portfolio-web-3.png)
+
+## Contributing
+
+If you find any issues or have suggestions for improvement, feel free to create a pull request or open an issue in the repository.
+
+---
+
+Thank you for checking out this Web Developer Portfolio! If you have any questions or inquiries, don't hesitate to reach out.
+
+Connect with me:
+
+- Email: lesterreandino@gmail.com
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/lester-reandino/)
+- Github: [Github Profile](https://github.com/lhes23)
