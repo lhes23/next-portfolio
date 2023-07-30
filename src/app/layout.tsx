@@ -2,10 +2,10 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Head from "next/head"
-import data from "@/utils/data.json"
 
 const inter = Inter({ subsets: ["latin"] })
-const { firstName, lastName } = data.personalDetails
+const firstName = "Lester"
+const lastName = "Reandino"
 
 export const metadata: Metadata = {
   title: firstName + " " + lastName,
