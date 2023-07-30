@@ -364,9 +364,10 @@
         "javascript",
         "django",
         "django rest framework",
-        "python"
+        "python",
+        "amazon web services"
       ],
-      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end",
+      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end. Backend is hosted on AWS EC2. (currently turned off)",
       "createdAt": "2022-10-11"
     },
     {
