@@ -57,7 +57,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
 }
 
 export const styles = {
-  section: "py-16 lg:px-16",
+  section: "py-16 lg:px-16 text-gray-800",
   title: "font-bold text-gray-800 text-3xl sm:text-4xl",
   bgCardGlass: "backdrop-blur-md bg-white/80 rounded-lg shadow-lg glass",
   button:

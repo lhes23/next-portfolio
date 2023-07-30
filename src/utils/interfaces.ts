@@ -58,6 +58,7 @@ export interface IPortfolio {
   url: string
   img: string
   app: string
+  tech: string[]
   description: string
   createdAt: string
 }
