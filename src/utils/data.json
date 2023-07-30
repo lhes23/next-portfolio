@@ -51,7 +51,9 @@
       { "name": "Django Rest Framework" },
       { "name": "Git and Github" },
       { "name": "Tailwind CSS" },
-      { "name": "Amazon Web Services" }
+      { "name": "Amazon Web Services" },
+      { "name": "RESTful API" },
+      { "name": "Vite" }
     ]
   },
   "jobExperiences": [
@@ -134,6 +136,7 @@
       "url": "https://www.allgoodtowing.com/",
       "img": "allgoodtowing.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website build for a towing company",
       "createdAt": "2016-04-05"
     },
@@ -143,6 +146,7 @@
       "url": "https://atlantatreeserviceco.com/",
       "img": "atlantatreeserviceco.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website build for a Tree Service company in Atlanta",
       "createdAt": "2020-06-02"
     },
@@ -152,6 +156,7 @@
       "url": "https://chicagocommercialroofingco.com/",
       "img": "chicagocommercialroofingco.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a roofing commercial company in Chicago",
       "createdAt": "2017-01-10"
     },
@@ -161,6 +166,7 @@
       "url": "https://chicagosewerrescue.com/",
       "img": "chicagosewerrescue.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a sewer and rescue commercial company in Chicago",
       "createdAt": "2016-07-14"
     },
@@ -170,6 +176,7 @@
       "url": "https://detroitlegacytowingservice.com/",
       "img": "detroitlegacytowingservice.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a towing service commercial company in Detroit",
       "createdAt": "2018-05-01"
     },
@@ -179,6 +186,7 @@
       "url": "https://detroitpropertymanagementparks.com/",
       "img": "detroitpropertymanagementparks.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a property management commercial company in Detroit",
       "createdAt": "2018-05-14"
     },
@@ -188,6 +196,7 @@
       "url": "https://extractionprowaterremoval.com/",
       "img": "extractionprowaterremoval.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a water removal commercial company in Chicago",
       "createdAt": "2018-05-02"
     },
@@ -197,6 +206,7 @@
       "url": "https://hurricanetreeservice.org/",
       "img": "hurricanetreeservice.org.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a commercial tree service company",
       "createdAt": "2018-03-20"
     },
@@ -206,6 +216,7 @@
       "url": "https://lansingwaterdamagerestoration.com/",
       "img": "lansingwaterdamagerestoration.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a commercial water damage restoration company in Lansing",
       "createdAt": "2017-04-17"
     },
@@ -215,6 +226,7 @@
       "url": "https://legacycaraccidentlawyers.com/",
       "img": "legacycaraccidentlawyers.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a commercial car accident lawyers company",
       "createdAt": "2018-04-04"
     },
@@ -224,6 +236,7 @@
       "url": "https://mcautobodyrepair.com/",
       "img": "mcautobodyrepair.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a professional Auto body repair company",
       "createdAt": "2017-10-17"
     },
@@ -233,7 +246,8 @@
       "url": "https://modestohvacs.com",
       "img": "modestohvacs.com.jpg",
       "app": "wordpress",
-      "description": "A wordpress website built for a commercial heating, ventilation and air condition company",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
+      "description": "A website built for a commercial heating, ventilation, and air conditioning needs in the vibrant city of Modesto, California. Designed using the powerful and user-friendly combination of WordPress and the Divi theme builder",
       "createdAt": "2015-11-22"
     },
     {
@@ -242,6 +256,7 @@
       "url": "https://movingsanjoselocallongdistance.com",
       "img": "movingsanjoselocallongdistance.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a commercial moving company in San Jose",
       "createdAt": "2017-03-04"
     },
@@ -251,6 +266,7 @@
       "url": "https://mtprospectplumber.org",
       "img": "mtprospectplumber.org.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a professional plumber commercial company in Mt. Prospect",
       "createdAt": "2016-07-14"
     },
@@ -260,6 +276,7 @@
       "url": "https://ofallonroofer.com",
       "img": "ofallonroofer.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a roofing commercial company in Ofallon",
       "createdAt": "2016-06-20"
     },
@@ -269,6 +286,7 @@
       "url": "https://spotlessmaidshousecleaningservice.com",
       "img": "spotlessmaidshousecleaningservice.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a commercial House cleaning maids service company",
       "createdAt": "2018-05-08"
     },
@@ -278,6 +296,7 @@
       "url": "https://stcharlesroof.com",
       "img": "stcharlesroof.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A wordpress website built for a roofing commercial company in St. Charles",
       "createdAt": "2016-06-21"
     },
@@ -287,6 +306,7 @@
       "url": "https://nextjs-todo-app-lhes23.vercel.app",
       "img": "nextjs-todo-app-lhes23.vercel.app.jpg",
       "app": "react",
+      "tech": ["nextjs", "reactjs", "typescript", "html", "css", "javascript"],
       "description": "A todo app using a ReactJS Framework NextJS. Using animations from framer-motion. Redux for state management",
       "createdAt": "2022-06-01"
     },
@@ -296,6 +316,15 @@
       "url": "https://next-portfolio-lhes23.vercel.app",
       "img": "next-portfolio-lhes23.vercel.app.jpg",
       "app": "react",
+      "tech": [
+        "nextjs",
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript"
+      ],
       "description": "Main portfolio using NextJS, a ReactJS Framework",
       "createdAt": "2022-06-12"
     },
@@ -305,6 +334,7 @@
       "url": "https://dreamlaptops.com",
       "img": "dreamlaptops.com.jpg",
       "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A simple blog about laptops guide and info",
       "createdAt": "2020-08-06"
     },
@@ -314,6 +344,17 @@
       "url": "https://next-dreamlaptops-lhes23.vercel.app/",
       "img": "next-dreamlaptops-lhes23.vercel.app.jpg",
       "app": "react",
+      "tech": [
+        "nextjs",
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript",
+        "wordpress",
+        "api"
+      ],
       "description": "A remake of a simple blog. Wordpress backend, NextJS/ReactJS Front end",
       "createdAt": "2022-06-26"
     },
@@ -323,7 +364,20 @@
       "url": "https://checkspeed-app-frontend.vercel.app/",
       "img": "checkspeed-app-frontend.vercel.app.jpg",
       "app": "react",
-      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end",
+      "tech": [
+        "nextjs",
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript",
+        "django",
+        "django rest framework",
+        "python",
+        "amazon web services"
+      ],
+      "description": "An app that can check your internet speed. This is built using ReactJs/Typescript in the front-end and Django/Django Rest Framework in the back-end. Backend is hosted on AWS EC2. (currently turned off)",
       "createdAt": "2022-10-11"
     },
     {
@@ -332,6 +386,16 @@
       "url": "https://bestmeats.rcclothes.com/",
       "img": "bestmeats.png",
       "app": "react",
+      "tech": [
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript",
+        "wordpress",
+        "restful api"
+      ],
       "description": "An affiliate website using Vite + React + Typescript and Tailwind",
       "createdAt": "2023-03-20"
     },
@@ -340,7 +404,8 @@
       "name": "RC Clothes",
       "url": "https://rcclothes.com/",
       "img": "rcclothes.com.png",
-      "app": "react",
+      "app": "wordpress",
+      "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A dropshipping website made using WordPress and Woocommerce. Created for the RC enthusiast for clothing and wearables",
       "createdAt": "2023-07-28"
     }

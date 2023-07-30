@@ -1,15 +1,14 @@
-import React, { useContext } from "react"
-import { motion } from "framer-motion"
-import { container, item } from "@/utils/animations"
-import { useInView } from "react-intersection-observer"
-import Icons from "./Icons"
-import { UserContext } from "@/pages/_app"
+"use client"
+import React, { useRef } from "react"
+import { motion, useInView } from "framer-motion"
+import { container } from "@/utils/animations"
 import { styles } from "./MainContent"
+import { ISkill } from "@/utils/interfaces"
+import Skill from "./Skill"
 
-const SkillsSection = () => {
-  const ctx = useContext(UserContext)
-  const { skills } = ctx.professionalDetails
-  const { ref: skillRef, inView } = useInView()
+const SkillsSection = ({ skills }: { skills: ISkill[] }) => {
+  const skillRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(skillRef)
 
   return (
     <section className={styles.section} id="skills">
@@ -26,20 +25,10 @@ const SkillsSection = () => {
             className="grid grid-cols-2 gap-4 sm:grid-cols-5"
             variants={container}
             initial="hidden"
-            animate={inView ? "visible" : ""}
+            animate={isInView ? "visible" : ""}
           >
             {skills?.map((skill, i) => (
-              <motion.div
-                className={`block p-4 border border-gray-100 focus:outline-none focus:ring hover:border-gray-200 hover:ring-1 hover:ring-gray-200 ${styles.bgCardGlass}`}
-                key={skill.name}
-                variants={item}
-                whileHover={{ scale: 1.02 }}
-              >
-                <span className="inline-block p-3 rounded-lg">
-                  <Icons icon={skill.name} />
-                </span>
-                <h3 className="mt-2 font-bold">{skill.name}</h3>
-              </motion.div>
+              <Skill key={i} name={skill.name} />
             ))}
           </motion.div>
         </div>

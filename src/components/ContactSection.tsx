@@ -1,14 +1,16 @@
-import React, { useContext } from "react"
-import { UserContext } from "@/pages/_app"
+"use client"
+import React from "react"
 
 import ContactForm from "./ContactForm"
 import { styles } from "./MainContent"
 
-const ContactSection = () => {
-  const ctx = useContext(UserContext)
+interface IProp {
+  phoneNumber: string
+  address: string
+  email: string
+}
 
-  const { phoneNumber, address, email } = ctx.personalDetails
-
+const ContactSection = ({ phoneNumber, address, email }: IProp) => {
   return (
     <>
       <section className={styles.section} id="contact">

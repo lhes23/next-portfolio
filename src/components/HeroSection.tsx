@@ -1,13 +1,25 @@
-import React, { useContext } from "react"
-import Typed from "react-typed"
+// import React, { useContext } from "react"
+"use client"
+import React from "react"
+import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"
-import { UserContext } from "@/pages/_app"
 import ButtonComponent from "./ButtonComponent"
 
-const HeroSection = () => {
-  const ctx = useContext(UserContext)
-  const { firstName, lastName } = ctx.personalDetails
-  const { jobTitles } = ctx.professionalDetails
+interface IProp {
+  firstName: string
+  lastName: string
+  jobTitles: string[]
+}
+
+const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
+  const jobTitlesWithDelay = () => {
+    const arr: (string | number)[] = []
+    jobTitles.map((title: string) => {
+      arr.push(title)
+      arr.push(1000)
+    })
+    return arr
+  }
 
   return (
     <section className="relative">
@@ -30,11 +42,10 @@ const HeroSection = () => {
           <p className="mt-4 text-2xl sm:leading-relaxed sm:text-4xl text-white text-center">
             I&apos;m a{" "}
             <span className="block">
-              <Typed
-                strings={jobTitles.map((title) => title)}
-                typeSpeed={100}
-                backSpeed={50}
-                loop
+              <TypeAnimation
+                sequence={jobTitlesWithDelay()}
+                speed={5}
+                repeat={Infinity}
                 className="text-left"
               />
             </span>

@@ -1,9 +1,6 @@
-import { useContext } from "react"
-import { UserContext } from "@/pages/_app"
+import ctx from "@/utils/data.json"
 
 const Footer = () => {
-  const ctx = useContext(UserContext)
-
   const { firstName, lastName } = ctx.personalDetails
   return (
     <div className="w-full justify-center text-center p-4 bg-white">

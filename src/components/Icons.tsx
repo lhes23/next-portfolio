@@ -1,4 +1,9 @@
-import { AiOutlineHtml5, AiFillApi, AiFillGithub } from "react-icons/ai"
+import {
+  AiOutlineHtml5,
+  AiFillApi,
+  AiFillGithub,
+  AiOutlineApi
+} from "react-icons/ai"
 import { FaCss3, FaNodeJs, FaWhmcs } from "react-icons/fa"
 import {
   SiJavascript,
@@ -13,50 +18,58 @@ import {
   SiExpress,
   SiDjango,
   SiTailwindcss,
-  SiAmazonaws
+  SiAmazonaws,
+  SiVite
 } from "react-icons/si"
 
-const Icons = ({ icon }) => {
+const Icons = ({ icon }: { icon: string }) => {
   const size = 40
+  icon = icon.toLowerCase()
   switch (icon) {
-    case "HTML":
+    case "html":
       return <AiOutlineHtml5 size={size} style={{ color: "#dd4d25" }} />
-    case "CSS":
+    case "css":
       return <FaCss3 size={size} style={{ color: "#146eb0" }} />
-    case "Javascript":
+    case "javascript":
       return <SiJavascript size={size} style={{ color: "#f7df1e" }} />
-    case "TypeScript":
+    case "typescript":
       return <SiTypescript size={size} style={{ color: "#2f74c0" }} />
-    case "PHP":
+    case "php":
       return <SiPhp size={size} style={{ color: "#7377ad" }} />
-    case "WordPress":
+    case "wordpress":
       return <SiWordpress size={size} style={{ color: "#207196" }} />
-    case "Python":
+    case "python":
       return <SiPython size={size} style={{ color: "#356a97" }} />
-    case "ReactJS":
+    case "reactjs":
       return <SiReact size={size} style={{ color: "#5ed3f3" }} />
-    case "NextJS":
+    case "nextjs":
       return <SiNextdotjs size={size} style={{ color: "#000" }} />
-    case "cPanel":
+    case "cpanel":
       return <SiCpanel size={size} style={{ color: "#f7692b" }} />
-    case "PhpMyAdmin":
+    case "phpmyadmin":
       return <SiPhpmyadmin size={size} style={{ color: "#f0970e" }} />
-    case "Web Host Manager":
+    case "web host manager":
       return <FaWhmcs size={size} style={{ color: "#ea692f" }} />
-    case "NodeJS":
+    case "nodejs":
       return <FaNodeJs size={size} style={{ color: "green" }} />
-    case "ExpressJS":
+    case "expressjs":
       return <SiExpress style={{ color: "black" }} size={size} />
-    case "Django":
+    case "django":
       return <SiDjango style={{ color: "green" }} size={size} />
-    case "Django Rest Framework":
+    case "django rest framework":
       return <AiFillApi style={{ color: "green" }} size={size} />
-    case "Git and Github":
+    case "git and github":
       return <AiFillGithub style={{ color: "#000" }} size={size} />
-    case "Tailwind CSS":
+    case "tailwind css":
       return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
-    case "Amazon Web Services":
+    case "amazon web services":
       return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
+    case "restful api":
+      return <AiOutlineApi style={{ color: "#e7850f" }} size={size} />
+    case "vite":
+      return <SiVite style={{ color: "#e7850f" }} size={size} />
+    default:
+      return <></>
   }
 }
 

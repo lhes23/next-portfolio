@@ -4,10 +4,11 @@ import Link from "next/link"
 const Nav = () => {
   const navLinks = [
     { title: "Home", url: "/" },
-    { title: "Skills", url: "#skills" },
+    // { title: "Skills", url: "#skills" },
     { title: "About", url: "#about" },
+    { title: "Experiences", url: "#experiences" },
     { title: "Portfolios", url: "#portfolios" },
-    { title: "Info", url: "#info" },
+    // { title: "Info", url: "#info" },
     { title: "Contact", url: "#contact" }
   ]
 
