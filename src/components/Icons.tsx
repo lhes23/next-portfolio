@@ -1,4 +1,9 @@
-import { AiOutlineHtml5, AiFillApi, AiFillGithub } from "react-icons/ai"
+import {
+  AiOutlineHtml5,
+  AiFillApi,
+  AiFillGithub,
+  AiOutlineApi
+} from "react-icons/ai"
 import { FaCss3, FaNodeJs, FaWhmcs } from "react-icons/fa"
 import {
   SiJavascript,
@@ -13,7 +18,8 @@ import {
   SiExpress,
   SiDjango,
   SiTailwindcss,
-  SiAmazonaws
+  SiAmazonaws,
+  SiVite
 } from "react-icons/si"
 
 const Icons = ({ icon }: { icon: string }) => {
@@ -58,6 +64,10 @@ const Icons = ({ icon }: { icon: string }) => {
       return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
     case "amazon web services":
       return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
+    case "restful api":
+      return <AiOutlineApi style={{ color: "#e7850f" }} size={size} />
+    case "vite":
+      return <SiVite style={{ color: "#e7850f" }} size={size} />
     default:
       return <></>
   }
