@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["three"]
+  transpilePackages: ["three"],
+  experimental: {
+    nftTracing: true
+  }
 }
 
 module.exports = nextConfig
