@@ -1,7 +1,7 @@
 import ButtonComponent from "@/components/ButtonComponent"
 import Link from "next/link"
 
-export default function Custom404() {
+export default function NotFound() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900 ">
