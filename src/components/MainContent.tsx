@@ -39,7 +39,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
   }
   return (
     <>
-      <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
+      <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500 scroll-smooth">
         <Nav />
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
