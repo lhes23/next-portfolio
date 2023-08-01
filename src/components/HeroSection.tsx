@@ -30,7 +30,10 @@ const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
         src="/videos/circuit.mp4"
       />
-      <div className="relative w-full px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
+      <div
+        id="hero"
+        className="relative w-full px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
+      >
         <div className="w-full text-center justify-center">
           <h1 className="text-3xl font-extrabold sm:pt-32 text-transparent sm:text-6xl bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-100 to-purple-600">
             Hi, my name is
