@@ -3,16 +3,21 @@ import MainContent from "@/components/MainContent"
 import baseUrl from "@/utils/baseUrl"
 import objectData from "@/utils/data.json"
 
-const Home = async () => {
+const fetchData = async () => {
   try {
     const res = await fetch(`${baseUrl}/api/staticdata/`)
     const data = await res.json()
-    console.log({ data })
-    // const data = objectData
-    return <MainContent data={data} />
+    return data
   } catch (error) {
     console.log(error)
   }
+}
+
+const Home = async () => {
+  const data = await fetchData()
+  if (!data) return undefined
+  // const data = objectData
+  return <MainContent data={data} />
 }
 
 export default Home
