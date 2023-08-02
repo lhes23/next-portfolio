@@ -8,7 +8,12 @@ import InfoSection from "./InfoSection"
 import PortfolioSection from "./PortfolioSection"
 import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
-import { AppContextInterface, IJobTitle } from "@/utils/interfaces"
+import {
+  AppContextInterface,
+  IJobTitle,
+  ISkill,
+  IUser
+} from "@/utils/interfaces"
 
 const MainContent = ({
   data,
@@ -17,36 +22,36 @@ const MainContent = ({
   jobTitles
 }: {
   data: AppContextInterface
-  personalDetails: any
-  skills: any
+  personalDetails: IUser
+  skills: ISkill[]
   jobTitles: IJobTitle[]
 }) => {
   const {
-    // personalDetails,
-    professionalDetails,
-    education,
-    jobExperiences,
-    portfolios
-  } = data
+    firstName,
+    lastName,
+    email,
+    about,
+    address,
+    phoneNumber,
+    summary,
+    schoolCourse,
+    schoolYear,
+    schoolName,
+    schoolAddress
+  } = personalDetails
 
-  const heroData = {
-    firstName: personalDetails.firstName,
-    lastName: personalDetails.lastName,
-    jobTitles
-  }
+  const { jobExperiences, portfolios } = data
+
+  const heroData = { firstName, lastName, jobTitles }
   const infoData = {
-    about: personalDetails.about,
-    course: education.course,
-    year: education.year,
-    school: education.school,
-    schoolAddress: education.schoolAddress
+    about,
+    schoolCourse,
+    schoolYear,
+    schoolName,
+    schoolAddress
   }
 
-  const contactData = {
-    phoneNumber: personalDetails.phoneNumber,
-    address: personalDetails.address,
-    email: personalDetails.email
-  }
+  const contactData = { phoneNumber, address, email }
   return (
     <>
       <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
@@ -54,7 +59,7 @@ const MainContent = ({
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection skills={skills} />
-          <AboutSection summary={professionalDetails.summary} />
+          <AboutSection summary={summary} />
           <JobExperiences jobExperiences={jobExperiences} />
           <PortfolioSection portfolios={portfolios} />
           <InfoSection {...infoData} />
