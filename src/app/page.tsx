@@ -7,9 +7,18 @@ import { fetchData } from "@/hooks/fetchData"
 const Home = async () => {
   const myID = "64c9d313866149c3746dba1c"
   const data = await fetchData(`${baseUrl}/api/staticdata/`)
-  const personalDetails = await fetchData(`${baseUrl}/api/users/${myID}`)
-  const skills = await fetchData(`${baseUrl}/api/skills/`)
-  console.log(skills)
+
+  const personalDetailsData = fetchData(`${baseUrl}/api/users/${myID}`)
+  const skillsData = fetchData(`${baseUrl}/api/skills/`)
+  const jobTitlesData = fetchData(`${baseUrl}/api/job-titles/`)
+
+  const [personalDetails, skills, jobTitles] = await Promise.all([
+    personalDetailsData,
+    skillsData,
+    jobTitlesData
+  ])
+
+  console.log(jobTitles)
   if (!data) return undefined
   // const data = objectData
   return (
