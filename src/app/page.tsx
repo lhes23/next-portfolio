@@ -26,6 +26,7 @@ const Home = async () => {
       data={data}
       personalDetails={personalDetails}
       skills={skills}
+      jobTitles={jobTitles}
     />
   )
 }
