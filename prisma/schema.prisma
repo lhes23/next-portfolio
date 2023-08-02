@@ -15,13 +15,13 @@ model User{
   email String @unique
   firstName String
   lastName String
-  bday String
-  address String
-  phoneNumber String
-  about String
-  mainTitle String
-  summary String
-  website String
+  bday String?
+  address String?
+  phoneNumber String?
+  about String?
+  mainTitle String?
+  summary String?
+  website String?
 }
 
 model Skill{
