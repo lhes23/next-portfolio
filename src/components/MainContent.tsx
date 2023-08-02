@@ -10,9 +10,15 @@ import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
 import { AppContextInterface } from "@/utils/interfaces"
 
-const MainContent = ({ data }: { data: AppContextInterface }) => {
+const MainContent = ({
+  data,
+  personalDetails
+}: {
+  data: AppContextInterface
+  personalDetails: any
+}) => {
   const {
-    personalDetails,
+    // personalDetails,
     professionalDetails,
     education,
     jobExperiences,

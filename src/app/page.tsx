@@ -2,22 +2,16 @@ import React from "react"
 import MainContent from "@/components/MainContent"
 import baseUrl from "@/utils/baseUrl"
 import objectData from "@/utils/data.json"
-
-const fetchData = async () => {
-  try {
-    const res = await fetch(`${baseUrl}/api/staticdata/`)
-    const data = await res.json()
-    return data
-  } catch (error) {
-    console.log(error)
-  }
-}
+import { fetchData } from "@/hooks/fetchData"
 
 const Home = async () => {
-  const data = await fetchData()
+  const myID = "64c9d313866149c3746dba1c"
+  const data = await fetchData(`${baseUrl}/api/staticdata/`)
+  const personalDetails = await fetchData(`${baseUrl}/api/users/${myID}`)
+  console.log(personalDetails)
   if (!data) return undefined
   // const data = objectData
-  return <MainContent data={data} />
+  return <MainContent data={data} personalDetails={personalDetails} />
 }
 
 export default Home
