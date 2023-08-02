@@ -29,3 +29,8 @@ model Skill{
   name String
   userId String @db.ObjectId
 }
+
+model JobTitle{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+}
