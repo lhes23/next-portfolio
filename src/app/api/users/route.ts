@@ -6,9 +6,10 @@ export const GET = async () => {
   return NextResponse.json(users)
 }
 
-// export const POST = async (req: NextRequest) => {
-//   const body = await req.json()
-//   const data = await JSON.stringify(body)
-//   const user = await addUser()
-//   return new Response(user)
-// }
+export const POST = async (req: Request) => {
+  const body = await req.json()
+  //   const data = JSON.stringify(body)
+  const user = await addUser(body)
+  //   return new Response(data)
+  return NextResponse.json(user)
+}
