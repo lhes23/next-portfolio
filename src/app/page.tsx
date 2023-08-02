@@ -11,14 +11,15 @@ const Home = async () => {
   const personalDetailsData = fetchData(`${baseUrl}/api/users/${myID}`)
   const skillsData = fetchData(`${baseUrl}/api/skills/`)
   const jobTitlesData = fetchData(`${baseUrl}/api/job-titles/`)
+  const portfoliosData = fetchData(`${baseUrl}/api/portfolios/`)
 
-  const [personalDetails, skills, jobTitles] = await Promise.all([
+  const [personalDetails, skills, jobTitles, portfolios] = await Promise.all([
     personalDetailsData,
     skillsData,
-    jobTitlesData
+    jobTitlesData,
+    portfoliosData
   ])
 
-  console.log(jobTitles)
   if (!data) return undefined
   // const data = objectData
   return (
@@ -27,6 +28,7 @@ const Home = async () => {
       personalDetails={personalDetails}
       skills={skills}
       jobTitles={jobTitles}
+      portfolios={portfolios}
     />
   )
 }

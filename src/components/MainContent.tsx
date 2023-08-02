@@ -11,6 +11,7 @@ import JobExperiences from "./JobExperiences"
 import {
   AppContextInterface,
   IJobTitle,
+  IPortfolio,
   ISkill,
   IUser
 } from "@/utils/interfaces"
@@ -19,12 +20,14 @@ const MainContent = ({
   data,
   personalDetails,
   skills,
-  jobTitles
+  jobTitles,
+  portfolios
 }: {
   data: AppContextInterface
   personalDetails: IUser
   skills: ISkill[]
   jobTitles: IJobTitle[]
+  portfolios: IPortfolio[]
 }) => {
   const {
     firstName,
@@ -40,7 +43,7 @@ const MainContent = ({
     schoolAddress
   } = personalDetails
 
-  const { jobExperiences, portfolios } = data
+  const { jobExperiences } = data
 
   const heroData = { firstName, lastName, jobTitles }
   const infoData = {
