@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { addUser, getAllUsers } from "../../../../prisma/user"
+import { addUser, getAllUsers } from "../../../prisma/user"
 
 export const GET = async () => {
   const users = await getAllUsers()
