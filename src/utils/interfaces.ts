@@ -55,3 +55,9 @@ export interface IPortfolios {
 export interface ISkill {
   name: string
 }
+
+// New Interface from DB
+export interface IJobTitle {
+  id: string
+  name: string
+}

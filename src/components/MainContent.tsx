@@ -8,16 +8,18 @@ import InfoSection from "./InfoSection"
 import PortfolioSection from "./PortfolioSection"
 import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
-import { AppContextInterface } from "@/utils/interfaces"
+import { AppContextInterface, IJobTitle } from "@/utils/interfaces"
 
 const MainContent = ({
   data,
   personalDetails,
-  skills
+  skills,
+  jobTitles
 }: {
   data: AppContextInterface
   personalDetails: any
   skills: any
+  jobTitles: IJobTitle[]
 }) => {
   const {
     // personalDetails,
@@ -30,7 +32,7 @@ const MainContent = ({
   const heroData = {
     firstName: personalDetails.firstName,
     lastName: personalDetails.lastName,
-    jobTitles: professionalDetails.jobTitles
+    jobTitles
   }
   const infoData = {
     about: personalDetails.about,

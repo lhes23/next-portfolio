@@ -4,23 +4,24 @@ import React from "react"
 import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
+import { IJobTitle } from "@/utils/interfaces"
 
 interface IProp {
   firstName: string
   lastName: string
-  jobTitles: string[]
+  // jobTitles: string[]
+  jobTitles: IJobTitle[]
 }
 
 const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
   const jobTitlesWithDelay = () => {
     const arr: (string | number)[] = []
-    jobTitles.map((title: string) => {
-      arr.push(title)
+    jobTitles.map((jobTitle) => {
+      arr.push(jobTitle.name)
       arr.push(1000)
     })
     return arr
   }
-
   return (
     <section className="relative">
       <video
