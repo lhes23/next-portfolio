@@ -14,3 +14,21 @@ export const addUser = async (data) => {
 
   return user
 }
+
+export const getSingleUser = async (id: string) => {
+  const user = await prisma.user.findUnique({
+    where: {
+      id: id
+    }
+  })
+  return user
+}
+
+export const deleteUser = async (id:string) => {
+  const user = await prisma.user.delete({
+    where:{
+      id: id
+    }
+  })
+  return user
+}
