@@ -12,10 +12,12 @@ import { AppContextInterface } from "@/utils/interfaces"
 
 const MainContent = ({
   data,
-  personalDetails
+  personalDetails,
+  skills
 }: {
   data: AppContextInterface
   personalDetails: any
+  skills: any
 }) => {
   const {
     // personalDetails,
@@ -49,7 +51,7 @@ const MainContent = ({
         <Nav />
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
-          <SkillsSection skills={professionalDetails.skills} />
+          <SkillsSection skills={skills} />
           <AboutSection summary={professionalDetails.summary} />
           <JobExperiences jobExperiences={jobExperiences} />
           <PortfolioSection portfolios={portfolios} />
