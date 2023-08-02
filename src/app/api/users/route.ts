@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server"
+import { NextResponse } from "next/server"
 import { addUser, getAllUsers } from "../../../../prisma/user"
 
 export const GET = async () => {
@@ -7,9 +7,7 @@ export const GET = async () => {
 }
 
 export const POST = async (req: Request) => {
-  const body = await req.json()
-  //   const data = JSON.stringify(body)
-  const user = await addUser(body)
-  //   return new Response(data)
+  const res = await req.json()
+  const user = await addUser(res)
   return NextResponse.json(user)
 }
