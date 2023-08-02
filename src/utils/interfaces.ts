@@ -1,14 +1,6 @@
 export interface AppContextInterface extends IJobExperiences, IPortfolios {
   id: { $oid: string }
-  personalDetails: {
-    firstName: string
-    lastName: string
-    bday: string
-    address: string
-    email: string
-    phoneNumber: string
-    about: string
-  }
+  personalDetails: IUser
   education: {
     degree: string
     course: string
@@ -52,11 +44,31 @@ export interface IPortfolios {
   portfolios: IPortfolio[]
 }
 
+// New Interface from DB
+export interface IUser {
+  id: string
+  email: string
+  firstName: string
+  lastName: string
+  bday: string
+  address: string
+  phoneNumber: string
+  about: string
+  mainTitle: string
+  summary: string
+  website: string
+  schoolDegree: string
+  schoolCourse: string
+  schoolName: string
+  schoolYear: string
+  schoolAddress: string
+}
+
 export interface ISkill {
+  id: string
   name: string
 }
 
-// New Interface from DB
 export interface IJobTitle {
   id: string
   name: string

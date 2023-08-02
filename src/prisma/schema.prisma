@@ -22,6 +22,11 @@ model User{
   mainTitle String?
   summary String?
   website String?
+  schoolDegree String?
+  schoolCourse String?
+  schoolName String?
+  schoolYear String?
+  schoolAddress String?
 }
 
 model Skill{
@@ -34,3 +39,10 @@ model JobTitle{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String
 }
+
+// model Portfolio{
+//   id String @id @default(auto()) @map("_id") @db.ObjectId
+//   name String
+//   url String
+
+// } 

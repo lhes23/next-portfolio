@@ -8,12 +8,18 @@ import ctx from "@/utils/data.json"
 
 interface IProp {
   about: string
-  course: string
-  year: string
-  school: string
+  schoolCourse: string
+  schoolYear: string
+  schoolName: string
   schoolAddress: string
 }
-const InfoSection = ({ about, course, year, school, schoolAddress }: IProp) => {
+const InfoSection = ({
+  about,
+  schoolCourse,
+  schoolYear,
+  schoolName,
+  schoolAddress
+}: IProp) => {
   // const { about } = ctx.personalDetails
   // const { course, year, school, schoolAddress } = ctx.education
   const infoRef = useRef<HTMLDivElement>(null)
@@ -48,10 +54,10 @@ const InfoSection = ({ about, course, year, school, schoolAddress }: IProp) => {
           animate={isInView ? "visible" : ""}
         >
           <div className="p-4 sm:p-16 lg:p-8">
-            <h2 className={styles.title}>{course}</h2>
+            <h2 className={styles.title}>{schoolCourse}</h2>
             <div className="py-4">
-              <p>{year}</p>
-              <p>{school}</p>
+              <p>{schoolYear}</p>
+              <p>{schoolName}</p>
               <p>{schoolAddress}</p>
             </div>
             <h2 className="text-xl font-bold sm:text-2xl">More Info</h2>
