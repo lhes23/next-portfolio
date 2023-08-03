@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   i18n: {
     locales: ["en"],
@@ -11,9 +12,7 @@ const nextConfig = {
   transpilePackages: ["three"],
   experimental: {
     nftTracing: true
-  },
-  trailingSlash: true,
-  output: "export"
+  }
 }
 
 module.exports = nextConfig
