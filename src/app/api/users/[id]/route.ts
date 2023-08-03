@@ -1,4 +1,4 @@
-import { deleteUser, getSingleUser } from "@/prisma/users"
+import { deleteUser, getSingleUser } from "@/prisma/controllers/users"
 import { NextResponse } from "next/server"
 
 export const GET = async (req: Request, { params }) => {

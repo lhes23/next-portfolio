@@ -1,4 +1,4 @@
-import { getAllExperiences } from "@/prisma/experiences"
+import { getAllExperiences } from "@/prisma/controllers/experiences"
 import { NextResponse } from "next/server"
 
 export const GET = async () => {

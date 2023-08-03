@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client"
-
-const prisma = new PrismaClient()
+import { prisma } from "../prismaInstantiate"
 
 export const getAllUsers = async () => {
   const users = await prisma.user.findMany()
@@ -24,9 +22,9 @@ export const getSingleUser = async (id: string) => {
   return user
 }
 
-export const deleteUser = async (id:string) => {
+export const deleteUser = async (id: string) => {
   const user = await prisma.user.delete({
-    where:{
+    where: {
       id: id
     }
   })
