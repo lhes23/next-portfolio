@@ -25,7 +25,6 @@ export interface IPortfolios {
   portfolios: IPortfolio[]
 }
 
-// New Interface from DB
 export interface IUser {
   id: string
   email: string
