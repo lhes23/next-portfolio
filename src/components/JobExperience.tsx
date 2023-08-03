@@ -1,12 +1,12 @@
 "use client"
 import React from "react"
 import { motion } from "framer-motion"
-import { IJobExperience } from "@/utils/interfaces"
+import { IExperience } from "@/utils/interfaces"
 import { scaleUp } from "@/utils/animations"
 import { styles } from "./MainContent"
 
 interface IProp {
-  job: IJobExperience
+  job: IExperience
   index: number
   isInView: boolean
 }
