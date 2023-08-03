@@ -11,7 +11,8 @@ const nextConfig = {
   transpilePackages: ["three"],
   experimental: {
     nftTracing: true
-  }
+  },
+  output: "export"
 }
 
 module.exports = nextConfig
