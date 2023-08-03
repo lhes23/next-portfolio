@@ -3,12 +3,12 @@ import React, { useRef } from "react"
 import { useInView } from "framer-motion"
 import { styles } from "./MainContent"
 import JobExperience from "./JobExperience"
-import { IJobExperience } from "@/utils/interfaces"
+import { IExperience } from "@/utils/interfaces"
 
 const JobExperiences = ({
   jobExperiences
 }: {
-  jobExperiences: IJobExperience[]
+  jobExperiences: IExperience[]
 }) => {
   const jobRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(jobRef)

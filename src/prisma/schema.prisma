@@ -52,3 +52,17 @@ model JobTitle{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String
 }
+
+model Experience{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  workDate String
+  company String
+  tasks String[]
+}
+
+model SocialMedia {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  url String
+}

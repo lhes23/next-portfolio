@@ -8,27 +8,9 @@ import InfoSection from "./InfoSection"
 import PortfolioSection from "./PortfolioSection"
 import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
-import {
-  AppContextInterface,
-  IJobTitle,
-  IPortfolio,
-  ISkill,
-  IUser
-} from "@/utils/interfaces"
+import { AppContextInterface } from "@/utils/interfaces"
 
-const MainContent = ({
-  data,
-  personalDetails,
-  skills,
-  jobTitles,
-  portfolios
-}: {
-  data: AppContextInterface
-  personalDetails: IUser
-  skills: ISkill[]
-  jobTitles: IJobTitle[]
-  portfolios: IPortfolio[]
-}) => {
+const MainContent = ({ data }: { data: AppContextInterface }) => {
   const {
     firstName,
     lastName,
@@ -41,9 +23,9 @@ const MainContent = ({
     schoolYear,
     schoolName,
     schoolAddress
-  } = personalDetails
+  } = data.personalDetails
 
-  const { jobExperiences } = data
+  const { skills, jobTitles, portfolios, experiences } = data
 
   const heroData = { firstName, lastName, jobTitles }
   const infoData = {
@@ -63,7 +45,7 @@ const MainContent = ({
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
           <SkillsSection skills={skills} />
           <AboutSection summary={summary} />
-          <JobExperiences jobExperiences={jobExperiences} />
+          <JobExperiences jobExperiences={experiences} />
           <PortfolioSection portfolios={portfolios} />
           <InfoSection {...infoData} />
           <ContactSection {...contactData} />
