@@ -1,6 +1,6 @@
 export interface AppContextInterface extends IJobExperiences, IPortfolios {
   // id: string
-  personalDetails: IUser
+  user: IUser
   skills: ISkill[]
   jobTitles: IJobTitle[]
   socialMedias: ISocialMedia[]

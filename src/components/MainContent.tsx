@@ -9,22 +9,8 @@ import PortfolioSection from "./PortfolioSection"
 import SkillsSection from "./SkillsSection"
 import JobExperiences from "./JobExperiences"
 import { AppContextInterface } from "@/utils/interfaces"
-import baseUrl from "@/utils/baseUrl"
-import { useEffect, useState } from "react"
 
 const MainContent = ({ data }: { data: AppContextInterface }) => {
-  const [myData, setMyData] = useState<any>({})
-  useEffect(() => {
-    const fetchingData = async () => {
-      const res = await fetch(`${baseUrl}/api/skills`)
-      const data = await res.json()
-      setMyData(data)
-    }
-    fetchingData()
-  }, [])
-
-  useEffect(() => console.log(myData), [myData])
-  console.log(`${baseUrl}/api/skills`)
   const {
     firstName,
     lastName,
@@ -37,7 +23,7 @@ const MainContent = ({ data }: { data: AppContextInterface }) => {
     schoolYear,
     schoolName,
     schoolAddress
-  } = data.personalDetails
+  } = data.user
 
   const { skills, jobTitles, portfolios, experiences } = data
 
