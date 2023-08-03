@@ -13,6 +13,7 @@ interface IProp {
   schoolName: string
   schoolAddress: string
 }
+
 const InfoSection = ({
   about,
   schoolCourse,
@@ -20,8 +21,6 @@ const InfoSection = ({
   schoolName,
   schoolAddress
 }: IProp) => {
-  // const { about } = ctx.personalDetails
-  // const { course, year, school, schoolAddress } = ctx.education
   const infoRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(infoRef)
 
