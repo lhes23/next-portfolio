@@ -35,7 +35,7 @@ const JobExperience = ({ job, index, isInView }: IProp) => {
           <h3 className="mb-3 font-bold text-gray-800 text-xl">{job.title}</h3>
           <div className="text-slate-400">
             <p>{job.company}</p>
-            <p>{job.date}</p>
+            <p>{job.workDate}</p>
           </div>
           <div className="text-sm leading-snug tracking-wide">
             <ul>

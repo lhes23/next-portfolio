@@ -57,7 +57,7 @@ export interface IJobTitle {
 export interface IExperience {
   id: string
   title: string
-  date: string
+  workDate: string
   company: string
   tasks: string[]
 }
