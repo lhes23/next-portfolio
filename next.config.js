@@ -12,6 +12,7 @@ const nextConfig = {
   experimental: {
     nftTracing: true
   },
+  trailingSlash: true,
   output: "export"
 }
 
