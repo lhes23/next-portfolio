@@ -1,4 +1,4 @@
-import { getAllSocialMedias } from "@/prisma/socialmedias"
+import { getAllSocialMedias } from "@/prisma/controllers/socialmedias"
 import { NextResponse } from "next/server"
 
 export const GET = async () => {

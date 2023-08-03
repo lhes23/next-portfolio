@@ -1,4 +1,4 @@
-import { getAllSkills } from "@/prisma/skills"
+import { getAllSkills } from "@/prisma/controllers/skills"
 import { NextResponse } from "next/server"
 
 export const GET = async () => {

@@ -1,4 +1,4 @@
-import { getAllPortfolios } from "@/prisma/portfolios"
+import { getAllPortfolios } from "@/prisma/controllers/portfolios"
 import { NextResponse } from "next/server"
 
 export const GET = async () => {

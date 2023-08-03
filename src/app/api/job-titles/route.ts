@@ -1,4 +1,4 @@
-import { getAllJobTitles } from "@/prisma/jobtitles"
+import { getAllJobTitles } from "@/prisma/controllers/jobtitles"
 import { NextResponse } from "next/server"
 
 export const GET = async () => {
