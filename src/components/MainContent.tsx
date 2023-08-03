@@ -11,42 +11,34 @@ import JobExperiences from "./JobExperiences"
 import { AppContextInterface } from "@/utils/interfaces"
 
 const MainContent = ({ data }: { data: AppContextInterface }) => {
-  const {
-    firstName,
-    lastName,
-    email,
-    about,
-    address,
-    phoneNumber,
-    summary,
-    schoolCourse,
-    schoolYear,
-    schoolName,
-    schoolAddress
-  } = data.user
-
-  const { skills, jobTitles, portfolios, experiences } = data
-
-  const heroData = { firstName, lastName, jobTitles }
+  const heroData = {
+    firstName: data.user.firstName,
+    lastName: data.user.lastName,
+    jobTitles: data.jobTitles
+  }
   const infoData = {
-    about,
-    schoolCourse,
-    schoolYear,
-    schoolName,
-    schoolAddress
+    about: data.user.about,
+    schoolCourse: data.user.schoolCourse,
+    schoolYear: data.user.schoolYear,
+    schoolName: data.user.schoolName,
+    schoolAddress: data.user.schoolAddress
   }
 
-  const contactData = { phoneNumber, address, email }
+  const contactData = {
+    phoneNumber: data.user.phoneNumber,
+    address: data.user.address,
+    email: data.user.email
+  }
   return (
     <>
       <main className="w-full bg-gradient-to-tr from-blue-300 via-purple-200 to-blue-500">
         <Nav />
         <HeroSection {...heroData} />
         <div className="lg:m-auto px-6 md:px-10 text-gray-600">
-          <SkillsSection skills={skills} />
-          <AboutSection summary={summary} />
-          <JobExperiences jobExperiences={experiences} />
-          <PortfolioSection portfolios={portfolios} />
+          <SkillsSection skills={data.skills} />
+          <AboutSection summary={data.user.summary} />
+          <JobExperiences jobExperiences={data.experiences} />
+          <PortfolioSection portfolios={data.portfolios} />
           <InfoSection {...infoData} />
           <ContactSection {...contactData} />
         </div>
