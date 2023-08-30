@@ -14,10 +14,10 @@ const fetchData = async () => {
 }
 
 const Home = async () => {
-  const data = await fetchData()
-  if (!data) return undefined
+  // const data = await fetchData()
+  // if (!data) return undefined
   // const data = objectData
-  return <MainContent data={data} />
+  return <MainContent data={objectData} />
 }
 
 export default Home
