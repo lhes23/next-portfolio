@@ -408,6 +408,24 @@
       "tech": ["wordpress", "html", "css", "javascript", "php", "PhpMyAdmin"],
       "description": "A dropshipping website made using WordPress and Woocommerce. Created for the RC enthusiast for clothing and wearables",
       "createdAt": "2023-07-28"
+    },
+    {
+      "id": "25",
+      "name": "Finance Web App",
+      "url": "",
+      "img": "next-finance-app.png",
+      "app": "nextjs",
+      "tech": [
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript",
+        "restful api"
+      ],
+      "description": "A Web application for monitoring income and expenses with data visualization using charts and tables",
+      "createdAt": "2023-08-28"
     }
   ]
 }
