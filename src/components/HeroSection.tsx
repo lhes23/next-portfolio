@@ -1,5 +1,3 @@
-// import React, { useContext } from "react"
-"use client"
 import React from "react"
 import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"

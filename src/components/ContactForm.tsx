@@ -1,3 +1,4 @@
+"use client"
 import { useState, SyntheticEvent, FormEvent } from "react"
 import baseUrl from "@/utils/baseUrl"
 import ButtonComponent from "./ButtonComponent"

@@ -10,16 +10,13 @@ const AboutSection = ({ summary }: { summary: string }) => {
   const isInView = useInView(aboutRef)
 
   return (
-    <section id="about" className={styles.section}>
-      <div
-        ref={aboutRef}
-        className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2"
-      >
+    <section id="about" className={styles.section} ref={aboutRef}>
+      <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
         <motion.div
           variants={slideFromLeft}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          exit={!isInView ? "hidden" : ""}
+          // exit={!isInView ? "hidden" : ""}
           className="relative h-64 overflow-hidden rounded-lg sm:h-full"
         >
           <EarthCanvas />
@@ -30,7 +27,7 @@ const AboutSection = ({ summary }: { summary: string }) => {
           variants={scaleUp}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          exit={!isInView ? "hidden" : ""}
+          // exit={!isInView ? "hidden" : ""}
         >
           <h2 className={`text-center ${styles.title}`}>
             Professional Summary

@@ -20,8 +20,8 @@ const InfoSection = ({ about, course, year, school, schoolAddress }: IProp) => {
   const isInView = useInView(infoRef)
 
   return (
-    <section className={styles.section} id="info">
-      <div ref={infoRef} className="grid grid-cols-1 lg:grid-cols-2">
+    <section className={styles.section} id="info" ref={infoRef}>
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <motion.div
           variants={slideFromLeft}
           initial="hidden"
