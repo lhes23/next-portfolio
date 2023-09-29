@@ -1,7 +1,7 @@
-"use client"
+// "use client"
 import React from "react"
 import { motion } from "framer-motion"
-import { item } from "@/utils/animations"
+// import { item } from "@/utils/animations"
 import { IPortfolio } from "@/utils/interfaces"
 import Link from "next/link"
 import Image from "next/image"
@@ -15,7 +15,7 @@ const Portfolio = ({ port }: IProp) => {
     <>
       <motion.div
         className="w-full h-[100%]"
-        variants={item}
+        // variants={item}
         whileHover={{ scale: 1.02 }}
       >
         <Link
@@ -25,9 +25,9 @@ const Portfolio = ({ port }: IProp) => {
           <Image
             className="object-cover w-full h-56"
             src={`/images/portfolio/${port.img}`}
-            width={500}
-            height={500}
-            alt={port.name}
+            width={300}
+            height={300}
+            alt=""
           />
           <div className="p-4 bg-gray-900">
             <p className="text-sm text-white text-ellipsis overflow-hidden whitespace-nowrap">

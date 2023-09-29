@@ -1,26 +1,11 @@
-// import React, { useContext } from "react"
-"use client"
 import React from "react"
-import { TypeAnimation } from "react-type-animation"
 import Link from "next/link"
 import ButtonComponent from "./ButtonComponent"
+import TypingAnimate from "./TypingAnimate"
+import data from "@/utils/data.json"
 
-interface IProp {
-  firstName: string
-  lastName: string
-  jobTitles: string[]
-}
-
-const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
-  const jobTitlesWithDelay = () => {
-    const arr: (string | number)[] = []
-    jobTitles.map((title: string) => {
-      arr.push(title)
-      arr.push(1000)
-    })
-    return arr
-  }
-
+const HeroSection = () => {
+  const { firstName, lastName } = data.personalDetails
   return (
     <section className="relative">
       <video
@@ -42,17 +27,7 @@ const HeroSection = ({ firstName, lastName, jobTitles }: IProp) => {
             </span>
           </h1>
 
-          <p className="mt-4 text-2xl sm:leading-relaxed sm:text-4xl text-white text-center">
-            I&apos;m a{" "}
-            <span className="block">
-              <TypeAnimation
-                sequence={jobTitlesWithDelay()}
-                speed={5}
-                repeat={Infinity}
-                className="text-left"
-              />
-            </span>
-          </p>
+          <TypingAnimate />
           <div className="flex flex-wrap gap-4 mt-8 text-center justify-center bg-transparent py-4">
             <ButtonComponent>
               <Link href="#skills">Learn More</Link>
