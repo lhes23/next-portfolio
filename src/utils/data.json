@@ -426,6 +426,24 @@
       ],
       "description": "A Web application for monitoring income and expenses with data visualization using charts and tables",
       "createdAt": "2023-08-28"
+    },
+    {
+      "id": "26",
+      "name": "Sales Report",
+      "url": "",
+      "img": "sales-report.jpg",
+      "app": "nextjs",
+      "tech": [
+        "reactjs",
+        "typescript",
+        "tailwind css",
+        "html",
+        "css",
+        "javascript",
+        "restful api"
+      ],
+      "description": "A Web application for monitoring sales report with data visualization using charts and tables",
+      "createdAt": "2023-09-29"
     }
   ]
 }
