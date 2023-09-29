@@ -17,6 +17,7 @@ const PortFolioDetails = ({
   description,
   createdAt
 }: IPortfolio) => {
+  // console.log({ img })
   return (
     <>
       <section
