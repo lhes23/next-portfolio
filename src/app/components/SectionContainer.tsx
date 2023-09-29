@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from "react"
 import { useInView } from "framer-motion"
-import { styles } from "@/components/MainContent"
+import { styles } from "./MainContent"
 
 const SectionContainer = ({
   children,

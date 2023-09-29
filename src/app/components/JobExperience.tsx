@@ -2,16 +2,15 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { IJobExperience } from "@/utils/interfaces"
-import { scaleUp } from "@/utils/animations"
+// import { scaleUp } from "@/utils/animations"
 import { styles } from "./MainContent"
 
 interface IProp {
   job: IJobExperience
   index: number
-  isInView: boolean
 }
 
-const JobExperience = ({ job, index, isInView }: IProp) => {
+const JobExperience = ({ job, index }: IProp) => {
   return (
     <>
       <motion.div
@@ -19,9 +18,9 @@ const JobExperience = ({ job, index, isInView }: IProp) => {
           index % 2 == 0 ? "flex-row-reverse" : ""
         }`}
         key={index}
-        variants={scaleUp}
+        // variants={scaleUp}
         initial="hidden"
-        animate={isInView ? "visible" : ""}
+        animate="visible"
       >
         <div className="order-1 md:w-5/12 hidden md:block" />
         <div className="z-20 items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full hidden md:flex">

@@ -1,16 +1,11 @@
-// "use client"
 import React from "react"
+import data from "@/utils/data.json"
 
 import ContactForm from "./ContactForm"
 import { styles } from "./MainContent"
 
-interface IProp {
-  phoneNumber: string
-  address: string
-  email: string
-}
-
-const ContactSection = ({ phoneNumber, address, email }: IProp) => {
+const ContactSection = () => {
+  const { phoneNumber, address, email } = data.personalDetails
   return (
     <>
       <section className={styles.section} id="contact">
