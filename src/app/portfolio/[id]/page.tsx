@@ -3,18 +3,19 @@ import { notFound } from "next/navigation"
 import data from "@/utils/data.json"
 import PortFolioDetails from "@/app/components/PortfolioDetails"
 
-const fetchPortfolios = (id: string) => {
+export async function generateStaticParams() {
   const { portfolios } = data
-  const portfolio = portfolios.find((p) => p.id === id)
-  return portfolio ? portfolio : notFound()
+
+  return portfolios.map((portfolio) => ({
+    id: portfolio.id
+  }))
 }
 
-const PortfolioPage = ({ params }: { params: { id: string } }) => {
+const PortfolioPage = async ({ params }: { params: { id: string } }) => {
+  const { portfolios } = data
   const { id } = params
-  const portfolio = fetchPortfolios(id)
-  if (!portfolio) {
-    notFound()
-  }
+  const portfolio = portfolios.find((p) => p.id === id)
+  if (!portfolio) return notFound()
 
   return <PortFolioDetails {...portfolio} />
 }
