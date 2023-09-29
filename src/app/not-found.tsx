@@ -1,11 +1,12 @@
-import ButtonComponent from "@/components/ButtonComponent"
-import Custom404 from "@/components/Custom404Component"
-import Link from "next/link"
+import React from "react"
+import Custom404Component from "./components/Custom404Component"
 
-export default function NotFound() {
+const NotFound = () => {
   return (
     <>
-      <Custom404 />
+      <Custom404Component />
     </>
   )
 }
+
+export default NotFound

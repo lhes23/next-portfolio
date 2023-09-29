@@ -1,7 +1,7 @@
 import React from "react"
 import { notFound } from "next/navigation"
-import PortFolioDetails from "@/components/PortfolioDetails"
 import data from "@/utils/data.json"
+import PortFolioDetails from "@/app/components/PortfolioDetails"
 
 const fetchPortfolios = (id: string) => {
   const { portfolios } = data
