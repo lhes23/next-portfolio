@@ -5,7 +5,6 @@ import PortFolioDetails from "@/app/components/PortfolioDetails"
 
 export async function generateStaticParams() {
   const { portfolios } = data
-
   return portfolios.map((portfolio) => ({
     id: portfolio.id
   }))
