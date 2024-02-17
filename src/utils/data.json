@@ -48,10 +48,10 @@
       { "name": "NodeJS" },
       { "name": "ExpressJS" },
       { "name": "Django" },
-      { "name": "Django Rest Framework" },
+      { "name": "Django Rest API" },
       { "name": "Git and Github" },
       { "name": "Tailwind CSS" },
-      { "name": "Amazon Web Services" },
+      { "name": "AWS Cloud" },
       { "name": "RESTful API" },
       { "name": "Vite" }
     ]

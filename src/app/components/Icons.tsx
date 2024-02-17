@@ -23,7 +23,7 @@ import {
 } from "react-icons/si"
 
 const Icons = ({ icon }: { icon: string }) => {
-  const size = 40
+  const size = 60
   icon = icon.toLowerCase()
   switch (icon) {
     case "html":
@@ -56,13 +56,13 @@ const Icons = ({ icon }: { icon: string }) => {
       return <SiExpress style={{ color: "black" }} size={size} />
     case "django":
       return <SiDjango style={{ color: "green" }} size={size} />
-    case "django rest framework":
+    case "django rest api":
       return <AiFillApi style={{ color: "green" }} size={size} />
     case "git and github":
       return <AiFillGithub style={{ color: "#000" }} size={size} />
     case "tailwind css":
       return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
-    case "amazon web services":
+    case "aws cloud":
       return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
     case "restful api":
       return <AiOutlineApi style={{ color: "#e7850f" }} size={size} />
