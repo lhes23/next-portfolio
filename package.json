@@ -12,10 +12,10 @@
     "@react-three/drei": "^9.79.3",
     "@react-three/fiber": "^8.13.5",
     "framer-motion": "^6.3.11",
-    "next": "latest",
+    "next": "^14.1.0",
     "nodemailer": "^6.9.5",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-type-animation": "^3.1.0",
     "three": "^0.154.0"
@@ -27,7 +27,7 @@
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "^14.1.0",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
