@@ -1,7 +1,6 @@
 // "use client"
 import React, { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-// import { container } from "@/utils/animations"
 import { styles } from "./MainContent"
 import { ISkill } from "@/utils/interfaces"
 import Skills from "./Skills"

@@ -11,7 +11,7 @@ const Skills = ({ skills }: { skills: ISkill[] }) => {
   return (
     <>
       <motion.div
-        className="grid grid-cols-2 gap-4 sm:grid-cols-5"
+        className="grid grid-cols-2 gap-3 sm:grid-cols-4"
         // variants={container}
         initial="hidden"
         animate={isInView ? "visible" : ""}

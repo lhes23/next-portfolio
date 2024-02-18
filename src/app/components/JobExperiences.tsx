@@ -21,22 +21,19 @@ const JobExperiences = ({
           <h2 className={styles.title}>Job Experiences</h2>
         </div>
         <div className="container mx-auto w-full h-full">
-          <div className="relative wrap overflow-hidden h-full">
-            <div
-              // ref={jobRef}
-              className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border md:block"
-              style={{ left: "50%" }}
-            />
-            {jobExperiences.map((job, index) => {
-              return (
-                <JobExperience
-                  key={index}
-                  job={job}
-                  index={index}
-                  // isInView={isInView}
-                />
-              )
-            })}
+          <div className="relative wrap overflow-hidden h-full pt-10">
+            <ol className="border-l border-neutral-300 dark:border-neutral-500">
+              {jobExperiences.map((job, index) => {
+                return (
+                  <JobExperience
+                    key={index}
+                    job={job}
+                    index={index}
+                    // isInView={isInView}
+                  />
+                )
+              })}
+            </ol>
           </div>
         </div>
       </div>

@@ -12,11 +12,7 @@ import { AppContextInterface } from "@/utils/interfaces"
 import data from "@/utils/data.json"
 
 const MainContent = () => {
-  const {
-    professionalDetails,
-
-    jobExperiences
-  } = data
+  const { professionalDetails, jobExperiences } = data
 
   return (
     <>
