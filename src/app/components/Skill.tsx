@@ -9,7 +9,13 @@ const Skill = ({ name }: { name: string }) => {
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border justify-center text-center">
           <CardItem
             translateZ="50"
-            className="text-lg font-bold text-neutral-600 dark:text-white text-center justify-center flex"
+            className={`${
+              name.toLowerCase() === "django rest framework"
+                ? // name.toLowerCase() === "amazon web service" ||
+                  // name.toLowerCase() === "web host manager"
+                  "text-sm"
+                : "text-base"
+            } font-bold text-neutral-600 dark:text-white text-center justify-center flex`}
           >
             {name}
           </CardItem>

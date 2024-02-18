@@ -56,13 +56,13 @@ const Icons = ({ icon }: { icon: string }) => {
       return <SiExpress style={{ color: "black" }} size={size} />
     case "django":
       return <SiDjango style={{ color: "green" }} size={size} />
-    case "django rest api":
+    case "django rest framework":
       return <AiFillApi style={{ color: "green" }} size={size} />
     case "git and github":
       return <AiFillGithub style={{ color: "#000" }} size={size} />
     case "tailwind css":
       return <SiTailwindcss style={{ color: "#06b6d4" }} size={size} />
-    case "aws cloud":
+    case "amazon web service":
       return <SiAmazonaws style={{ color: "#e7850f" }} size={size} />
     case "restful api":
       return <AiOutlineApi style={{ color: "#e7850f" }} size={size} />
