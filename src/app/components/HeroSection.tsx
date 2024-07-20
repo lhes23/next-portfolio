@@ -13,7 +13,7 @@ const HeroSection = () => {
         autoPlay
         muted
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-100 sm:opacity-100"
-        src="/videos/circuit.mp4"
+        src="videos/circuit.mp4"
       />
       <div
         id="hero"

@@ -64,7 +64,7 @@ const PortFolioDetails = ({
             <div className="flex w-full md:w-1/2 flex-wrap">
               <div className="w-full md:p-2">
                 <Image
-                  src={`/images/portfolio/${img}`}
+                  src={`images/portfolio/${img}`}
                   width={1000}
                   height={1000}
                   alt={name}

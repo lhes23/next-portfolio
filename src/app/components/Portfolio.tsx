@@ -24,7 +24,7 @@ const Portfolio = ({ port }: IProp) => {
         >
           <Image
             className="object-cover w-full h-56"
-            src={`/images/portfolio/${port.img}`}
+            src={`images/portfolio/${port.img}`}
             width={300}
             height={300}
             alt=""

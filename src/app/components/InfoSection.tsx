@@ -25,7 +25,7 @@ const InfoSection = () => {
           {/* <div className="avatar rounded-full w-1/2 h-1/2"> */}
           <div className="justify-center z-10 rounded-full relative sm:h-full w-1/2  h-36">
             <Image
-              src="/images/profile/profilepic.png"
+              src="images/profile/profilepic.png"
               className="rounded-full w-full ring ring-offset-gray-200 ring-offset-2 bg-white shadow-lg"
               alt="Lester Reandino profile picture"
               width={350}
