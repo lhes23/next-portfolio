@@ -22,13 +22,13 @@ const JobExperience = ({ job, index }: IProp) => {
           </p>
         </div>
         <div className="mb-6 ml-4 mt-2">
-          <CardContainer className="inter-var hover:shadow-xl w-[5/12]">
-            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border justify-center text-center">
+        <CardContainer className={`inter-var hover:shadow-xl ${styles.bgCardGlass}`}>
+          <CardBody className="relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border justify-center text-center">
               <CardItem
                 translateZ="70"
                 className="text-lg font-bold text-neutral-600 dark:text-white text-center justify-center flex"
               >
-                <h3 className="mb-3 font-bold text-gray-800 text-xl">
+                <h3 className="mb-3 font-bold text-gray-800 dark:text-white text-xl">
                   {job.title}
                 </h3>
               </CardItem>
