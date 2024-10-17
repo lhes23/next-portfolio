@@ -58,8 +58,25 @@
   },
   "jobExperiences": [
     {
+      "title": "Software Engineer | Devops Engineer",
+      "date": "April 2024 - Present",
+      "company": "Skydev Solutions, Inc.",
+      "tasks": [
+        "Develop, write, modify, integrate a website software application using NextJS, Django using security best practices",
+        "Built and deployed a Roku TV application using BrightScript, a proprietary language, ensuring seamless integration with platform-specific requirements.",
+        "Containerizing an application using Docker for easier deployment and scalability.",
+        "Integrate a PHP Laravel App with continuous deployment using Envoyer.",
+        "Use devops best practice and tools that automates and integrates the process between software development and IT teams like github actions.",
+        "Design, deploy, manage applications on AWS and GCP cloud servers using Linux distributions like Rocky and Ubuntu with expertise in SSH and server infrastructure management",
+        "Facilitate knowledge transfer and implement DevOps automation processes",
+        "Embrace the DevOps culture and accept ownership of the whole development and delivery lifecycle",
+        "Respect diverse perspectives and enjoy collaborating with other engineers to solve difficult problems",
+        "Ensured code quality and maintainability through active participation in programming, code reviews, and adherence to high engineering standards.",
+      ]
+    },
+    {
       "title": "Web Developer",
-      "date": "October 2017 - Present",
+      "date": "October 2017 - October 2024",
       "company": "Ippei Leads, Inc",
       "tasks": [
         "Managing the main website in WordPress hosted in Amazon Web Service (AWS) Cloud using Secure Shell (SSH) and Github",
