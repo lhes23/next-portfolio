@@ -36,8 +36,10 @@ const JobExperience = ({ job, index }: IProp) => {
                 translateZ="10"
                 className="w-full mt-4 flex text-xs text-gray-400"
               >
+              <div className="flex w-full justify-between">
                 <p>{job.company}</p>
                 <p>{job.date}</p>
+              </div>
               </CardItem>
               <CardItem translateZ={30}>
                 <ul>

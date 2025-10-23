@@ -7,7 +7,7 @@
     "address": "New Cabalan, Olongapo City, Zambales, Philippines",
     "email": "lesterreandino@gmail.com",
     "phoneNumber": "+63-915-982-2241",
-    "about": "A Husband and a Father of 3 kids. Enthusiastic in giving value to businesses and companies by using Web Development skills. Seeking extensive experience that will be further developed and continues self improvement to give more value and become an asset to the company"
+    "about": "Lester Reandino is a husband and a father of 3 kids. Enthusiastic in giving value to businesses and companies by using Web Development skills. Seeking extensive experience that will be further developed and continues self improvement to give more value and become an asset to the company"
   },
   "education": {
     "degree": "Bachelor",
@@ -18,7 +18,7 @@
   },
   "professionalDetails": {
     "mainTitles": "Web Developer and Designer",
-    "summary": "An experienced Production Manager. A Web Developer with experienced in Wordpress Development. Full Stack Development with Microservice architecture. Frontend development in HTML, CSS, Javascript, ReactJS, NextJS, Bootstrap, Tailwind CSS. Backend develpment in PHP, Python, NodeJs, Express and Database Management. Highly qualified and well established in a team collaboration and administrative environments that are fast paced and challenging",
+    "summary": "A highly skilled Web Developer with a strong DevOps engineering background, experienced in building and deploying modern web applications using frameworks like Next.js, Django, and Laravel. Adept at automating infrastructure and deployment workflows through Terraform, Docker, and GitHub Actions, with proven expertise in managing CI/CD pipelines and cloud environments on AWS. Skilled in orchestrating containers using Kubernetes (EKS) and maintaining secure, high-performance Linux servers. Combines full-stack development proficiency with DevOps best practices to deliver scalable, reliable, and efficient web solutions.",
     "jobTitles": [
       "Web Developer",
       "Web Designer",
@@ -58,8 +58,21 @@
   },
   "jobExperiences": [
     {
+      "title": "Devops Engineer",
+      "date": "September 2025 - Present",
+      "company": "Career Team",
+      "tasks": [
+        "Automate infrastructure provisioning and management using Terraform for scalable and reproducible cloud environments.",
+        "Containerize applications using Docker and Docker Compose to streamline development, testing, and deployment processes.",
+        "Configure and manage GitHub Runners and design CI/CD pipelines through GitHub Workflows for automated build and deployment.",
+        "Deploy and manage applications on AWS, leveraging services like EKS (Kubernetes) for container orchestration and scalability.",
+        "Monitor and maintain Linux servers, ensuring high availability, performance, and security compliance across environments.",
+        "Implement Kubernetes workloads, managing pods, services, and deployments for efficient scaling and fault tolerance."
+      ]
+    },
+    {
       "title": "Software Engineer | Devops Engineer",
-      "date": "April 2024 - Present",
+      "date": "April 2024 - August 2025",
       "company": "Skydev Solutions, Inc.",
       "tasks": [
         "Develop, write, modify, integrate a website software application using NextJS, Django using security best practices",

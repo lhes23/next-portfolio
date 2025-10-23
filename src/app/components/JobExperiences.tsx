@@ -20,7 +20,7 @@ const JobExperiences = ({
         <div className="justify-center p-4 m-4 text-center">
           <h2 className={styles.title}>Job Experiences</h2>
         </div>
-        <div className="container mx-auto w-full h-full">
+        <div className="container mx-auto max-w-xl min-w-sm">
           <div className="relative wrap overflow-hidden h-full pt-10">
             <ol className="border-l border-neutral-300 dark:border-neutral-500">
               {jobExperiences.map((job, index) => {
