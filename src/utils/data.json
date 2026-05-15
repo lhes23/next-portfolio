@@ -20,16 +20,14 @@
     "mainTitles": "Web Developer and Designer",
     "summary": "A highly skilled Web Developer with a strong DevOps engineering background, experienced in building and deploying modern web applications using frameworks like Next.js, Django, and Laravel. Adept at automating infrastructure and deployment workflows through Terraform, Docker, and GitHub Actions, with proven expertise in managing CI/CD pipelines and cloud environments on AWS. Skilled in orchestrating containers using Kubernetes (EKS) and maintaining secure, high-performance Linux servers. Combines full-stack development proficiency with DevOps best practices to deliver scalable, reliable, and efficient web solutions.",
     "jobTitles": [
-      "Web Developer",
-      "Web Designer",
+      "DevOps Manager",
+      "DevOps Engineer",
       "Full Stack Developer",
-      "Software Developer",
+      "Software Engineer",
       "Wordpress Expert",
       "Project Manager",
       "Programmer",
-      "Virtual Assistant",
-      "Father",
-      "Dancer"
+      "Virtual Assistant"
     ],
     "website": "https://lhes23.github.io/iportfolio",
     "skills": [
@@ -58,7 +56,7 @@
   },
   "jobExperiences": [
     {
-      "title": "Devops Engineer",
+      "title": "Devops Team Lead",
       "date": "September 2025 - Present",
       "company": "Career Team",
       "tasks": [
